@@ -546,7 +546,7 @@
     }
   ],
   "calendar": {
-    "total": 47,
+    "total": 49,
     "weeks": [
       [
         {
@@ -2845,7 +2845,7 @@
         },
         {
           "date": "2026-10-26",
-          "count": 44,
+          "count": 46,
           "level": 4,
           "weekday": 1
         }
