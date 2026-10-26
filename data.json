@@ -31,8 +31,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "9",
-    "Merged": "1",
-    "Under review": "8",
+    "Merged": "2",
+    "Under review": "7",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "0",
     "Projects I contribute to": "32"
@@ -64,7 +64,7 @@
       "name": "VectorCraft",
       "repo": "storytold/vectorcraft",
       "prs": 2,
-      "merged": 1,
+      "merged": 2,
       "features": 1,
       "comments": 1,
       "link": "https://github.com/storytold/vectorcraft/commits?author=ashokram-si",
@@ -236,7 +236,7 @@
       "kind": "pr",
       "feature": true,
       "logo": "storytold-vectorcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     }
   ],
   "interests": [
@@ -480,7 +480,7 @@
     }
   ],
   "calendar": {
-    "total": 37,
+    "total": 39,
     "weeks": [
       [
         {
@@ -2779,7 +2779,7 @@
         },
         {
           "date": "2026-10-26",
-          "count": 34,
+          "count": 36,
           "level": 4,
           "weekday": 1
         }
