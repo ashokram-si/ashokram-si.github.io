@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ashok Ram · Open-source contributor</title>
+  <meta name="description" content="Ashok Ram (@ashokram-si) builds new features, takes on open tasks and fixes bugs in open-source developer tools and AI infrastructure, every change shipped with tests.">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="color-scheme" content="light">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="canonical" href="https://ashokram-si.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ashokram-si.github.io/">
+  <meta property="og:title" content="Ashok Ram · Open-source contributor">
+  <meta property="og:description" content="New features, open tasks and bug fixes in open-source developer tools and AI infrastructure, every change shipped with tests.">
+  <meta property="og:image" content="https://ashokram-si.github.io/assets/avatar.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+  <meta property="og:image:alt" content="Ashok Ram">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2366676D'/%3E%3Cpath d='M32 9 52 20.5v23L32 55 12 43.5v-23z' fill='none' stroke='%23F6CD4C' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M32 20 42 37H22z' fill='%23F6CD4C'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js" crossorigin>
+
+  <!-- Marks JS as available; reveals the hero after 4 s even if a script never arrives. -->
+  <script>document.documentElement.classList.replace('no-js','js');setTimeout(function(){document.documentElement.classList.add('is-ready')},4000);</script>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.min.js" } }
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="fx-scan" aria-hidden="true"></div>
+
+  <!-- Duotone filters for the two photos only (never applied to logos):
+       Quiet Shade ramp (#2B2C30 > #66676D > white) and Sunstruck ramp (#2B2C30 > #F6CD4C > white) -->
+  <svg class="sr-only" aria-hidden="true" focusable="false" width="0" height="0">
+    <filter id="duo-shade" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.169 0.40 1"/>
+        <feFuncG type="table" tableValues="0.173 0.404 1"/>
+        <feFuncB type="table" tableValues="0.188 0.427 1"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="duo-sun" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values="0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0.2126 0.7152 0.0722 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0.169 0.965 1"/>
+        <feFuncG type="table" tableValues="0.173 0.804 1"/>
+        <feFuncB type="table" tableValues="0.188 0.298 1"/>
+      </feComponentTransfer>
+    </filter>
+  </svg>
+
+  <header class="nav">
+    <a class="nav__brand mono" href="#top"><span class="nav__prompt">~/</span><span data-bind="handle"></span><span class="caret" aria-hidden="true"></span></a>
+    <nav aria-label="Sections">
+      <ol class="nav__links mono">
+        <li><a href="#stats"><span>01</span>stats</a></li>
+        <li><a href="#activity"><span>02</span>activity</a></li>
+        <li><a href="#contributor"><span>03</span>contributor</a></li>
+        <li><a href="#prs"><span>04</span>pull requests</a></li>
+        <li><a href="#following"><span>05</span>following</a></li>
+        <li><a href="#how"><span>06</span>how I work</a></li>
+      </ol>
+    </nav>
+    <a class="nav__gh mono" data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    <div class="nav__progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <main id="main">
+    <!-- 00 / HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero__canvas" id="hero-canvas" aria-hidden="true"></div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__frame mono" aria-hidden="true">
+        <span class="corner corner--tl"></span><span class="corner corner--tr"></span>
+        <span class="corner corner--bl"></span><span class="corner corner--br"></span>
+        <span class="hero__label hero__label--tl">ashokram-si.github.io</span>
+        <span class="hero__label hero__label--tr" data-hud="render">render: —</span>
+        <span class="hero__label hero__label--br" data-hud="pointer">x +0.00 · y +0.00</span>
+      </div>
+
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <p class="whoami mono"><span class="whoami__prompt">$</span> <span class="whoami__cmd" data-text="whoami">whoami</span><span class="caret" aria-hidden="true"></span></p>
+          <h1 id="hero-name" class="hero__name"></h1>
+          <p class="hero__handle mono"></p>
+          <p class="hero__tagline"></p>
+          <ul class="chips mono" aria-label="Skills"></ul>
+          <div class="hero__cta">
+            <a class="btn btn--solid mono" href="#prs">See pull requests</a>
+            <a class="btn btn--ghost mono" data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub profile<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+
+        <div class="avatar-slot">
+          <!-- Shown only when WebGL is unavailable -->
+          <svg class="hero__fallback" viewBox="-160 -160 320 320" aria-hidden="true" focusable="false">
+            <g class="fb-rings" fill="none" stroke="#F6CD4C">
+              <circle class="fb-ring fb-ring--a" r="156" stroke-width="2.5" stroke-dasharray="2 8"/>
+              <circle class="fb-ring fb-ring--b" r="146" stroke-width="3" stroke-dasharray="60 30 4 30"/>
+            </g>
+            <g class="fb-core" fill="none" stroke="#66676D" stroke-width="1" stroke-linejoin="round" transform="scale(1.18)">
+              <polygon points="0,-112 97,-56 97,56 0,112 -97,56 -97,-56"/>
+              <polygon points="0,-56 48.5,28 -48.5,28"/>
+              <polygon points="0,56 48.5,-28 -48.5,-28"/>
+              <path d="M0-56V-112M0-56 97-56M0-56-97-56M48.5 28 97 56M48.5 28 97-56M48.5 28 0 112M-48.5 28-97 56M-48.5 28-97-56M-48.5 28 0 112M0 56 0 112M48.5-28 97 56M-48.5-28-97 56M48.5-28 0-112M-48.5-28 0-112"/>
+            </g>
+          </svg>
+
+          <figure class="avatar">
+            <svg class="avatar__hud" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+              <circle class="avatar__ticks" cx="100" cy="100" r="96" fill="none" stroke="#66676D" stroke-width="5" stroke-dasharray="0.8 9.25"/>
+              <circle class="avatar__ticks avatar__ticks--major" cx="100" cy="100" r="96" fill="none" stroke="#2B2C30" stroke-width="9" stroke-dasharray="1.4 48.87"/>
+              <circle class="avatar__arc" cx="100" cy="100" r="89" fill="none" stroke="#F6CD4C" stroke-width="3" stroke-dasharray="110 30 8 30 40 341"/>
+            </svg>
+            <div class="avatar__img">
+              <img src="assets/avatar.jpg" alt="Ashok Ram" width="1200" height="1200" fetchpriority="high" decoding="async">
+            </div>
+            <figcaption class="avatar__cap mono" data-bind="handle-id"></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <a class="hero__scroll mono" href="#stats"><span>scroll</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <!-- 01 / STATS + PORTRAIT -->
+    <section class="section about" id="stats" aria-labelledby="stats-title">
+      <div class="container about__grid">
+        <figure class="portrait hud">
+          <div class="portrait__stack">
+            <img class="portrait__base" src="assets/portrait.jpg" alt="Ashok Ram, head and shoulders, holding a box" width="1400" height="1517" loading="lazy" decoding="async">
+            <img class="portrait__sun" src="assets/portrait.jpg" alt="" aria-hidden="true" width="1400" height="1517" loading="lazy" decoding="async">
+            <span class="portrait__scan" aria-hidden="true"></span>
+          </div>
+          <figcaption class="portrait__cap mono"><span>assets/portrait.jpg</span><span class="portrait__hint">hover to scan</span></figcaption>
+        </figure>
+
+        <div class="about__body">
+          <div class="sec-head">
+            <p class="sec-head__idx mono"><span>01</span> // stats</p>
+            <h2 class="sec-head__title" id="stats-title">By the numbers</h2>
+            <div class="sec-head__rule" aria-hidden="true"></div>
+          </div>
+          <ul class="stats"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 / ACTIVITY (contribution calendar) -->
+    <section class="section section--tight" id="activity" aria-labelledby="activity-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>02</span> // activity</p>
+          <h2 class="sec-head__title" id="activity-title">Activity</h2>
+          <div class="sec-head__rule" aria-hidden="true"></div>
+        </div>
+        <div class="cal hud">
+          <h3 class="cal__total"></h3>
+          <div class="cal__scroll" tabindex="0" role="region" aria-label="Contribution calendar for the last year (scrolls sideways)">
+            <div class="cal__grid" role="group" aria-label="Contributions per day"></div>
+          </div>
+          <div class="cal__legend mono" aria-hidden="true">
+            <span>Less</span>
+            <i class="cal__day cal__day--l0"></i><i class="cal__day cal__day--l1"></i><i class="cal__day cal__day--l2"></i><i class="cal__day cal__day--l3"></i><i class="cal__day cal__day--l4"></i>
+            <span>More</span>
+          </div>
+          <div class="cal__tip mono" role="tooltip" hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / CONTRIBUTOR TO -->
+    <section class="section" id="contributor" aria-labelledby="contributor-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>03</span> // contributor_to</p>
+          <h2 class="sec-head__title" id="contributor-title">Contributor to</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="contributing"></span></div>
+        </div>
+        <ul class="cards"></ul>
+      </div>
+    </section>
+
+    <!-- 04 / PULL REQUESTS -->
+    <section class="section" id="prs" aria-labelledby="prs-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>04</span> // git log --author=<span data-bind="handle"></span></p>
+          <h2 class="sec-head__title" id="prs-title">Pull requests</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="contributions"></span></div>
+        </div>
+        <div class="prt-tabs" role="tablist" aria-label="Filter by status"></div>
+        <div class="prt-panel" id="prs-panel" role="tabpanel">
+          <table class="prt" role="table">
+            <caption class="sr-only">Pull requests and other contributions, newest first</caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th class="c-proj" role="columnheader" scope="col">Project</th>
+                <th class="c-what" role="columnheader" scope="col">Contribution</th>
+                <th class="c-type" role="columnheader" scope="col">Type</th>
+                <th class="c-link" role="columnheader" scope="col">Link</th>
+                <th class="c-status" role="columnheader" scope="col">Status</th>
+                <th class="c-date" role="columnheader" scope="col">Date</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup"></tbody>
+          </table>
+        </div>
+        <div class="prt-foot">
+          <p class="prt-count mono" aria-live="polite"></p>
+          <nav class="pager" aria-label="Pull request pages" hidden></nav>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / PROJECTS I FOLLOW -->
+    <section class="section" id="following" aria-labelledby="following-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>05</span> // watching</p>
+          <h2 class="sec-head__title" id="following-title">Projects I follow</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="interests"></span></div>
+        </div>
+        <div class="wall">
+          <span class="wall__scan" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 / HOW I WORK -->
+    <section class="section section--band" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>06</span> // method</p>
+          <h2 class="sec-head__title" id="how-title">How I work</h2>
+          <div class="sec-head__rule" aria-hidden="true"></div>
+        </div>
+        <div class="term hud">
+          <div class="term__bar mono" aria-hidden="true">
+            <span class="term__dots"><i></i><i></i><i></i></span>
+            <span>~/<span data-bind="handle"></span> — how-i-work</span>
+          </div>
+          <div class="term__body mono">
+            <p class="term__cmd" aria-hidden="true"><span class="term__p">$</span> <span class="term__typed" data-text="cat how-i-work.md">cat how-i-work.md</span></p>
+            <ol class="term__list"></ol>
+            <p class="term__cmd term__cmd--end" aria-hidden="true"><span class="term__p">$</span> <span class="caret"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <noscript>
+      <p class="container noscript mono">This page renders its content with JavaScript. The full record is on GitHub: <a href="https://github.com/ashokram-si">github.com/ashokram-si</a>.</p>
+    </noscript>
+  </main>
+
+  <footer class="foot">
+    <div class="container foot__inner">
+      <p class="mono foot__cmd"><span class="term__p">$</span> open <a data-bind-href="profile" data-bind="profile-text" href="#" target="_blank" rel="noopener"></a></p>
+      <p class="mono foot__note">built with three.js + GSAP · static page, no cookies, no trackers</p>
+    </div>
+  </footer>
+</body>
+</html>
