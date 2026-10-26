@@ -164,7 +164,7 @@
     {
       "date": "2026-10-25",
       "project": "Tauri",
-      "what": "tauri dev stopped watching the whole app when .taurignore contained /*. Fixed to match .gitignore semantics, with a unit test and an end-to-end check",
+      "what": "tauri dev stopped watching the whole app when .taurignore contained /*. Watch folders are now always walked and ignore rules filter their entries and change events, with unit tests and an end-to-end check",
       "url": "https://github.com/tauri-apps/tauri/pull/16398",
       "ref": "tauri-apps/tauri#16398",
       "kind": "pr",
@@ -546,7 +546,7 @@
     }
   ],
   "calendar": {
-    "total": 49,
+    "total": 51,
     "weeks": [
       [
         {
@@ -2845,7 +2845,7 @@
         },
         {
           "date": "2026-10-26",
-          "count": 46,
+          "count": 48,
           "level": 4,
           "weekday": 1
         }
