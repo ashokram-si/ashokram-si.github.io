@@ -30,9 +30,9 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "9",
+    "Pull requests opened": "12",
     "Merged": "2",
-    "Under review": "7",
+    "Under review": "10",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "0",
     "Projects I contribute to": "32"
@@ -125,6 +125,39 @@
       "link": "https://github.com/storytold/effectcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-effectcraft"
+    },
+    {
+      "name": "oxc",
+      "repo": "oxc-project/oxc",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "oxc-project"
+    },
+    {
+      "name": "GridCraft",
+      "repo": "storytold/gridcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/gridcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-gridcraft"
+    },
+    {
+      "name": "Craft Launcher",
+      "repo": "storytold/craft-launcher",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/craft-launcher/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-craft-launcher"
     }
   ],
   "contributions": [
@@ -237,6 +270,39 @@
       "feature": true,
       "logo": "storytold-vectorcraft",
       "status": "MERGED"
+    },
+    {
+      "date": "2026-10-26",
+      "project": "oxc",
+      "what": "Parser fix: a regex like (/<!-- x -->/) in a module was wrongly read as an HTML comment (and crashed the formatter in scripts). The arrow-function lookahead now stops early, as TypeScript's does, with unit and conformance tests",
+      "url": "https://github.com/oxc-project/oxc/pull/28181",
+      "ref": "oxc-project/oxc#28181",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-26",
+      "project": "GridCraft",
+      "what": "After saving a CSV, Save in the close dialog asked again forever. It now closes once the file is written, and keeps multi-sheet workbooks open with a clear message so no sheet is lost silently",
+      "url": "https://github.com/storytold/gridcraft/pull/2642",
+      "ref": "storytold/gridcraft#2642",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-gridcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-26",
+      "project": "Craft Launcher",
+      "what": "Security: the macOS install check could follow a planted symlink and empty another file. It now probes with a randomly named, create-only file, with a symlink regression test",
+      "url": "https://github.com/storytold/craft-launcher/pull/912",
+      "ref": "storytold/craft-launcher#912",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-craft-launcher",
+      "status": "IN REVIEW"
     }
   ],
   "interests": [
@@ -480,7 +546,7 @@
     }
   ],
   "calendar": {
-    "total": 39,
+    "total": 47,
     "weeks": [
       [
         {
@@ -2779,7 +2845,7 @@
         },
         {
           "date": "2026-10-26",
-          "count": 36,
+          "count": 44,
           "level": 4,
           "weekday": 1
         }
