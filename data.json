@@ -30,9 +30,9 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "7",
+    "Pull requests opened": "9",
     "Merged": "1",
-    "Under review": "6",
+    "Under review": "8",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "0",
     "Projects I contribute to": "32"
@@ -63,9 +63,9 @@
     {
       "name": "VectorCraft",
       "repo": "storytold/vectorcraft",
-      "prs": 1,
+      "prs": 2,
       "merged": 1,
-      "features": 0,
+      "features": 1,
       "comments": 1,
       "link": "https://github.com/storytold/vectorcraft/commits?author=ashokram-si",
       "state": "merged",
@@ -114,6 +114,17 @@
       "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "tursodatabase"
+    },
+    {
+      "name": "EffectCraft",
+      "repo": "storytold/effectcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/effectcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-effectcraft"
     }
   ],
   "contributions": [
@@ -203,6 +214,28 @@
       "kind": "pr",
       "feature": true,
       "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-26",
+      "project": "EffectCraft",
+      "what": "the Render Queue now writes Targa (.tga) image sequences: 24-bit RGB, or 32-bit with straight or premultiplied alpha, with every frame checked byte for byte against the PNG output and read back through EffectCraft's own importer",
+      "url": "https://github.com/storytold/effectcraft/pull/2476",
+      "ref": "storytold/effectcraft#2476",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-effectcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-26",
+      "project": "VectorCraft",
+      "what": "saved views completed: all 25 views are now listed in the View menu (only 10 were), Edit Views opens a proper rename/delete list as one undo step, and views from a file are checked when it opens",
+      "url": "https://github.com/storytold/vectorcraft/pull/4247",
+      "ref": "storytold/vectorcraft#4247",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-vectorcraft",
       "status": "IN REVIEW"
     }
   ],
@@ -447,7 +480,7 @@
     }
   ],
   "calendar": {
-    "total": 30,
+    "total": 34,
     "weeks": [
       [
         {
@@ -2746,7 +2779,7 @@
         },
         {
           "date": "2026-10-26",
-          "count": 27,
+          "count": 31,
           "level": 4,
           "weekday": 1
         }
