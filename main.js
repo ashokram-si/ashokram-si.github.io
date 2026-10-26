@@ -435,6 +435,28 @@ function setupPortrait() {
   }
 }
 
+/** Compact section menu for narrow screens (≤1000px, see style.css). */
+function setupNavMenu() {
+  const bar = $('.nav');
+  const toggle = $('.nav__toggle');
+  const menu = $('#nav-menu');
+  if (!toggle || !menu) return;
+  const setOpen = (open, { focusToggle = false } = {}) => {
+    bar.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    if (!open && focusToggle) toggle.focus();
+  };
+  toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+  menu.addEventListener('click', (e) => { if (e.target.closest('a')) setOpen(false); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && bar.classList.contains('is-open')) setOpen(false, { focusToggle: true });
+  });
+  document.addEventListener('click', (e) => {
+    if (bar.classList.contains('is-open') && !bar.contains(e.target)) setOpen(false);
+  });
+  window.matchMedia('(min-width: 1001px)').addEventListener('change', (e) => { if (e.matches) setOpen(false); });
+}
+
 function setupScrollProgress() {
   const bar = $('.nav__progress span');
   let queued = false;
@@ -498,6 +520,7 @@ async function init() {
 
   startHero3D();
   setupScrollProgress();
+  setupNavMenu();
   setupNavSpy();
   setupPortrait();
 

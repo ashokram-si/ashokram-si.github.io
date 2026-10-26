@@ -93,8 +93,20 @@ const damp = (current, target, lambda, dt) => current + (target - current) * (1 
 export function createHero(host, opts = {}) {
   const { reduce = false, anchor = null, mask: maskEl = null, watch = [], onPointer, onFps, onLost } = opts;
 
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
-  const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+  // Small or low-power devices get fewer particles and a lower pixel ratio.
+  const small = window.matchMedia('(max-width: 700px), (max-height: 540px)').matches;
+  const nav = window.navigator || {};
+  const lowPower = small
+    || (nav.hardwareConcurrency && nav.hardwareConcurrency <= 4)
+    || (nav.deviceMemory && nav.deviceMemory <= 4)
+    || (nav.connection && nav.connection.saveData);
+  const dpr = window.devicePixelRatio || 1;
+  const pixelRatio = Math.min(dpr, lowPower ? 1.5 : 2);
+  const renderer = new THREE.WebGLRenderer({
+    antialias: pixelRatio < 2,
+    alpha: true,
+    powerPreference: lowPower ? 'low-power' : 'high-performance',
+  });
   renderer.setPixelRatio(pixelRatio);
   renderer.setClearColor(0x000000, 0);
   host.appendChild(renderer.domElement);
@@ -103,7 +115,6 @@ export function createHero(host, opts = {}) {
   const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 60);
   camera.position.set(0, 0, 9);
 
-  const small = window.matchMedia('(max-width: 700px)').matches;
   const rand = mulberry32(20261026);
 
   // Uniform objects shared by every point material (same references).
@@ -139,7 +150,7 @@ export function createHero(host, opts = {}) {
   };
 
   // --- Particle field --------------------------------------------------------
-  const FIELD_N = small ? 900 : 2000;
+  const FIELD_N = small ? 600 : lowPower ? 1100 : 2000;
   const fPos = new Float32Array(FIELD_N * 3);
   const fSeed = new Float32Array(FIELD_N);
   for (let i = 0; i < FIELD_N; i++) {
@@ -232,6 +243,12 @@ export function createHero(host, opts = {}) {
   function layout() {
     width = Math.max(1, host.clientWidth);
     height = Math.max(1, host.clientHeight);
+    // Keep the drawing buffer under ~4.5 MP (e.g. 2560x1000 at 2x would be 10 MP).
+    const pr = Math.max(1, Math.min(pixelRatio, Math.sqrt(4.5e6 / (width * height))));
+    if (renderer.getPixelRatio() !== pr) {
+      renderer.setPixelRatio(pr);
+      shared.uPixelRatio.value = pr;
+    }
     renderer.setSize(width, height, false);
     camera.aspect = width / height;
     camera.updateProjectionMatrix();

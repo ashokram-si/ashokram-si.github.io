@@ -199,12 +199,14 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
       'data-page': page, 'data-role': role, ...extra,
     }, label);
     pager.replaceChildren(
-      btn('← Prev', cur - 1, 'prev', { disabled: cur === 1, 'aria-label': 'Previous page' }),
+      btn([h('span', { 'aria-hidden': 'true', text: '←' }), h('span', { class: 'pager__txt', text: ' Prev' })],
+        cur - 1, 'prev', { disabled: cur === 1, 'aria-label': 'Previous page' }),
       h('span', { class: 'pager__nums' },
         pageList(total, cur).map((p) => (p === '…'
           ? h('span', { class: 'pager__gap', 'aria-hidden': 'true', text: '…' })
           : btn(String(p), p, 'num', { 'aria-label': `Page ${p}`, 'aria-current': p === cur ? 'page' : null })))),
-      btn('Next →', cur + 1, 'next', { disabled: cur === total, 'aria-label': 'Next page' }),
+      btn([h('span', { class: 'pager__txt', text: 'Next ' }), h('span', { 'aria-hidden': 'true', text: '→' })],
+        cur + 1, 'next', { disabled: cur === total, 'aria-label': 'Next page' }),
     );
     if (focus) {
       const target = focus === 'num'

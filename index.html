@@ -64,7 +64,10 @@
 
   <header class="nav">
     <a class="nav__brand mono" href="#top"><span class="nav__prompt">~/</span><span data-bind="handle"></span><span class="caret" aria-hidden="true"></span></a>
-    <nav aria-label="Sections">
+    <button class="nav__toggle mono" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav__toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>menu</span>
+    </button>
+    <nav aria-label="Sections" id="nav-menu">
       <ol class="nav__links mono">
         <li><a href="#stats"><span>01</span>stats</a></li>
         <li><a href="#activity"><span>02</span>activity</a></li>
@@ -72,6 +75,7 @@
         <li><a href="#prs"><span>04</span>pull requests</a></li>
         <li><a href="#following"><span>05</span>following</a></li>
         <li><a href="#how"><span>06</span>how I work</a></li>
+        <li class="nav__links-gh"><a data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub profile<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
       </ol>
     </nav>
     <a class="nav__gh mono" data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a>
@@ -161,7 +165,7 @@
     </section>
 
     <!-- 02 / ACTIVITY (contribution calendar) -->
-    <section class="section section--tight" id="activity" aria-labelledby="activity-title">
+    <section class="section" id="activity" aria-labelledby="activity-title">
       <div class="container">
         <div class="sec-head">
           <p class="sec-head__idx mono"><span>02</span> // activity</p>
