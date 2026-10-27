@@ -30,12 +30,12 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "12",
+    "Pull requests opened": "20",
     "Merged": "2",
-    "Under review": "10",
+    "Under review": "18",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "0",
-    "Projects I contribute to": "32"
+    "Fixes ready locally, awaiting submission": "9",
+    "Projects I contribute to": "40"
   },
   "contributing_to": [
     {
@@ -158,6 +158,94 @@
       "link": "https://github.com/storytold/craft-launcher/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-craft-launcher"
+    },
+    {
+      "name": "Knip",
+      "repo": "webpro-nl/knip",
+      "prs": 1,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/webpro-nl/knip/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "webpro-nl-knip"
+    },
+    {
+      "name": "Leptos",
+      "repo": "leptos-rs/leptos",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/leptos-rs/leptos/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "leptos-rs"
+    },
+    {
+      "name": "Prettier",
+      "repo": "prettier/prettier",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/prettier/prettier/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "prettier"
+    },
+    {
+      "name": "Julia",
+      "repo": "JuliaLang/julia",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/JuliaLang/julia/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "JuliaLang"
+    },
+    {
+      "name": "Burn",
+      "repo": "tracel-ai/burn",
+      "prs": 1,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/tracel-ai/burn/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "tracel-ai"
+    },
+    {
+      "name": "Hugo",
+      "repo": "gohugoio/hugo",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/gohugoio/hugo/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "gohugoio"
+    },
+    {
+      "name": "Quarkus",
+      "repo": "quarkusio/quarkus",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/quarkusio/quarkus/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "quarkusio"
+    },
+    {
+      "name": "Vector",
+      "repo": "vectordotdev/vector",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/vectordotdev/vector/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "vectordotdev"
     }
   ],
   "contributions": [
@@ -303,6 +391,94 @@
       "feature": false,
       "logo": "storytold-craft-launcher",
       "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Knip",
+      "what": "Mastra plugin: Mastra's CLI finds agents, tools and workflows by folder convention under src/mastra/, so Knip reported them as unused. The plugin adds those conventions from Mastra's own source, with fixtures",
+      "url": "https://github.com/webpro-nl/knip/pull/2227",
+      "ref": "webpro-nl/knip#2227",
+      "kind": "pr",
+      "feature": true,
+      "logo": "webpro-nl-knip",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Leptos",
+      "what": "Islands never hydrated on a page whose main thread never goes idle: island_script.js waited on requestIdleCallback with no timeout. It now gets the same 2 s backstop the hydration script has, with a test",
+      "url": "https://github.com/leptos-rs/leptos/pull/4974",
+      "ref": "leptos-rs/leptos#4974",
+      "kind": "pr",
+      "feature": false,
+      "logo": "leptos-rs",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Prettier",
+      "what": "A comment just inside the ( of a label's body moved on every format run. It is now attached to the label, where the second run already put it, with an idempotency test",
+      "url": "https://github.com/prettier/prettier/pull/20377",
+      "ref": "prettier/prettier#20377",
+      "kind": "pr",
+      "feature": false,
+      "logo": "prettier",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Julia",
+      "what": "first(s, typemax(Int)) returned an empty string for non-ASCII text: nextind overflowed to a negative index. It now saturates, which also fixes Iterators.partition on strings",
+      "url": "https://github.com/JuliaLang/julia/pull/64370",
+      "ref": "JuliaLang/julia#64370",
+      "kind": "pr",
+      "feature": false,
+      "logo": "JuliaLang",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Burn",
+      "what": "average pooling gets dilation, threaded the same way as max pooling through every layer and the gradient, so the ONNX importer can lower dilated AveragePool",
+      "url": "https://github.com/tracel-ai/burn/pull/6235",
+      "ref": "tracel-ai/burn#6235",
+      "kind": "pr",
+      "feature": true,
+      "logo": "tracel-ai",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Hugo",
+      "what": "Tailwind @import \"./x.css\" failed with disableInlineImports: the CSS goes to the CLI on stdin, so relative paths resolved against the project root. They now resolve against the source file",
+      "url": "https://github.com/gohugoio/hugo/pull/15488",
+      "ref": "gohugoio/hugo#15488",
+      "kind": "pr",
+      "feature": false,
+      "logo": "gohugoio",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Quarkus",
+      "what": "quarkus:dev generated code before application.properties was copied, so gRPC settings like scan-for-proto were ignored. Dev mode now runs same-phase goals in Maven's priority order",
+      "url": "https://github.com/quarkusio/quarkus/pull/57866",
+      "ref": "quarkusio/quarkus#57866",
+      "kind": "pr",
+      "feature": false,
+      "logo": "quarkusio",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-27",
+      "project": "Vector",
+      "what": "Compressing sinks (Loki, HTTP, S3 and others) reported compressed bytes in component_sent_bytes_total; Vector's spec says before compression. The shared request builder now passes the uncompressed size it already had",
+      "url": "https://github.com/vectordotdev/vector/pull/26886",
+      "ref": "vectordotdev/vector#26886",
+      "kind": "pr",
+      "feature": false,
+      "logo": "vectordotdev",
+      "status": "IN REVIEW"
     }
   ],
   "interests": [
@@ -433,6 +609,42 @@
           "url": "https://github.com/strapi/strapi",
           "logo": "strapi",
           "monogram": "St"
+        },
+        {
+          "name": "Knip",
+          "url": "https://github.com/webpro-nl/knip",
+          "logo": "webpro-nl-knip",
+          "monogram": "Kn"
+        },
+        {
+          "name": "Prettier",
+          "url": "https://github.com/prettier/prettier",
+          "logo": "prettier",
+          "monogram": "Pr"
+        },
+        {
+          "name": "Leptos",
+          "url": "https://github.com/leptos-rs/leptos",
+          "logo": "leptos-rs",
+          "monogram": "Le"
+        },
+        {
+          "name": "Hugo",
+          "url": "https://github.com/gohugoio/hugo",
+          "logo": "gohugoio",
+          "monogram": "Hu"
+        },
+        {
+          "name": "Quarkus",
+          "url": "https://github.com/quarkusio/quarkus",
+          "logo": "quarkusio",
+          "monogram": "Qu"
+        },
+        {
+          "name": "Julia",
+          "url": "https://github.com/JuliaLang/julia",
+          "logo": "JuliaLang",
+          "monogram": "Ju"
         }
       ]
     },
@@ -474,6 +686,12 @@
           "url": "https://github.com/Arize-ai/phoenix",
           "logo": "Arize-ai",
           "monogram": "Ph"
+        },
+        {
+          "name": "Burn",
+          "url": "https://github.com/tracel-ai/burn",
+          "logo": "tracel-ai",
+          "monogram": "Bu"
         }
       ]
     },
@@ -515,6 +733,12 @@
           "url": "https://github.com/PostHog/posthog",
           "logo": "PostHog",
           "monogram": "PH"
+        },
+        {
+          "name": "Vector",
+          "url": "https://github.com/vectordotdev/vector",
+          "logo": "vectordotdev",
+          "monogram": "Ve"
         }
       ]
     }
@@ -546,7 +770,7 @@
     }
   ],
   "calendar": {
-    "total": 54,
+    "total": 71,
     "weeks": [
       [
         {
@@ -2851,8 +3075,8 @@
         },
         {
           "date": "2026-10-27",
-          "count": 1,
-          "level": 2,
+          "count": 18,
+          "level": 4,
           "weekday": 2
         }
       ]
