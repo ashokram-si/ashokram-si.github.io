@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 14
+      "count": 17
     },
     {
       "name": "C++",
@@ -26,7 +26,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 1
+      "count": 2
     },
     {
       "name": "AI tooling",
@@ -59,11 +59,11 @@
       "url": "https://github.com/storytold/vectorcraft/pull/4215"
     },
     {
-      "text": "3 features shipped, 3 in review",
+      "text": "3 features shipped, 4 in review",
       "url": "https://ashokram-si.github.io#prs"
     },
     {
-      "text": "20 PRs · 19 projects · 3 days",
+      "text": "24 PRs · 22 projects · 4 days",
       "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si"
     },
     {
@@ -83,14 +83,47 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "20",
+    "Pull requests opened": "24",
     "Merged": "4",
-    "Under review": "16",
+    "Under review": "20",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "13",
+    "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "SoundCraft",
+      "repo": "storytold/soundcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-soundcraft"
+    },
+    {
+      "name": "DesignCraft",
+      "repo": "storytold/designcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-designcraft"
+    },
+    {
+      "name": "Grafana",
+      "repo": "grafana/grafana",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/grafana/grafana/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "grafana"
+    },
     {
       "name": "Tauri",
       "repo": "tauri-apps/tauri",
@@ -302,6 +335,50 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-28",
+      "project": "SoundCraft",
+      "what": "A movie whose file is gone kept its raw stored path and was never marked offline, so the Video track opened it relative to the working directory",
+      "url": "https://github.com/storytold/soundcraft/pull/1156",
+      "ref": "storytold/soundcraft#1156",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-soundcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "SoundCraft",
+      "what": "A refused MIDI file (track longer than a day) left tracks and a new tempo map behind with no undo; the import now checks the whole file before the session changes",
+      "url": "https://github.com/storytold/soundcraft/pull/1157",
+      "ref": "storytold/soundcraft#1157",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-soundcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "DesignCraft",
+      "what": "a spine line where the pages of a spread meet, screen-only, hidden with the other guides and in preview modes",
+      "url": "https://github.com/storytold/designcraft/pull/1936",
+      "ref": "storytold/designcraft#1936",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-designcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "Grafana",
+      "what": "Table Gauge cells: bar widths didn't match the values because an inverted comparison let the first-rendered row set the column's text reservation",
+      "url": "https://github.com/grafana/grafana/pull/136236",
+      "ref": "grafana/grafana#136236",
+      "kind": "pr",
+      "feature": false,
+      "logo": "grafana",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-25",
       "project": "Tauri",
@@ -823,7 +900,7 @@
     }
   ],
   "calendar": {
-    "total": 184,
+    "total": 191,
     "weeks": [
       [
         {
@@ -3134,7 +3211,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 28,
+          "count": 35,
           "level": 4,
           "weekday": 3
         }
