@@ -67,8 +67,8 @@
       "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si"
     },
     {
-      "text": "Approved, awaiting merge: Julia",
-      "url": "https://github.com/JuliaLang/julia/pull/64370"
+      "text": "Approved, awaiting merge: Knip, Julia",
+      "url": "https://github.com/webpro-nl/knip/pull/2227"
     }
   ],
   "github_achievements": [
@@ -823,7 +823,7 @@
     }
   ],
   "calendar": {
-    "total": 163,
+    "total": 165,
     "weeks": [
       [
         {
@@ -3134,7 +3134,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 7,
+          "count": 9,
           "level": 4,
           "weekday": 3
         }
