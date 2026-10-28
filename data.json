@@ -35,17 +35,17 @@
     },
     {
       "name": "JavaScript",
-      "logo": null,
+      "logo": "assets/lang/javascript-original.svg",
       "count": 1
     },
     {
       "name": "Julia",
-      "logo": null,
+      "logo": "assets/lang/julia-original.svg",
       "count": 1
     },
     {
       "name": "Go",
-      "logo": null,
+      "logo": "assets/lang/go-original.svg",
       "count": 1
     }
   ],
@@ -813,7 +813,7 @@
     }
   ],
   "calendar": {
-    "total": 159,
+    "total": 161,
     "weeks": [
       [
         {
@@ -3107,7 +3107,7 @@
         {
           "date": "2026-10-25",
           "count": 3,
-          "level": 4,
+          "level": 3,
           "weekday": 0
         },
         {
@@ -3124,7 +3124,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 3,
+          "count": 5,
           "level": 4,
           "weekday": 3
         }
