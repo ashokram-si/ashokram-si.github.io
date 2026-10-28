@@ -71,6 +71,16 @@
       "url": "https://github.com/JuliaLang/julia/pull/64370"
     }
   ],
+  "github_achievements": [
+    {
+      "name": "Pull Shark",
+      "tier": "",
+      "earned": "2026-10-28",
+      "note": "two or more merged pull requests",
+      "image": "assets/badges/pull-shark.png",
+      "url": "https://github.com/ashokram-si"
+    }
+  ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "20",
@@ -813,7 +823,7 @@
     }
   ],
   "calendar": {
-    "total": 161,
+    "total": 163,
     "weeks": [
       [
         {
@@ -3107,7 +3117,7 @@
         {
           "date": "2026-10-25",
           "count": 3,
-          "level": 3,
+          "level": 2,
           "weekday": 0
         },
         {
@@ -3124,7 +3134,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 5,
+          "count": 7,
           "level": 4,
           "weekday": 3
         }
