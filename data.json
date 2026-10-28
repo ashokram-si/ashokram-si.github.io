@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 17
+      "count": 21
     },
     {
       "name": "C++",
@@ -59,16 +59,16 @@
       "url": "https://github.com/storytold/vectorcraft/pull/4215"
     },
     {
-      "text": "3 features shipped, 4 in review",
+      "text": "3 features shipped, 8 in review",
       "url": "https://ashokram-si.github.io#prs"
     },
     {
-      "text": "24 PRs · 22 projects · 4 days",
+      "text": "28 PRs · 23 projects · 4 days",
       "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si"
     },
     {
-      "text": "Approved, awaiting merge: Julia",
-      "url": "https://github.com/JuliaLang/julia/pull/64370"
+      "text": "Approved, awaiting merge: Tauri, Julia",
+      "url": "https://github.com/tauri-apps/tauri/pull/16398"
     }
   ],
   "github_achievements": [
@@ -83,14 +83,58 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "24",
+    "Pull requests opened": "28",
     "Merged": "4",
-    "Under review": "20",
+    "Under review": "24",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "DesignCraft",
+      "repo": "storytold/designcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 2,
+      "comments": 0,
+      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-designcraft"
+    },
+    {
+      "name": "EffectCraft",
+      "repo": "storytold/effectcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 2,
+      "comments": 0,
+      "link": "https://github.com/storytold/effectcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-effectcraft"
+    },
+    {
+      "name": "DeckCraft",
+      "repo": "storytold/deckcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/deckcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-deckcraft"
+    },
+    {
+      "name": "PhotoCraft",
+      "repo": "storytold/photocraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/photocraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-photocraft"
+    },
     {
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
@@ -101,17 +145,6 @@
       "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-soundcraft"
-    },
-    {
-      "name": "DesignCraft",
-      "repo": "storytold/designcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-designcraft"
     },
     {
       "name": "Grafana",
@@ -134,17 +167,6 @@
       "link": "https://github.com/tauri-apps/tauri/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "tauri-apps"
-    },
-    {
-      "name": "PhotoCraft",
-      "repo": "storytold/photocraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/photocraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-photocraft"
     },
     {
       "name": "VectorCraft",
@@ -200,17 +222,6 @@
       "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "tursodatabase"
-    },
-    {
-      "name": "EffectCraft",
-      "repo": "storytold/effectcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/storytold/effectcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-effectcraft"
     },
     {
       "name": "oxc",
@@ -335,6 +346,50 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-28",
+      "project": "DesignCraft",
+      "what": "Cmd-click with the Selection tool selects the object behind; each further click goes one deeper and wraps back to the front",
+      "url": "https://github.com/storytold/designcraft/pull/1938",
+      "ref": "storytold/designcraft#1938",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-designcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "EffectCraft",
+      "what": "a shape's Rectangle and Ellipse Size get the Constrain Proportions chain, off by default",
+      "url": "https://github.com/storytold/effectcraft/pull/2550",
+      "ref": "storytold/effectcraft#2550",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-effectcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "DeckCraft",
+      "what": "the Reuse Slides picker shows a thumbnail of each slide beside its title",
+      "url": "https://github.com/storytold/deckcraft/pull/1485",
+      "ref": "storytold/deckcraft#1485",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-deckcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-28",
+      "project": "PhotoCraft",
+      "what": "JPEG Options shows how big the file will be, updating as quality and format change",
+      "url": "https://github.com/storytold/photocraft/pull/9952",
+      "ref": "storytold/photocraft#9952",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-photocraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-28",
       "project": "SoundCraft",
@@ -900,7 +955,7 @@
     }
   ],
   "calendar": {
-    "total": 193,
+    "total": 200,
     "weeks": [
       [
         {
@@ -3211,7 +3266,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 37,
+          "count": 44,
           "level": 4,
           "weekday": 3
         }
