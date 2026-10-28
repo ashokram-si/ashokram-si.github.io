@@ -49,28 +49,6 @@
       "count": 1
     }
   ],
-  "achievements": [
-    {
-      "text": "4 PRs merged · VectorCraft, Knip, Burn",
-      "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si+is%3Amerged"
-    },
-    {
-      "text": "Fastest merge: 7 min after opening",
-      "url": "https://github.com/storytold/vectorcraft/pull/4215"
-    },
-    {
-      "text": "3 features shipped, 8 in review",
-      "url": "https://ashokram-si.github.io#prs"
-    },
-    {
-      "text": "28 PRs · 23 projects · 4 days",
-      "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si"
-    },
-    {
-      "text": "Approved, awaiting merge: Tauri, Julia",
-      "url": "https://github.com/tauri-apps/tauri/pull/16398"
-    }
-  ],
   "github_achievements": [
     {
       "name": "Pull Shark",
@@ -955,7 +933,7 @@
     }
   ],
   "calendar": {
-    "total": 200,
+    "total": 202,
     "weeks": [
       [
         {
@@ -3266,7 +3244,7 @@
         },
         {
           "date": "2026-10-28",
-          "count": 44,
+          "count": 46,
           "level": 4,
           "weekday": 3
         }

@@ -50,17 +50,6 @@ function renderHero(data) {
       : null;
     return h('li', {}, icon, h('span', { text: name }), count);
   }));
-  // Achievements are {text, url}: short facts derived from the pull requests, each linking
-  // to where it can be checked.
-  $('.achievements').append(...(data.achievements || []).map((a) => {
-    const mark = h('span', { class: 'ach__mark', 'aria-hidden': 'true' });
-    const url = safeUrl(a.url);
-    const sameSite = url && url.startsWith(location.origin);
-    const body = url
-      ? h('a', sameSite ? { href: url } : external(url), h('span', { text: a.text }), sameSite ? null : newTabNote())
-      : h('span', { text: a.text });
-    return h('li', {}, mark, body);
-  }));
   // GitHub's own achievement badges: {name, tier, earned, note, image, url}, drawn with
   // GitHub's official artwork. The caption and list stay hidden when there are none.
   const badges = (data.github_achievements || []).filter((b) => safeAsset(b.image));
@@ -265,7 +254,6 @@ function introTimeline() {
     .from('.hero__tagline', { opacity: 0, y: 18, duration: 0.8 }, 1.3)
     .from('.hero__cap', { opacity: 0, duration: 0.4, stagger: 0.1 }, 1.4)
     .from('.chips li', { opacity: 0, y: 10, duration: 0.45, stagger: 0.06 }, 1.45)
-    .from('.achievements li', { opacity: 0, x: -10, duration: 0.45, stagger: 0.08 }, 1.6)
     .from('.gh-badges li', { opacity: 0, scale: 0.8, duration: 0.5, stagger: 0.1, transformOrigin: 'left center' }, 1.8)
     .from('.hero__cta .btn', { opacity: 0, y: 12, duration: 0.5, stagger: 0.08 }, 1.6)
     .from('.avatar', { scale: 0.7, opacity: 0, rotate: -25, duration: 1.4, ease: 'expo.out' }, 0.35)
