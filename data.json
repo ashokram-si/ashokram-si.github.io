@@ -5,27 +5,70 @@
   "skills": [
     {
       "name": "Java",
-      "logo": "assets/lang/java-original.svg"
+      "logo": "assets/lang/java-original.svg",
+      "count": 1
     },
     {
       "name": "Rust",
-      "logo": "assets/lang/rust-original.svg"
+      "logo": "assets/lang/rust-original.svg",
+      "count": 14
     },
     {
       "name": "C++",
-      "logo": "assets/lang/cplusplus-original.svg"
+      "logo": "assets/lang/cplusplus-original.svg",
+      "count": 1
     },
     {
       "name": "Python",
-      "logo": "assets/lang/python-original.svg"
+      "logo": "assets/lang/python-original.svg",
+      "count": 0
     },
     {
       "name": "TypeScript",
-      "logo": "assets/lang/typescript-original.svg"
+      "logo": "assets/lang/typescript-original.svg",
+      "count": 1
     },
     {
       "name": "AI tooling",
-      "logo": null
+      "logo": null,
+      "count": 0
+    },
+    {
+      "name": "JavaScript",
+      "logo": null,
+      "count": 1
+    },
+    {
+      "name": "Julia",
+      "logo": null,
+      "count": 1
+    },
+    {
+      "name": "Go",
+      "logo": null,
+      "count": 1
+    }
+  ],
+  "achievements": [
+    {
+      "text": "3 PRs merged · VectorCraft, Burn",
+      "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si+is%3Amerged"
+    },
+    {
+      "text": "Fastest merge: 7 min after opening",
+      "url": "https://github.com/storytold/vectorcraft/pull/4215"
+    },
+    {
+      "text": "2 features shipped, 4 in review",
+      "url": "https://ashokram-si.github.io#prs"
+    },
+    {
+      "text": "20 PRs · 19 projects · 3 days",
+      "url": "https://github.com/pulls?q=is%3Apr+author%3Aashokram-si"
+    },
+    {
+      "text": "Approved, awaiting merge: Julia",
+      "url": "https://github.com/JuliaLang/julia/pull/64370"
     }
   ],
   "profile": "https://github.com/ashokram-si",
@@ -770,7 +813,7 @@
     }
   ],
   "calendar": {
-    "total": 76,
+    "total": 159,
     "weeks": [
       [
         {
@@ -3069,20 +3112,20 @@
         },
         {
           "date": "2026-10-26",
-          "count": 50,
+          "count": 104,
           "level": 4,
           "weekday": 1
         },
         {
           "date": "2026-10-27",
-          "count": 22,
+          "count": 49,
           "level": 4,
           "weekday": 2
         },
         {
           "date": "2026-10-28",
-          "count": 1,
-          "level": 2,
+          "count": 3,
+          "level": 4,
           "weekday": 3
         }
       ]
