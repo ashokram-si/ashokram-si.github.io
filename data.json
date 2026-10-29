@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "28",
-    "Merged": "5",
-    "Under review": "21",
+    "Merged": "6",
+    "Under review": "20",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -84,11 +84,11 @@
       "name": "EffectCraft",
       "repo": "storytold/effectcraft",
       "prs": 2,
-      "merged": 0,
+      "merged": 1,
       "features": 2,
       "comments": 0,
-      "link": "https://github.com/storytold/effectcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/effectcraft/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "storytold-effectcraft"
     },
     {
@@ -344,7 +344,7 @@
       "kind": "pr",
       "feature": true,
       "logo": "storytold-effectcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-28",
@@ -933,7 +933,7 @@
     }
   ],
   "calendar": {
-    "total": 240,
+    "total": 246,
     "weeks": [
       [
         {
@@ -3244,13 +3244,13 @@
         },
         {
           "date": "2026-10-28",
-          "count": 78,
+          "count": 82,
           "level": 4,
           "weekday": 3
         },
         {
           "date": "2026-10-29",
-          "count": 6,
+          "count": 8,
           "level": 4,
           "weekday": 4
         }
