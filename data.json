@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "28",
-    "Merged": "4",
-    "Under review": "24",
+    "Merged": "5",
+    "Under review": "21",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -271,11 +271,11 @@
       "name": "Julia",
       "repo": "JuliaLang/julia",
       "prs": 1,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/JuliaLang/julia/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/JuliaLang/julia/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "JuliaLang"
     },
     {
@@ -575,7 +575,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "leptos-rs",
-      "status": "IN REVIEW"
+      "status": "CLOSED"
     },
     {
       "date": "2026-10-27",
@@ -597,7 +597,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "JuliaLang",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-27",
@@ -619,7 +619,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "gohugoio",
-      "status": "IN REVIEW"
+      "status": "CLOSED"
     },
     {
       "date": "2026-10-27",
@@ -933,7 +933,7 @@
     }
   ],
   "calendar": {
-    "total": 230,
+    "total": 235,
     "weeks": [
       [
         {
@@ -3244,9 +3244,15 @@
         },
         {
           "date": "2026-10-28",
-          "count": 74,
+          "count": 78,
           "level": 4,
           "weekday": 3
+        },
+        {
+          "date": "2026-10-29",
+          "count": 1,
+          "level": 2,
+          "weekday": 4
         }
       ]
     ]
