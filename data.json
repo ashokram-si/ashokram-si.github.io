@@ -26,7 +26,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 2
+      "count": 4
     },
     {
       "name": "AI tooling",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "28",
+    "Pull requests opened": "30",
     "Merged": "7",
-    "Under review": "19",
+    "Under review": "21",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "Grafana",
+      "repo": "grafana/grafana",
+      "prs": 3,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/grafana/grafana/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "grafana"
+    },
     {
       "name": "DesignCraft",
       "repo": "storytold/designcraft",
@@ -123,17 +134,6 @@
       "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-soundcraft"
-    },
-    {
-      "name": "Grafana",
-      "repo": "grafana/grafana",
-      "prs": 1,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/grafana/grafana/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "grafana"
     },
     {
       "name": "Tauri",
@@ -324,6 +324,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "Grafana",
+      "what": "The trace view kept wrong indent guides on span rows after the trace data changed (a new subtrace, or expanding a collapsed span), because the visible span ids were cached on the window only; they now follow the rows, with two regression tests",
+      "url": "https://github.com/grafana/grafana/pull/136586",
+      "ref": "grafana/grafana#136586",
+      "kind": "pr",
+      "feature": false,
+      "logo": "grafana",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-10-30",
+      "project": "Grafana",
+      "what": "The SQL query builder's \"Any in\" and \"Not in\" wrote one quoted string (IN ('a, b, c')); each value is now quoted and escaped on its own for every SQL data source, and multi-value variables in the same list stay intact",
+      "url": "https://github.com/grafana/grafana/pull/136585",
+      "ref": "grafana/grafana#136585",
+      "kind": "pr",
+      "feature": false,
+      "logo": "grafana",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-28",
       "project": "DesignCraft",
@@ -933,7 +955,7 @@
     }
   ],
   "calendar": {
-    "total": 253,
+    "total": 261,
     "weeks": [
       [
         {
@@ -3256,8 +3278,8 @@
         },
         {
           "date": "2026-10-30",
-          "count": 2,
-          "level": 1,
+          "count": 10,
+          "level": 4,
           "weekday": 5
         }
       ]
