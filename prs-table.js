@@ -1,5 +1,5 @@
-// Pull requests: status filter tabs + paginated table (stacked cards on phones).
-// State lives in the URL hash, e.g. #prs?status=merged&page=2, so views are
+// Pull requests: status filter tabs + paginated table (stacked cards on phones), opening on
+// the merged ones. State lives in the URL hash, e.g. #prs?status=all&page=2, so views are
 // shareable and the back button works.
 import { $, $$, h, external, newTabNote, logoTile } from './util.js';
 
@@ -43,6 +43,8 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
     ...statuses.map((s) => ({ key: slug(s), status: s, label: sentence(s), count: items.filter((c) => c.status === s).length })),
   ];
   const validKeys = new Set(tabsDef.map((t) => t.key));
+  // Opens on the merged pull requests when there are any; All and the other statuses are a tab away.
+  const defaultKey = validKeys.has('merged') ? 'merged' : 'all';
 
   const tablist = $('.prt-tabs', root);
   const panel = $('.prt-panel', root);
@@ -50,7 +52,7 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
   const countEl = $('.prt-count', root);
   const pager = $('.pager', root);
 
-  let state = { status: 'all', page: 1 };
+  let state = { status: defaultKey, page: 1 };
 
   // ---- tabs
   const tabs = tabsDef.map((t) => h('button', {
@@ -101,7 +103,7 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
   const pageCount = () => Math.max(1, Math.ceil(filtered().length / PAGE_SIZE));
 
   function setState(next, { push = false, focus = null, animateRows = true } = {}) {
-    const status = validKeys.has(next.status) ? next.status : 'all';
+    const status = validKeys.has(next.status) ? next.status : defaultKey;
     state = { status, page: 1 };
     state.page = Math.min(Math.max(1, Number(next.page) || 1), pageCount());
     if (push) writeHash();
@@ -112,12 +114,12 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
     const m = /^#prs(?:\?(.*))?$/.exec(location.hash);
     if (!m) return null;
     const p = new URLSearchParams(m[1] || '');
-    return { status: p.get('status') || 'all', page: p.get('page') || 1 };
+    return { status: p.get('status') || defaultKey, page: p.get('page') || 1 };
   }
 
   function writeHash() {
     const p = new URLSearchParams();
-    if (state.status !== 'all') p.set('status', state.status);
+    if (state.status !== defaultKey) p.set('status', state.status);
     if (state.page > 1) p.set('page', String(state.page));
     const hash = `#prs${p.toString() ? `?${p}` : ''}`;
     if (location.hash !== hash) history.pushState(null, '', hash);
@@ -126,7 +128,7 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
   window.addEventListener('popstate', () => {
     const fromHash = readHash();
     if (fromHash) setState(fromHash);
-    else if (!location.hash) setState({ status: 'all', page: 1 });
+    else if (!location.hash) setState({ status: defaultKey, page: 1 });
   });
 
   // ---- render
@@ -218,7 +220,7 @@ export function createPrTable(root, contributions, { resolveProject, animate }) 
 
   // ---- initial state (from the URL if it targets this section)
   const initial = readHash();
-  setState(initial || { status: 'all', page: 1 }, { animateRows: false });
+  setState(initial || { status: defaultKey, page: 1 }, { animateRows: false });
 
   return { rows: () => $$('.prt-row', tbody) };
 }
