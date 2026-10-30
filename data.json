@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 24
+      "count": 25
     },
     {
       "name": "C++",
@@ -61,9 +61,9 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "33",
+    "Pull requests opened": "34",
     "Merged": "7",
-    "Under review": "24",
+    "Under review": "25",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -72,9 +72,9 @@
     {
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
-      "prs": 3,
+      "prs": 4,
       "merged": 0,
-      "features": 1,
+      "features": 2,
       "comments": 0,
       "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "SoundCraft",
+      "what": "Clip Looping's Number of Loops goes up to 1000 loops, the limit looping by length or to the next clip already had, through one shared limit in the engine",
+      "url": "https://github.com/storytold/soundcraft/pull/1204",
+      "ref": "storytold/soundcraft#1204",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-soundcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "SoundCraft",
@@ -988,7 +999,7 @@
     }
   ],
   "calendar": {
-    "total": 270,
+    "total": 273,
     "weeks": [
       [
         {
@@ -3306,12 +3317,12 @@
         {
           "date": "2026-10-29",
           "count": 11,
-          "level": 3,
+          "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-10-30",
-          "count": 19,
+          "count": 22,
           "level": 4,
           "weekday": 5
         }
