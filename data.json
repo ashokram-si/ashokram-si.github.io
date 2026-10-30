@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 26
+      "count": 27
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "35",
+    "Pull requests opened": "36",
     "Merged": "7",
-    "Under review": "26",
+    "Under review": "27",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "SoundCraft",
+      "repo": "storytold/soundcraft",
+      "prs": 5,
+      "merged": 0,
+      "features": 2,
+      "comments": 0,
+      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-soundcraft"
+    },
     {
       "name": "VectorCraft",
       "repo": "storytold/vectorcraft",
@@ -79,17 +90,6 @@
       "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
       "state": "listed",
       "logo": "storytold-vectorcraft"
-    },
-    {
-      "name": "SoundCraft",
-      "repo": "storytold/soundcraft",
-      "prs": 4,
-      "merged": 0,
-      "features": 2,
-      "comments": 0,
-      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-soundcraft"
     },
     {
       "name": "DesignCraft",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "SoundCraft",
+      "what": "A recorded take longer than the program could read back (about 47 min of stereo at 192 kHz) stayed on disk and never reached the session; a take now continues in a new file before that limit and its files are placed end to end as one take, crash recovery included",
+      "url": "https://github.com/storytold/soundcraft/pull/1205",
+      "ref": "storytold/soundcraft#1205",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-soundcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "VectorCraft",
@@ -1010,7 +1021,7 @@
     }
   ],
   "calendar": {
-    "total": 276,
+    "total": 279,
     "weeks": [
       [
         {
@@ -3333,7 +3344,7 @@
         },
         {
           "date": "2026-10-30",
-          "count": 25,
+          "count": 28,
           "level": 4,
           "weekday": 5
         }
