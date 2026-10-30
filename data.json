@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 22
+      "count": 23
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "31",
+    "Pull requests opened": "32",
     "Merged": "7",
-    "Under review": "22",
+    "Under review": "23",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "DesignCraft",
+      "repo": "storytold/designcraft",
+      "prs": 3,
+      "merged": 0,
+      "features": 3,
+      "comments": 0,
+      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-designcraft"
+    },
     {
       "name": "DeckCraft",
       "repo": "storytold/deckcraft",
@@ -90,17 +101,6 @@
       "link": "https://github.com/grafana/grafana/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "grafana"
-    },
-    {
-      "name": "DesignCraft",
-      "repo": "storytold/designcraft",
-      "prs": 2,
-      "merged": 0,
-      "features": 2,
-      "comments": 0,
-      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-designcraft"
     },
     {
       "name": "EffectCraft",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "DesignCraft",
+      "what": "the window title names the open document, with a dot while it has unsaved changes, so a host running the web build can tell which file a drop opened; also shown in the taskbar and window switcher",
+      "url": "https://github.com/storytold/designcraft/pull/2030",
+      "ref": "storytold/designcraft#2030",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-designcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "DeckCraft",
@@ -966,7 +977,7 @@
     }
   ],
   "calendar": {
-    "total": 264,
+    "total": 267,
     "weeks": [
       [
         {
@@ -3284,12 +3295,12 @@
         {
           "date": "2026-10-29",
           "count": 11,
-          "level": 4,
+          "level": 3,
           "weekday": 4
         },
         {
           "date": "2026-10-30",
-          "count": 13,
+          "count": 16,
           "level": 4,
           "weekday": 5
         }
