@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 23
+      "count": 24
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "32",
+    "Pull requests opened": "33",
     "Merged": "7",
-    "Under review": "23",
+    "Under review": "24",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "SoundCraft",
+      "repo": "storytold/soundcraft",
+      "prs": 3,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-soundcraft"
+    },
     {
       "name": "DesignCraft",
       "repo": "storytold/designcraft",
@@ -123,17 +134,6 @@
       "link": "https://github.com/storytold/photocraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-photocraft"
-    },
-    {
-      "name": "SoundCraft",
-      "repo": "storytold/soundcraft",
-      "prs": 2,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-soundcraft"
     },
     {
       "name": "Tauri",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "SoundCraft",
+      "what": "the macOS menu bar shows each command's keyboard shortcut, from the same table as the in-window menus; pressed shortcuts still go through the app's own key handling, so text fields and dialogs keep their keys",
+      "url": "https://github.com/storytold/soundcraft/pull/1203",
+      "ref": "storytold/soundcraft#1203",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-soundcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "DesignCraft",
@@ -977,7 +988,7 @@
     }
   ],
   "calendar": {
-    "total": 267,
+    "total": 270,
     "weeks": [
       [
         {
@@ -3300,7 +3311,7 @@
         },
         {
           "date": "2026-10-30",
-          "count": 16,
+          "count": 19,
           "level": 4,
           "weekday": 5
         }
