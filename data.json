@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 21
+      "count": 22
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "30",
+    "Pull requests opened": "31",
     "Merged": "7",
-    "Under review": "21",
+    "Under review": "22",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "DeckCraft",
+      "repo": "storytold/deckcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 2,
+      "comments": 0,
+      "link": "https://github.com/storytold/deckcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-deckcraft"
+    },
     {
       "name": "Grafana",
       "repo": "grafana/grafana",
@@ -101,17 +112,6 @@
       "link": "https://github.com/storytold/effectcraft/graphs/contributors",
       "state": "listed",
       "logo": "storytold-effectcraft"
-    },
-    {
-      "name": "DeckCraft",
-      "repo": "storytold/deckcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/storytold/deckcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-deckcraft"
     },
     {
       "name": "PhotoCraft",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "DeckCraft",
+      "what": "the window title names the open presentation, with a dot while it has unsaved changes, so a host running the web build can tell which file a drop opened; also shown in the taskbar and window switcher",
+      "url": "https://github.com/storytold/deckcraft/pull/1566",
+      "ref": "storytold/deckcraft#1566",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-deckcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "Grafana",
@@ -955,7 +966,7 @@
     }
   ],
   "calendar": {
-    "total": 261,
+    "total": 264,
     "weeks": [
       [
         {
@@ -3249,7 +3260,7 @@
         {
           "date": "2026-10-25",
           "count": 3,
-          "level": 2,
+          "level": 1,
           "weekday": 0
         },
         {
@@ -3278,7 +3289,7 @@
         },
         {
           "date": "2026-10-30",
-          "count": 10,
+          "count": 13,
           "level": 4,
           "weekday": 5
         }
