@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 25
+      "count": 26
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "34",
+    "Pull requests opened": "35",
     "Merged": "7",
-    "Under review": "25",
+    "Under review": "26",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "VectorCraft",
+      "repo": "storytold/vectorcraft",
+      "prs": 3,
+      "merged": 2,
+      "features": 2,
+      "comments": 1,
+      "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
+      "state": "listed",
+      "logo": "storytold-vectorcraft"
+    },
     {
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
@@ -145,17 +156,6 @@
       "link": "https://github.com/tauri-apps/tauri/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "tauri-apps"
-    },
-    {
-      "name": "VectorCraft",
-      "repo": "storytold/vectorcraft",
-      "prs": 2,
-      "merged": 2,
-      "features": 1,
-      "comments": 1,
-      "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
-      "state": "listed",
-      "logo": "storytold-vectorcraft"
     },
     {
       "name": "Biome",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-10-30",
+      "project": "VectorCraft",
+      "what": "Gradient panel presets: a Presets menu applies a built-in or saved gradient to the selection, keeping its placement, as one undo step; the panel menu saves and deletes your own presets, kept with the preferences",
+      "url": "https://github.com/storytold/vectorcraft/pull/4701",
+      "ref": "storytold/vectorcraft#4701",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-vectorcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "SoundCraft",
@@ -999,7 +1010,7 @@
     }
   ],
   "calendar": {
-    "total": 273,
+    "total": 276,
     "weeks": [
       [
         {
@@ -3322,7 +3333,7 @@
         },
         {
           "date": "2026-10-30",
-          "count": 22,
+          "count": 25,
           "level": 4,
           "weekday": 5
         }
