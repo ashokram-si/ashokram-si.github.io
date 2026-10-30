@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "28",
-    "Merged": "6",
-    "Under review": "20",
+    "Merged": "7",
+    "Under review": "19",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -84,11 +84,11 @@
       "name": "EffectCraft",
       "repo": "storytold/effectcraft",
       "prs": 2,
-      "merged": 1,
+      "merged": 2,
       "features": 2,
       "comments": 0,
-      "link": "https://github.com/storytold/effectcraft/commits?author=ashokram-si",
-      "state": "merged",
+      "link": "https://github.com/storytold/effectcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-effectcraft"
     },
     {
@@ -153,8 +153,8 @@
       "merged": 2,
       "features": 1,
       "comments": 1,
-      "link": "https://github.com/storytold/vectorcraft/commits?author=ashokram-si",
-      "state": "merged",
+      "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-vectorcraft"
     },
     {
@@ -509,7 +509,7 @@
       "kind": "pr",
       "feature": true,
       "logo": "storytold-effectcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-26",
@@ -933,7 +933,7 @@
     }
   ],
   "calendar": {
-    "total": 246,
+    "total": 251,
     "weeks": [
       [
         {
@@ -3232,13 +3232,13 @@
         },
         {
           "date": "2026-10-26",
-          "count": 104,
+          "count": 105,
           "level": 4,
           "weekday": 1
         },
         {
           "date": "2026-10-27",
-          "count": 49,
+          "count": 50,
           "level": 4,
           "weekday": 2
         },
@@ -3250,9 +3250,15 @@
         },
         {
           "date": "2026-10-29",
-          "count": 8,
+          "count": 11,
           "level": 4,
           "weekday": 4
+        },
+        {
+          "date": "2026-10-30",
+          "count": 0,
+          "level": 0,
+          "weekday": 5
         }
       ]
     ]
