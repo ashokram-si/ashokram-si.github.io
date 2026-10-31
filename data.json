@@ -63,7 +63,7 @@
   "stats": {
     "Pull requests opened": "36",
     "Merged": "8",
-    "Under review": "26",
+    "Under review": "25",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -641,7 +641,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-craft-launcher",
-      "status": "IN REVIEW"
+      "status": "CLOSED"
     },
     {
       "date": "2026-10-27",
@@ -1021,7 +1021,7 @@
     }
   ],
   "calendar": {
-    "total": 282,
+    "total": 343,
     "weeks": [
       [
         {
@@ -3338,15 +3338,21 @@
         },
         {
           "date": "2026-10-29",
-          "count": 11,
+          "count": 27,
           "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-10-30",
-          "count": 31,
+          "count": 62,
           "level": 4,
           "weekday": 5
+        },
+        {
+          "date": "2026-10-31",
+          "count": 14,
+          "level": 1,
+          "weekday": 6
         }
       ]
     ]
