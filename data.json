@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 27
+      "count": 28
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "36",
+    "Pull requests opened": "37",
     "Merged": "8",
-    "Under review": "25",
+    "Under review": "26",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "CADCraft",
+      "repo": "storytold/cadcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/cadcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-cadcraft"
+    },
     {
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
@@ -178,17 +189,6 @@
       "link": "https://github.com/ggml-org/llama.cpp/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "ggml-org"
-    },
-    {
-      "name": "CADCraft",
-      "repo": "storytold/cadcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/storytold/cadcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-cadcraft"
     },
     {
       "name": "Turso",
@@ -324,6 +324,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-01",
+      "project": "CADCraft",
+      "what": "SVG import ignored a transform written on a shape itself, so a moved, rotated or skewed rectangle, circle or path came in untransformed. Every shape now takes its own transform, the way the SVG spec defines it",
+      "url": "https://github.com/storytold/cadcraft/pull/2602",
+      "ref": "storytold/cadcraft#2602",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-cadcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-10-30",
       "project": "SoundCraft",
@@ -1021,52 +1032,8 @@
     }
   ],
   "calendar": {
-    "total": 343,
+    "total": 352,
     "weeks": [
-      [
-        {
-          "date": "2025-10-26",
-          "count": 0,
-          "level": 0,
-          "weekday": 0
-        },
-        {
-          "date": "2025-10-27",
-          "count": 0,
-          "level": 0,
-          "weekday": 1
-        },
-        {
-          "date": "2025-10-28",
-          "count": 0,
-          "level": 0,
-          "weekday": 2
-        },
-        {
-          "date": "2025-10-29",
-          "count": 0,
-          "level": 0,
-          "weekday": 3
-        },
-        {
-          "date": "2025-10-30",
-          "count": 0,
-          "level": 0,
-          "weekday": 4
-        },
-        {
-          "date": "2025-10-31",
-          "count": 0,
-          "level": 0,
-          "weekday": 5
-        },
-        {
-          "date": "2025-11-01",
-          "count": 0,
-          "level": 0,
-          "weekday": 6
-        }
-      ],
       [
         {
           "date": "2025-11-02",
@@ -3350,9 +3317,17 @@
         },
         {
           "date": "2026-10-31",
-          "count": 14,
-          "level": 1,
+          "count": 19,
+          "level": 2,
           "weekday": 6
+        }
+      ],
+      [
+        {
+          "date": "2026-11-01",
+          "count": 4,
+          "level": 1,
+          "weekday": 0
         }
       ]
     ]
