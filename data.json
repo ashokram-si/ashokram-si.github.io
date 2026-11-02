@@ -21,7 +21,7 @@
     {
       "name": "Python",
       "logo": "assets/lang/python-original.svg",
-      "count": 0
+      "count": 1
     },
     {
       "name": "TypeScript",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "39",
+    "Pull requests opened": "40",
     "Merged": "8",
-    "Under review": "28",
+    "Under review": "29",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "Meltano",
+      "repo": "meltano/meltano",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "meltano"
+    },
     {
       "name": "WordCraft",
       "repo": "storytold/wordcraft",
@@ -346,6 +357,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-02",
+      "project": "Meltano",
+      "what": "meltano select saved patterns for extractors that can never receive them and said nothing when a full catalog file overrode them; it now fails with a clear fix for extractors without catalog support and warns whenever the override makes rules ignored",
+      "url": "https://github.com/meltano/meltano/pull/10430",
+      "ref": "meltano/meltano#10430",
+      "kind": "pr",
+      "feature": false,
+      "logo": "meltano",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-02",
       "project": "WordCraft",
@@ -1076,7 +1098,7 @@
     }
   ],
   "calendar": {
-    "total": 375,
+    "total": 381,
     "weeks": [
       [
         {
@@ -3375,7 +3397,7 @@
         },
         {
           "date": "2026-11-02",
-          "count": 20,
+          "count": 26,
           "level": 2,
           "weekday": 1
         }
