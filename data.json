@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 29
+      "count": 30
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "38",
+    "Pull requests opened": "39",
     "Merged": "8",
-    "Under review": "27",
+    "Under review": "28",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "WordCraft",
+      "repo": "storytold/wordcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/wordcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-wordcraft"
+    },
     {
       "name": "LightCraft",
       "repo": "storytold/lightcraft",
@@ -335,6 +346,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-02",
+      "project": "WordCraft",
+      "what": "Fonts embedded in one document stayed loaded after it closed and silently changed how later documents looked; a document's fonts now leave with the last open document that embeds them, and every open document is laid out again",
+      "url": "https://github.com/storytold/wordcraft/pull/5283",
+      "ref": "storytold/wordcraft#5283",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-wordcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-02",
       "project": "LightCraft",
@@ -1054,7 +1076,7 @@
     }
   ],
   "calendar": {
-    "total": 368,
+    "total": 375,
     "weeks": [
       [
         {
@@ -3353,8 +3375,8 @@
         },
         {
           "date": "2026-11-02",
-          "count": 13,
-          "level": 1,
+          "count": 20,
+          "level": 2,
           "weekday": 1
         }
       ]
