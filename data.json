@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 28
+      "count": 29
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "37",
+    "Pull requests opened": "38",
     "Merged": "8",
-    "Under review": "26",
+    "Under review": "27",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
   },
   "contributing_to": [
+    {
+      "name": "LightCraft",
+      "repo": "storytold/lightcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/lightcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-lightcraft"
+    },
     {
       "name": "CADCraft",
       "repo": "storytold/cadcraft",
@@ -324,6 +335,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-02",
+      "project": "LightCraft",
+      "what": "A JPEG carrying its edits in embedded metadata imported with none of them; import now reads them as the app's own Read Metadata command already did, without re-applying edits already baked into the pixels",
+      "url": "https://github.com/storytold/lightcraft/pull/3607",
+      "ref": "storytold/lightcraft#3607",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-lightcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-01",
       "project": "CADCraft",
@@ -1032,7 +1054,7 @@
     }
   ],
   "calendar": {
-    "total": 352,
+    "total": 368,
     "weeks": [
       [
         {
@@ -3325,9 +3347,15 @@
       [
         {
           "date": "2026-11-01",
-          "count": 4,
+          "count": 7,
           "level": 1,
           "weekday": 0
+        },
+        {
+          "date": "2026-11-02",
+          "count": 13,
+          "level": 1,
+          "weekday": 1
         }
       ]
     ]
