@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "40",
-    "Merged": "8",
-    "Under review": "29",
+    "Merged": "10",
+    "Under review": "27",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "40"
@@ -106,11 +106,11 @@
       "name": "CADCraft",
       "repo": "storytold/cadcraft",
       "prs": 2,
-      "merged": 0,
+      "merged": 1,
       "features": 1,
       "comments": 0,
-      "link": "https://github.com/storytold/cadcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/cadcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-cadcraft"
     },
     {
@@ -161,11 +161,11 @@
       "name": "Grafana",
       "repo": "grafana/grafana",
       "prs": 3,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/grafana/grafana/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/grafana/grafana/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "grafana"
     },
     {
@@ -399,7 +399,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-cadcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-30",
@@ -575,7 +575,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "grafana",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-25",
@@ -1098,7 +1098,7 @@
     }
   ],
   "calendar": {
-    "total": 381,
+    "total": 391,
     "weeks": [
       [
         {
@@ -3397,9 +3397,15 @@
         },
         {
           "date": "2026-11-02",
-          "count": 26,
-          "level": 2,
+          "count": 33,
+          "level": 3,
           "weekday": 1
+        },
+        {
+          "date": "2026-11-03",
+          "count": 3,
+          "level": 1,
+          "weekday": 2
         }
       ]
     ]
