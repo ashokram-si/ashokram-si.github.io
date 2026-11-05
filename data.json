@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 30
+      "count": 31
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "40",
+    "Pull requests opened": "41",
     "Merged": "10",
-    "Under review": "27",
+    "Under review": "28",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
-    "Projects I contribute to": "40"
+    "Projects I contribute to": "41"
   },
   "contributing_to": [
+    {
+      "name": "FigCraft",
+      "repo": "storytold/figcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/figcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-figcraft"
+    },
     {
       "name": "Meltano",
       "repo": "meltano/meltano",
@@ -109,8 +120,8 @@
       "merged": 1,
       "features": 1,
       "comments": 0,
-      "link": "https://github.com/storytold/cadcraft/graphs/contributors",
-      "state": "listed",
+      "link": "https://github.com/storytold/cadcraft/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "storytold-cadcraft"
     },
     {
@@ -357,6 +368,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-05",
+      "project": "FigCraft",
+      "what": "A mouse's side buttons (4 and 5) did nothing on the canvas; they now pan it as the middle button does, ending on release like any pan",
+      "url": "https://github.com/storytold/figcraft/pull/2009",
+      "ref": "storytold/figcraft#2009",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-figcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-02",
       "project": "Meltano",
@@ -1098,7 +1120,7 @@
     }
   ],
   "calendar": {
-    "total": 391,
+    "total": 406,
     "weeks": [
       [
         {
@@ -3403,9 +3425,21 @@
         },
         {
           "date": "2026-11-03",
-          "count": 3,
+          "count": 9,
           "level": 1,
           "weekday": 2
+        },
+        {
+          "date": "2026-11-04",
+          "count": 0,
+          "level": 0,
+          "weekday": 3
+        },
+        {
+          "date": "2026-11-05",
+          "count": 9,
+          "level": 1,
+          "weekday": 4
         }
       ]
     ]
