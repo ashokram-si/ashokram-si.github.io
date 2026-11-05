@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 31
+      "count": 32
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "41",
+    "Pull requests opened": "42",
     "Merged": "10",
-    "Under review": "28",
+    "Under review": "29",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
-    "Projects I contribute to": "41"
+    "Projects I contribute to": "42"
   },
   "contributing_to": [
+    {
+      "name": "FilmCraft",
+      "repo": "storytold/filmcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/filmcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-filmcraft"
+    },
     {
       "name": "FigCraft",
       "repo": "storytold/figcraft",
@@ -368,6 +379,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-05",
+      "project": "FilmCraft",
+      "what": "Searching a large or network folder for missing media froze the app; the folder is now walked in the background while the dialog keeps working, and closing it stops the search",
+      "url": "https://github.com/storytold/filmcraft/pull/4319",
+      "ref": "storytold/filmcraft#4319",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-filmcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-05",
       "project": "FigCraft",
@@ -1120,7 +1142,7 @@
     }
   ],
   "calendar": {
-    "total": 406,
+    "total": 410,
     "weeks": [
       [
         {
@@ -3437,7 +3459,7 @@
         },
         {
           "date": "2026-11-05",
-          "count": 9,
+          "count": 13,
           "level": 1,
           "weekday": 4
         }
