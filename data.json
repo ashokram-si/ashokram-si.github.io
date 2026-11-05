@@ -26,7 +26,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 4
+      "count": 5
     },
     {
       "name": "AI tooling",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "42",
+    "Pull requests opened": "43",
     "Merged": "10",
-    "Under review": "29",
+    "Under review": "30",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
-    "Projects I contribute to": "42"
+    "Projects I contribute to": "43"
   },
   "contributing_to": [
+    {
+      "name": "Rerun",
+      "repo": "rerun-build/rerun",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/rerun-build/rerun/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": null
+    },
     {
       "name": "FilmCraft",
       "repo": "storytold/filmcraft",
@@ -379,6 +390,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-05",
+      "project": "Rerun",
+      "what": "A routine with a timezone the scheduler couldn't use was accepted, then made every scheduler check throw (and the engine exit on the unhandled error); unknown zones are now refused and such a routine just never fires",
+      "url": "https://github.com/rerun-build/rerun/pull/22",
+      "ref": "rerun-build/rerun#22",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-05",
       "project": "FilmCraft",
@@ -1142,7 +1164,7 @@
     }
   ],
   "calendar": {
-    "total": 410,
+    "total": 418,
     "weeks": [
       [
         {
@@ -3459,8 +3481,8 @@
         },
         {
           "date": "2026-11-05",
-          "count": 13,
-          "level": 1,
+          "count": 21,
+          "level": 2,
           "weekday": 4
         }
       ]
