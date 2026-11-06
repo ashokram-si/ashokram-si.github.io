@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 33
+      "count": 34
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "44",
+    "Pull requests opened": "45",
     "Merged": "11",
-    "Under review": "30",
+    "Under review": "31",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "CADCraft",
+      "repo": "storytold/cadcraft",
+      "prs": 3,
+      "merged": 1,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/cadcraft/commits?author=ashokram-si",
+      "state": "merged",
+      "logo": "storytold-cadcraft"
+    },
     {
       "name": "PdfCraft",
       "repo": "storytold/pdfcraft",
@@ -145,17 +156,6 @@
       "link": "https://github.com/storytold/lightcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-lightcraft"
-    },
-    {
-      "name": "CADCraft",
-      "repo": "storytold/cadcraft",
-      "prs": 2,
-      "merged": 1,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/storytold/cadcraft/commits?author=ashokram-si",
-      "state": "merged",
-      "logo": "storytold-cadcraft"
     },
     {
       "name": "SoundCraft",
@@ -401,6 +401,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-06",
+      "project": "CADCraft",
+      "what": "MTEXT ignored \\T (character tracking), so tracked text in title blocks drew too narrow (65 mm where it is 99 mm); tracking now spreads the characters, and wrapping measures the tracked width",
+      "url": "https://github.com/storytold/cadcraft/pull/2848",
+      "ref": "storytold/cadcraft#2848",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-cadcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-06",
       "project": "PdfCraft",
@@ -1186,7 +1197,7 @@
     }
   ],
   "calendar": {
-    "total": 442,
+    "total": 451,
     "weeks": [
       [
         {
@@ -3509,7 +3520,7 @@
         },
         {
           "date": "2026-11-06",
-          "count": 21,
+          "count": 30,
           "level": 2,
           "weekday": 5
         }
