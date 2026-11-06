@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 32
+      "count": 33
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "43",
+    "Pull requests opened": "44",
     "Merged": "11",
-    "Under review": "29",
+    "Under review": "30",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
-    "Projects I contribute to": "43"
+    "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "PdfCraft",
+      "repo": "storytold/pdfcraft",
+      "prs": 1,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/pdfcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-pdfcraft"
+    },
     {
       "name": "Rerun",
       "repo": "rerun-build/rerun",
@@ -390,6 +401,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-06",
+      "project": "PdfCraft",
+      "what": "Readers who drag the page wanted the Hand tool by default; a new Default tool preference (Select or Hand) sets the tool the app starts with and the one Read mode uses",
+      "url": "https://github.com/storytold/pdfcraft/pull/6394",
+      "ref": "storytold/pdfcraft#6394",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-pdfcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-05",
       "project": "Rerun",
@@ -1164,7 +1186,7 @@
     }
   ],
   "calendar": {
-    "total": 430,
+    "total": 438,
     "weeks": [
       [
         {
@@ -3487,8 +3509,8 @@
         },
         {
           "date": "2026-11-06",
-          "count": 9,
-          "level": 1,
+          "count": 17,
+          "level": 2,
           "weekday": 5
         }
       ]
