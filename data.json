@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 34
+      "count": 35
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "45",
+    "Pull requests opened": "46",
     "Merged": "11",
-    "Under review": "31",
+    "Under review": "32",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "Biome",
+      "repo": "biomejs/biome",
+      "prs": 2,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/biomejs/biome/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "biomejs"
+    },
     {
       "name": "CADCraft",
       "repo": "storytold/cadcraft",
@@ -246,17 +257,6 @@
       "logo": "tauri-apps"
     },
     {
-      "name": "Biome",
-      "repo": "biomejs/biome",
-      "prs": 1,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/biomejs/biome/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "biomejs"
-    },
-    {
       "name": "llama.cpp",
       "repo": "ggml-org/llama.cpp",
       "prs": 1,
@@ -401,6 +401,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-06",
+      "project": "Biome",
+      "what": "The SCSS formatter turned -#{$s} -#{$s} into -#{$s} - #{$s}, which Sass compiles to invalid CSS; a minus written against an interpolation now stays a list item, as Sass reads it",
+      "url": "https://github.com/biomejs/biome/pull/12983",
+      "ref": "biomejs/biome#12983",
+      "kind": "pr",
+      "feature": false,
+      "logo": "biomejs",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-06",
       "project": "CADCraft",
@@ -1197,7 +1208,7 @@
     }
   ],
   "calendar": {
-    "total": 451,
+    "total": 458,
     "weeks": [
       [
         {
@@ -3520,8 +3531,8 @@
         },
         {
           "date": "2026-11-06",
-          "count": 30,
-          "level": 2,
+          "count": 37,
+          "level": 3,
           "weekday": 5
         }
       ]
