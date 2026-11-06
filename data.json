@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 35
+      "count": 36
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "46",
+    "Pull requests opened": "47",
     "Merged": "11",
-    "Under review": "32",
+    "Under review": "33",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "WordCraft",
+      "repo": "storytold/wordcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/wordcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-wordcraft"
+    },
     {
       "name": "Biome",
       "repo": "biomejs/biome",
@@ -145,17 +156,6 @@
       "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "meltano"
-    },
-    {
-      "name": "WordCraft",
-      "repo": "storytold/wordcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/wordcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-wordcraft"
     },
     {
       "name": "LightCraft",
@@ -401,6 +401,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-06",
+      "project": "WordCraft",
+      "what": "Turning off Check spelling as you type didn't last: it stayed on in the other open documents and could come back on at the next start; it is now one setting for every open document",
+      "url": "https://github.com/storytold/wordcraft/pull/5766",
+      "ref": "storytold/wordcraft#5766",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-wordcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-06",
       "project": "Biome",
@@ -1208,7 +1219,7 @@
     }
   ],
   "calendar": {
-    "total": 458,
+    "total": 467,
     "weeks": [
       [
         {
@@ -3531,7 +3542,7 @@
         },
         {
           "date": "2026-11-06",
-          "count": 37,
+          "count": 46,
           "level": 3,
           "weekday": 5
         }
