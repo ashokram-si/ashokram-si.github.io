@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "43",
-    "Merged": "10",
-    "Under review": "30",
+    "Merged": "11",
+    "Under review": "29",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "43"
@@ -370,11 +370,11 @@
       "name": "Quarkus",
       "repo": "quarkusio/quarkus",
       "prs": 1,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/quarkusio/quarkus/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/quarkusio/quarkus/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "quarkusio"
     },
     {
@@ -861,7 +861,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "quarkusio",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-27",
@@ -1164,7 +1164,7 @@
     }
   ],
   "calendar": {
-    "total": 418,
+    "total": 422,
     "weeks": [
       [
         {
@@ -3425,7 +3425,7 @@
         },
         {
           "date": "2026-10-27",
-          "count": 50,
+          "count": 51,
           "level": 4,
           "weekday": 2
         },
@@ -3481,9 +3481,15 @@
         },
         {
           "date": "2026-11-05",
-          "count": 21,
+          "count": 23,
           "level": 2,
           "weekday": 4
+        },
+        {
+          "date": "2026-11-06",
+          "count": 1,
+          "level": 1,
+          "weekday": 5
         }
       ]
     ]
