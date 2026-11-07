@@ -62,8 +62,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "47",
-    "Merged": "11",
-    "Under review": "33",
+    "Merged": "14",
+    "Under review": "30",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
@@ -84,11 +84,11 @@
       "name": "Biome",
       "repo": "biomejs/biome",
       "prs": 2,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/biomejs/biome/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/biomejs/biome/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "biomejs"
     },
     {
@@ -117,11 +117,11 @@
       "name": "Rerun",
       "repo": "rerun-build/rerun",
       "prs": 1,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/rerun-build/rerun/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/rerun-build/rerun/graphs/contributors",
+      "state": "listed",
       "logo": null
     },
     {
@@ -139,11 +139,11 @@
       "name": "FigCraft",
       "repo": "storytold/figcraft",
       "prs": 1,
-      "merged": 0,
+      "merged": 1,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/storytold/figcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/figcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-figcraft"
     },
     {
@@ -421,7 +421,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "biomejs",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-11-06",
@@ -454,7 +454,7 @@
       "kind": "pr",
       "feature": false,
       "logo": null,
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-11-05",
@@ -476,7 +476,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-figcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-11-02",
@@ -1219,7 +1219,7 @@
     }
   ],
   "calendar": {
-    "total": 467,
+    "total": 486,
     "weeks": [
       [
         {
@@ -3536,15 +3536,21 @@
         },
         {
           "date": "2026-11-05",
-          "count": 23,
+          "count": 24,
           "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-11-06",
-          "count": 46,
-          "level": 3,
+          "count": 63,
+          "level": 4,
           "weekday": 5
+        },
+        {
+          "date": "2026-11-07",
+          "count": 1,
+          "level": 1,
+          "weekday": 6
         }
       ]
     ]
