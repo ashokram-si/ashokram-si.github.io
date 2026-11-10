@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 36
+      "count": 37
     },
     {
       "name": "C++",
@@ -61,14 +61,25 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "47",
+    "Pull requests opened": "48",
     "Merged": "15",
-    "Under review": "29",
+    "Under review": "30",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "FilmCraft",
+      "repo": "storytold/filmcraft",
+      "prs": 2,
+      "merged": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/filmcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-filmcraft"
+    },
     {
       "name": "WordCraft",
       "repo": "storytold/wordcraft",
@@ -123,17 +134,6 @@
       "link": "https://github.com/rerun-build/rerun/graphs/contributors",
       "state": "listed",
       "logo": null
-    },
-    {
-      "name": "FilmCraft",
-      "repo": "storytold/filmcraft",
-      "prs": 1,
-      "merged": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/filmcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-filmcraft"
     },
     {
       "name": "FigCraft",
@@ -401,6 +401,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-10",
+      "project": "FilmCraft",
+      "what": "Remove Filler Words skipped a filler with no length (as speech recognition often gives) and still reported success; such a filler now goes with the gap it sits in, within its own clip",
+      "url": "https://github.com/storytold/filmcraft/pull/4633",
+      "ref": "storytold/filmcraft#4633",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-filmcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-06",
       "project": "WordCraft",
@@ -1219,7 +1230,7 @@
     }
   ],
   "calendar": {
-    "total": 495,
+    "total": 516,
     "weeks": [
       [
         {
@@ -3512,9 +3523,27 @@
       [
         {
           "date": "2026-11-08",
-          "count": 1,
+          "count": 7,
           "level": 1,
           "weekday": 0
+        },
+        {
+          "date": "2026-11-09",
+          "count": 3,
+          "level": 1,
+          "weekday": 1
+        },
+        {
+          "date": "2026-11-10",
+          "count": 9,
+          "level": 1,
+          "weekday": 2
+        },
+        {
+          "date": "2026-11-11",
+          "count": 3,
+          "level": 1,
+          "weekday": 3
         }
       ]
     ]
