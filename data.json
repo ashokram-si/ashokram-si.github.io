@@ -58,7 +58,7 @@
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
-      "count": 16,
+      "count": 17,
       "level": 2,
       "next": 128,
       "unit": "merged PRs",
@@ -535,8 +535,8 @@
       "closed": 0,
       "features": 3,
       "comments": 0,
-      "link": "https://github.com/storytold/designcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/designcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-designcraft"
     },
     {
@@ -1586,7 +1586,7 @@
     }
   ],
   "calendar": {
-    "total": 540,
+    "total": 576,
     "weeks": [
       [
         {
@@ -3809,25 +3809,25 @@
         },
         {
           "date": "2026-10-28",
-          "count": 82,
+          "count": 85,
           "level": 4,
           "weekday": 3
         },
         {
           "date": "2026-10-29",
-          "count": 27,
+          "count": 30,
           "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-10-30",
-          "count": 62,
+          "count": 64,
           "level": 4,
           "weekday": 5
         },
         {
           "date": "2026-10-31",
-          "count": 19,
+          "count": 20,
           "level": 2,
           "weekday": 6
         }
@@ -3897,8 +3897,8 @@
         },
         {
           "date": "2026-11-11",
-          "count": 27,
-          "level": 2,
+          "count": 54,
+          "level": 4,
           "weekday": 3
         }
       ]
