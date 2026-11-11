@@ -55,16 +55,334 @@
       "tier": "x2",
       "earned": "2026-11-05",
       "note": "16 merged pull requests (first tier 2026-10-28 with storytold/vectorcraft#4215; bronze with quarkusio/quarkus#57866)",
-      "image": "assets/badges/pull-shark.png",
-      "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements"
+      "image": "assets/badges/pull-shark.png?v=25e37d13fa",
+      "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
+      "unlocked_by": "quarkusio/quarkus#57866",
+      "count": 16,
+      "level": 2,
+      "next": 128,
+      "unit": "merged PRs",
+      "tiers": 4
     },
     {
       "name": "Pair Extraordinaire",
       "tier": "",
       "earned": "2026-10-31",
       "note": "a co-authored commit on a merged pull request (JuliaLang/julia#64230)",
-      "image": "assets/badges/pair-extraordinaire.png",
-      "url": "https://github.com/ashokram-si?achievement=pair-extraordinaire&tab=achievements"
+      "image": "assets/badges/pair-extraordinaire.png?v=7a73146861",
+      "url": "https://github.com/ashokram-si?achievement=pair-extraordinaire&tab=achievements",
+      "unlocked_by": "JuliaLang/julia#64230",
+      "count": 1,
+      "level": 1,
+      "next": 10,
+      "unit": "co-authored PRs",
+      "tiers": 4
+    }
+  ],
+  "shipped_to": [
+    {
+      "name": "WordCraft",
+      "repo": "storytold/wordcraft",
+      "logo": "storytold-wordcraft"
+    },
+    {
+      "name": "Biome",
+      "repo": "biomejs/biome",
+      "logo": "biomejs"
+    },
+    {
+      "name": "Rerun",
+      "repo": "rerun-build/rerun",
+      "logo": null
+    },
+    {
+      "name": "FigCraft",
+      "repo": "storytold/figcraft",
+      "logo": "storytold-figcraft"
+    },
+    {
+      "name": "CADCraft",
+      "repo": "storytold/cadcraft",
+      "logo": "storytold-cadcraft"
+    },
+    {
+      "name": "VectorCraft",
+      "repo": "storytold/vectorcraft",
+      "logo": "storytold-vectorcraft"
+    },
+    {
+      "name": "EffectCraft",
+      "repo": "storytold/effectcraft",
+      "logo": "storytold-effectcraft"
+    },
+    {
+      "name": "Grafana",
+      "repo": "grafana/grafana",
+      "logo": "grafana"
+    },
+    {
+      "name": "Knip",
+      "repo": "webpro-nl/knip",
+      "logo": "webpro-nl-knip"
+    },
+    {
+      "name": "Julia",
+      "repo": "JuliaLang/julia",
+      "logo": "JuliaLang"
+    },
+    {
+      "name": "Burn",
+      "repo": "tracel-ai/burn",
+      "logo": "tracel-ai"
+    },
+    {
+      "name": "Quarkus",
+      "repo": "quarkusio/quarkus",
+      "logo": "quarkusio"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Rust",
+      "logo": "assets/lang/rust-original.svg",
+      "prs": 37,
+      "projects": [
+        {
+          "name": "SoundCraft",
+          "repo": "storytold/soundcraft",
+          "prs": 5,
+          "logo": "storytold-soundcraft"
+        },
+        {
+          "name": "CADCraft",
+          "repo": "storytold/cadcraft",
+          "prs": 3,
+          "logo": "storytold-cadcraft"
+        },
+        {
+          "name": "DesignCraft",
+          "repo": "storytold/designcraft",
+          "prs": 3,
+          "logo": "storytold-designcraft"
+        },
+        {
+          "name": "VectorCraft",
+          "repo": "storytold/vectorcraft",
+          "prs": 3,
+          "logo": "storytold-vectorcraft"
+        },
+        {
+          "name": "Biome",
+          "repo": "biomejs/biome",
+          "prs": 2,
+          "logo": "biomejs"
+        },
+        {
+          "name": "DeckCraft",
+          "repo": "storytold/deckcraft",
+          "prs": 2,
+          "logo": "storytold-deckcraft"
+        },
+        {
+          "name": "EffectCraft",
+          "repo": "storytold/effectcraft",
+          "prs": 2,
+          "logo": "storytold-effectcraft"
+        },
+        {
+          "name": "FilmCraft",
+          "repo": "storytold/filmcraft",
+          "prs": 2,
+          "logo": "storytold-filmcraft"
+        },
+        {
+          "name": "PhotoCraft",
+          "repo": "storytold/photocraft",
+          "prs": 2,
+          "logo": "storytold-photocraft"
+        },
+        {
+          "name": "WordCraft",
+          "repo": "storytold/wordcraft",
+          "prs": 2,
+          "logo": "storytold-wordcraft"
+        },
+        {
+          "name": "Burn",
+          "repo": "tracel-ai/burn",
+          "prs": 1,
+          "logo": "tracel-ai"
+        },
+        {
+          "name": "Craft Launcher",
+          "repo": "storytold/craft-launcher",
+          "prs": 1,
+          "logo": "storytold-craft-launcher"
+        },
+        {
+          "name": "FigCraft",
+          "repo": "storytold/figcraft",
+          "prs": 1,
+          "logo": "storytold-figcraft"
+        },
+        {
+          "name": "GridCraft",
+          "repo": "storytold/gridcraft",
+          "prs": 1,
+          "logo": "storytold-gridcraft"
+        },
+        {
+          "name": "Leptos",
+          "repo": "leptos-rs/leptos",
+          "prs": 1,
+          "logo": "leptos-rs"
+        },
+        {
+          "name": "LightCraft",
+          "repo": "storytold/lightcraft",
+          "prs": 1,
+          "logo": "storytold-lightcraft"
+        },
+        {
+          "name": "PdfCraft",
+          "repo": "storytold/pdfcraft",
+          "prs": 1,
+          "logo": "storytold-pdfcraft"
+        },
+        {
+          "name": "Tauri",
+          "repo": "tauri-apps/tauri",
+          "prs": 1,
+          "logo": "tauri-apps"
+        },
+        {
+          "name": "Turso",
+          "repo": "tursodatabase/turso",
+          "prs": 1,
+          "logo": "tursodatabase"
+        },
+        {
+          "name": "Vector",
+          "repo": "vectordotdev/vector",
+          "prs": 1,
+          "logo": "vectordotdev"
+        },
+        {
+          "name": "oxc",
+          "repo": "oxc-project/oxc",
+          "prs": 1,
+          "logo": "oxc-project"
+        }
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "logo": "assets/lang/typescript-original.svg",
+      "prs": 5,
+      "projects": [
+        {
+          "name": "Grafana",
+          "repo": "grafana/grafana",
+          "prs": 3,
+          "logo": "grafana"
+        },
+        {
+          "name": "Knip",
+          "repo": "webpro-nl/knip",
+          "prs": 1,
+          "logo": "webpro-nl-knip"
+        },
+        {
+          "name": "Rerun",
+          "repo": "rerun-build/rerun",
+          "prs": 1,
+          "logo": null
+        }
+      ]
+    },
+    {
+      "name": "Java",
+      "logo": "assets/lang/java-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "Quarkus",
+          "repo": "quarkusio/quarkus",
+          "prs": 1,
+          "logo": "quarkusio"
+        }
+      ]
+    },
+    {
+      "name": "C++",
+      "logo": "assets/lang/cplusplus-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "llama.cpp",
+          "repo": "ggml-org/llama.cpp",
+          "prs": 1,
+          "logo": "ggml-org"
+        }
+      ]
+    },
+    {
+      "name": "Python",
+      "logo": "assets/lang/python-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "Meltano",
+          "repo": "meltano/meltano",
+          "prs": 1,
+          "logo": "meltano"
+        }
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "logo": "assets/lang/javascript-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "Prettier",
+          "repo": "prettier/prettier",
+          "prs": 1,
+          "logo": "prettier"
+        }
+      ]
+    },
+    {
+      "name": "Julia",
+      "logo": "assets/lang/julia-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "Julia",
+          "repo": "JuliaLang/julia",
+          "prs": 1,
+          "logo": "JuliaLang"
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "logo": "assets/lang/go-original.svg",
+      "prs": 1,
+      "projects": [
+        {
+          "name": "Hugo",
+          "repo": "gohugoio/hugo",
+          "prs": 1,
+          "logo": "gohugoio"
+        }
+      ]
+    },
+    {
+      "name": "AI tooling",
+      "logo": null,
+      "prs": 0,
+      "projects": []
     }
   ],
   "profile": "https://github.com/ashokram-si",
@@ -1268,7 +1586,7 @@
     }
   ],
   "calendar": {
-    "total": 533,
+    "total": 540,
     "weeks": [
       [
         {
@@ -3579,7 +3897,7 @@
         },
         {
           "date": "2026-11-11",
-          "count": 20,
+          "count": 27,
           "level": 2,
           "weekday": 3
         }

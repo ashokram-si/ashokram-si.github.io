@@ -69,12 +69,14 @@
     </button>
     <nav aria-label="Sections" id="nav-menu">
       <ol class="nav__links mono">
-        <li><a href="#stats"><span>01</span>stats</a></li>
-        <li><a href="#activity"><span>02</span>activity</a></li>
-        <li><a href="#contributor"><span>03</span>contributor</a></li>
-        <li><a href="#prs"><span>04</span>pull requests</a></li>
-        <li><a href="#following"><span>05</span>following</a></li>
-        <li><a href="#how"><span>06</span>how I work</a></li>
+        <li><a href="#achievements"><span>01</span>achievements</a></li>
+        <li><a href="#stats"><span>02</span>stats</a></li>
+        <li><a href="#activity"><span>03</span>activity</a></li>
+        <li><a href="#contributor"><span>04</span>contributor</a></li>
+        <li><a href="#languages"><span>05</span>languages</a></li>
+        <li><a href="#prs"><span>06</span>pull requests</a></li>
+        <li><a href="#following"><span>07</span>following</a></li>
+        <li><a href="#how"><span>08</span>how I work</a></li>
         <li class="nav__links-gh"><a data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub profile<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
       </ol>
     </nav>
@@ -102,10 +104,8 @@
           <h1 id="hero-name" class="hero__name"></h1>
           <p class="hero__handle mono"></p>
           <p class="hero__tagline"></p>
-          <p class="hero__cap mono" aria-hidden="true">// languages · pull requests</p>
-          <ul class="chips mono" aria-label="Languages, with pull requests in each"></ul>
-          <p class="hero__cap mono hero__cap--gh" aria-hidden="true">// github achievements</p>
-          <ul class="gh-badges mono" aria-label="GitHub achievements"></ul>
+          <p class="hero__cap mono" aria-hidden="true">// shipped to · <span data-count="shipped"></span></p>
+          <ul class="shipped" aria-label="Projects that merged my work"></ul>
           <div class="hero__cta">
             <a class="btn btn--solid mono" href="#prs">See pull requests</a>
             <a class="btn btn--ghost mono" data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub profile<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a>
@@ -141,10 +141,22 @@
         </div>
       </div>
 
-      <a class="hero__scroll mono" href="#stats"><span>scroll</span><i aria-hidden="true"></i></a>
+      <a class="hero__scroll mono" href="#achievements"><span>scroll</span><i aria-hidden="true"></i></a>
     </section>
 
-    <!-- 01 / STATS + PORTRAIT -->
+    <!-- 01 / GITHUB ACHIEVEMENTS -->
+    <section class="section section--tight" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>01</span> // github_achievements</p>
+          <h2 class="sec-head__title" id="achievements-title">Achievements</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="achievements"></span></div>
+        </div>
+        <ul class="ach"></ul>
+      </div>
+    </section>
+
+    <!-- 02 / STATS + PORTRAIT -->
     <section class="section about" id="stats" aria-labelledby="stats-title">
       <div class="container about__grid">
         <figure class="portrait hud">
@@ -158,7 +170,7 @@
 
         <div class="about__body">
           <div class="sec-head">
-            <p class="sec-head__idx mono"><span>01</span> // stats</p>
+            <p class="sec-head__idx mono"><span>02</span> // stats</p>
             <h2 class="sec-head__title" id="stats-title">By the numbers</h2>
             <div class="sec-head__rule" aria-hidden="true"></div>
           </div>
@@ -167,11 +179,11 @@
       </div>
     </section>
 
-    <!-- 02 / ACTIVITY (contribution calendar) -->
+    <!-- 03 / ACTIVITY (contribution calendar) -->
     <section class="section" id="activity" aria-labelledby="activity-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>02</span> // activity</p>
+          <p class="sec-head__idx mono"><span>03</span> // activity</p>
           <h2 class="sec-head__title" id="activity-title">Activity</h2>
           <div class="sec-head__rule" aria-hidden="true"></div>
         </div>
@@ -190,11 +202,11 @@
       </div>
     </section>
 
-    <!-- 03 / CONTRIBUTOR TO -->
+    <!-- 04 / CONTRIBUTOR TO -->
     <section class="section" id="contributor" aria-labelledby="contributor-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>03</span> // contributor_to</p>
+          <p class="sec-head__idx mono"><span>04</span> // contributor_to</p>
           <h2 class="sec-head__title" id="contributor-title">Contributor to</h2>
           <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="contributing"></span></div>
         </div>
@@ -202,11 +214,28 @@
       </div>
     </section>
 
-    <!-- 04 / PULL REQUESTS -->
+    <!-- 05 / LANGUAGES -->
+    <section class="section" id="languages" aria-labelledby="languages-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>05</span> // languages</p>
+          <h2 class="sec-head__title" id="languages-title">Languages I ship in</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="languages"></span></div>
+        </div>
+        <div class="langs hud">
+          <p class="langs__cap mono">Pull requests by project language</p>
+          <div class="langs__spectrum" role="img"></div>
+          <ul class="langs__rows"></ul>
+          <p class="langs__also mono" hidden>Also in my toolkit: <span></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 / PULL REQUESTS -->
     <section class="section" id="prs" aria-labelledby="prs-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>04</span> // git log --author=<span data-bind="handle"></span></p>
+          <p class="sec-head__idx mono"><span>06</span> // git log --author=<span data-bind="handle"></span></p>
           <h2 class="sec-head__title" id="prs-title">Pull requests</h2>
           <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="contributions"></span></div>
         </div>
@@ -234,11 +263,11 @@
       </div>
     </section>
 
-    <!-- 05 / PROJECTS I FOLLOW -->
+    <!-- 07 / PROJECTS I FOLLOW -->
     <section class="section" id="following" aria-labelledby="following-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>05</span> // watching</p>
+          <p class="sec-head__idx mono"><span>07</span> // watching</p>
           <h2 class="sec-head__title" id="following-title">Projects I follow</h2>
           <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="interests"></span></div>
         </div>
@@ -248,11 +277,11 @@
       </div>
     </section>
 
-    <!-- 06 / HOW I WORK -->
+    <!-- 08 / HOW I WORK -->
     <section class="section section--band" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>06</span> // method</p>
+          <p class="sec-head__idx mono"><span>08</span> // method</p>
           <h2 class="sec-head__title" id="how-title">How I work</h2>
           <div class="sec-head__rule" aria-hidden="true"></div>
         </div>

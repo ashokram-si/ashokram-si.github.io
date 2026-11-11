@@ -38,33 +38,84 @@ function renderHero(data) {
 
   $('.hero__handle').textContent = data.handle;
   $('.hero__tagline').textContent = data.tagline;
-  // Skills are {name, logo}; logo is a relative assets/ path (language logos in
-  // their original colours) or null, which gets a small Sunstruck glyph instead.
-  $('.chips').append(...(data.skills || []).map((skill) => {
-    const { name, logo } = typeof skill === 'string' ? { name: skill, logo: null } : skill;
-    const icon = safeAsset(logo)
-      ? h('img', { class: 'chip__logo', src: safeAsset(logo), alt: '', width: 16, height: 16, decoding: 'async' })
-      : h('span', { class: 'chip__glyph', 'aria-hidden': 'true', text: '✦' });
-    const count = Number.isInteger(skill.count) && skill.count > 0
-      ? h('span', { class: 'chip__count', text: String(skill.count), title: plural(skill.count, 'pull request', 'pull requests') })
-      : null;
-    return h('li', {}, icon, h('span', { text: name }), count);
-  }));
-  // GitHub's own achievement badges: {name, tier, earned, note, image, url}, drawn with
-  // GitHub's official artwork. The caption and list stay hidden when there are none.
+  // The projects that merged my work, most recent first (data.shipped_to): who I am in
+  // their logos. Each opens my merged pull requests there.
+  const shipped = data.shipped_to || [];
+  $('[data-count="shipped"]').textContent = plural(shipped.length, 'project', 'projects');
+  $('.shipped').append(...shipped.map((p) => h('li', {},
+    h('a', { ...external(`https://github.com/${p.repo}/pulls?q=is%3Apr+author%3A${encodeURIComponent(data.handle)}+is%3Amerged`), title: p.name },
+      logoTile(p.logo, (p.name || '?').slice(0, 2).toUpperCase(), 40),
+      h('span', { class: 'sr-only', text: p.name }),
+      newTabNote()))));
+}
+
+const TIER = ['', 'bronze', 'silver', 'gold'];
+
+/** GitHub's achievements, one card each: the official artwork in a turning ring, the tier as
+ *  pips and a chip, the pull request that unlocked it, and a bar to the next tier. */
+function renderAchievements(data) {
   const badges = (data.github_achievements || []).filter((b) => safeAsset(b.image));
-  if (!badges.length) {
-    $('.hero__cap--gh').hidden = true;
-    $('.gh-badges').hidden = true;
+  if (!badges.length) { $('#achievements').hidden = true; return; }
+  $('[data-count="achievements"]').textContent = `${badges.length} earned`;
+  $('.ach').append(...badges.map((b) => {
+    const level = Number(b.level) || 1;
+    const tiers = Number(b.tiers) || 1;
+    const label = tiers > 1 && level > 1 ? `x${level} · ${TIER[level - 1] || ''}` : 'unlocked';
+    const pips = tiers > 1 ? h('span', { class: 'ach__pips', 'aria-label': `tier ${level} of ${tiers}` },
+      ...Array.from({ length: tiers }, (_, k) => h('i', { class: k < level ? 'is-on' : '' }))) : null;
+    const next = Number(b.next) || 0;
+    const progress = next ? h('span', { class: 'ach__progress' },
+      h('span', { class: 'mono ach__count' }, h('b', { text: String(b.count) }), ` / ${next} ${b.unit} → x${level + 1}`),
+      h('span', { class: 'ach__bar', role: 'progressbar', 'aria-valuemin': '0', 'aria-valuemax': String(next), 'aria-valuenow': String(b.count), 'aria-label': `${b.count} of ${next} ${b.unit}` },
+        h('span', { style: `--p:${Math.max(4, Math.min(100, (100 * b.count) / next)).toFixed(1)}%` })))
+      : h('span', { class: 'ach__progress mono', text: 'top tier reached' });
+    return h('li', {},
+      h('a', { class: 'ach__card hud', ...external(b.url) },
+        h('span', { class: 'ach__art' },
+          h('img', { src: safeAsset(b.image), alt: '', width: 112, height: 112, decoding: 'async', loading: 'lazy' }), pips),
+        h('span', { class: 'ach__body' },
+          h('span', { class: 'ach__name', text: b.name }),
+          h('span', { class: `ach__tier mono${level > 1 ? ' is-solid' : ''}`, text: label }),
+          h('span', { class: 'ach__how mono', text: `unlocked ${b.earned}${b.unlocked_by ? ` · ${b.unlocked_by}` : ''}` }),
+          progress),
+        newTabNote()));
+  }));
+}
+
+/** The languages I ship in: a spectrum of the pull requests by project language, then a row
+ *  each with a bar and the projects it went to; skills without a pull request yet as a line. */
+function renderLanguages(data, resolveProject) {
+  const langs = (data.languages || []).filter((l) => l.prs > 0);
+  const other = (data.languages || []).filter((l) => !l.prs);
+  if (!langs.length) { $('#languages').hidden = true; return; }
+  const total = langs.reduce((n, l) => n + l.prs, 0);
+  const most = langs[0].prs;
+  $('[data-count="languages"]').textContent = `${total} PRs · ${langs.length} languages`;
+  const spectrum = $('.langs__spectrum');
+  spectrum.setAttribute('aria-label', 'Share of pull requests: ' + langs.map((l) => `${l.name} ${Math.round((100 * l.prs) / total)}%`).join(', '));
+  spectrum.append(...langs.map((l, i) => h('span', { class: `tone-${i % 8}`, style: `--w:${((100 * l.prs) / total).toFixed(2)}%`, title: `${l.name}: ${plural(l.prs, 'PR', 'PRs')}` })));
+  $('.langs__rows').append(...langs.map((l, i) => {
+    const icon = safeAsset(l.logo)
+      ? h('img', { class: 'langs__logo', src: safeAsset(l.logo), alt: '', width: 32, height: 32, decoding: 'async' })
+      : h('span', { class: 'langs__logo langs__logo--glyph', 'aria-hidden': 'true', text: '✦' });
+    const projects = l.projects || [];
+    return h('li', { class: 'langs__row' },
+      icon,
+      h('span', { class: 'langs__name' },
+        h('b', {}, h('i', { class: `langs__key tone-${i % 8}`, 'aria-hidden': 'true' }), l.name),
+        h('small', { class: 'mono', text: `${plural(l.prs, 'PR', 'PRs')} · ${plural(projects.length, 'project', 'projects')}` })),
+      h('span', { class: 'langs__bar', 'aria-hidden': 'true' }, h('span', { style: `--p:${Math.max(3, (100 * l.prs) / most).toFixed(1)}%` })),
+      h('b', { class: 'langs__n mono', 'aria-hidden': 'true', text: String(l.prs) }),
+      h('ul', { class: 'langs__projects', 'aria-label': `${l.name} projects` }, ...projects.map((p) => {
+        const r = resolveProject({ repo: p.repo, logo: p.logo }, p.name);
+        return h('li', { title: p.name }, logoTile(r.logo, r.monogram, 28), h('span', { class: 'sr-only', text: p.name }));
+      })));
+  }));
+  if (other.length) {
+    const also = $('.langs__also');
+    also.hidden = false;
+    also.querySelector('span').textContent = other.map((l) => l.name).join(', ');
   }
-  $('.gh-badges').append(...badges.map((b) => h('li', {},
-    h('a', external(b.url),
-      h('img', { class: 'gh-badge__img', src: safeAsset(b.image), alt: '', width: 44, height: 44, decoding: 'async' }),
-      h('span', { class: 'gh-badge__text' },
-        h('span', { class: 'gh-badge__name', text: b.name }),
-        h('span', { class: 'gh-badge__meta', text: b.tier ? `${b.tier} · ${b.note}` : b.note })),
-      newTabNote()),
-  )));
 }
 
 function renderStats(data) {
@@ -256,8 +307,7 @@ function introTimeline() {
     .from('.hero__handle', { opacity: 0, x: -14, duration: 0.6 }, 1.2)
     .from('.hero__tagline', { opacity: 0, y: 18, duration: 0.8 }, 1.3)
     .from('.hero__cap', { opacity: 0, duration: 0.4, stagger: 0.1 }, 1.4)
-    .from('.chips li', { opacity: 0, y: 10, duration: 0.45, stagger: 0.06 }, 1.45)
-    .from('.gh-badges li', { opacity: 0, scale: 0.8, duration: 0.5, stagger: 0.1, transformOrigin: 'left center' }, 1.8)
+    .from('.shipped li', { opacity: 0, y: 10, duration: 0.45, stagger: 0.04 }, 1.45)
     .from('.hero__cta .btn', { opacity: 0, y: 12, duration: 0.5, stagger: 0.08 }, 1.6)
     .from('.avatar', { scale: 0.7, opacity: 0, rotate: -25, duration: 1.4, ease: 'expo.out' }, 0.35)
     .from('.avatar__cap', { opacity: 0, y: 8, duration: 0.5 }, 1.4)
@@ -310,6 +360,20 @@ function statsMotion() {
       { '--r': '160%', '--y': '100%', duration: 1.3, ease: 'power1.inOut' }, 0.2)
     .to(stack, { '--r': '0%', duration: 0.7, ease: 'power2.in' })
     .to(scan, { opacity: 0, duration: 0.3 }, '<');
+}
+
+/** The achievement and language rows rise in, and their bars fill, as they scroll into view
+ *  (CSS draws everything in place without this). */
+function revealMotion() {
+  ScrollTrigger.batch('.ach > li, .langs__row', {
+    start: 'top 90%',
+    once: true,
+    onEnter: (batch) => gsap.from(batch, { opacity: 0, y: 24, duration: 0.6, stagger: 0.07, ease: 'power3.out' }),
+  });
+  $$('.ach__bar > span, .langs__bar > span, .langs__spectrum > span').forEach((el) => {
+    gsap.from(el, { scaleX: 0, transformOrigin: 'left center', duration: 1.1, ease: 'power2.out',
+      scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
+  });
 }
 
 function cardsMotion() {
@@ -534,9 +598,11 @@ async function init() {
   const resolveProject = projectResolver(data);
   bindBasics(data);
   renderHero(data);
+  renderAchievements(data);
   renderStats(data);
   const calCells = renderCalendar($('#activity'), data.calendar);
   renderContributing(data, resolveProject);
+  renderLanguages(data, resolveProject);
   const prTable = renderContributions(data, resolveProject);
   renderInterests(data);
   renderHowIWork(data);
@@ -552,6 +618,7 @@ async function init() {
     sectionHeads();
     statsMotion();
     cardsMotion();
+    revealMotion();
     prsMotion(prTable);
     if (calCells) calendarMotion(calCells);
     wallMotion();

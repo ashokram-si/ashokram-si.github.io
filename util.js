@@ -31,7 +31,8 @@ export function safeUrl(u) {
 
 /** Only allow relative paths inside assets/ for images named in data.json. */
 export function safeAsset(p) {
-  return typeof p === 'string' && /^assets\/[\w./-]+$/.test(p) && !p.includes('..') ? p : null;
+  // An optional ?v=<hash> busts the browser cache when the file changes under the same name.
+  return typeof p === 'string' && /^assets\/[\w./-]+(\?v=[0-9a-f]{6,16})?$/.test(p) && !p.includes('..') ? p : null;
 }
 
 export const external = (href) => ({ href: safeUrl(href) || '#', target: '_blank', rel: 'noopener' });
