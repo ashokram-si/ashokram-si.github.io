@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 37
+      "count": 44
     },
     {
       "name": "C++",
@@ -150,8 +150,14 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 37,
+      "prs": 44,
       "projects": [
+        {
+          "name": "oxc",
+          "repo": "oxc-project/oxc",
+          "prs": 7,
+          "logo": "oxc-project"
+        },
         {
           "name": "SoundCraft",
           "repo": "storytold/soundcraft",
@@ -181,6 +187,12 @@
           "repo": "biomejs/biome",
           "prs": 2,
           "logo": "biomejs"
+        },
+        {
+          "name": "Craft Launcher",
+          "repo": "storytold/craft-launcher",
+          "prs": 2,
+          "logo": "storytold-craft-launcher"
         },
         {
           "name": "DeckCraft",
@@ -217,12 +229,6 @@
           "repo": "tracel-ai/burn",
           "prs": 1,
           "logo": "tracel-ai"
-        },
-        {
-          "name": "Craft Launcher",
-          "repo": "storytold/craft-launcher",
-          "prs": 1,
-          "logo": "storytold-craft-launcher"
         },
         {
           "name": "FigCraft",
@@ -271,12 +277,6 @@
           "repo": "vectordotdev/vector",
           "prs": 1,
           "logo": "vectordotdev"
-        },
-        {
-          "name": "oxc",
-          "repo": "oxc-project/oxc",
-          "prs": 1,
-          "logo": "oxc-project"
         }
       ]
     },
@@ -392,14 +392,38 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "48",
+    "Pull requests opened": "55",
     "Merged": "16",
-    "Under review": "29",
+    "Under review": "36",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "9",
+    "Fixes ready locally, awaiting submission": "21",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "Craft Launcher",
+      "repo": "storytold/craft-launcher",
+      "prs": 2,
+      "merged": 0,
+      "closed": 1,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/craft-launcher/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-craft-launcher"
+    },
+    {
+      "name": "oxc",
+      "repo": "oxc-project/oxc",
+      "prs": 7,
+      "merged": 0,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "oxc-project"
+    },
     {
       "name": "FilmCraft",
       "repo": "storytold/filmcraft",
@@ -629,18 +653,6 @@
       "logo": "tursodatabase"
     },
     {
-      "name": "oxc",
-      "repo": "oxc-project/oxc",
-      "prs": 1,
-      "merged": 0,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/oxc-project/oxc/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "oxc-project"
-    },
-    {
       "name": "GridCraft",
       "repo": "storytold/gridcraft",
       "prs": 1,
@@ -651,18 +663,6 @@
       "link": "https://github.com/storytold/gridcraft/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "storytold-gridcraft"
-    },
-    {
-      "name": "Craft Launcher",
-      "repo": "storytold/craft-launcher",
-      "prs": 1,
-      "merged": 0,
-      "closed": 1,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/craft-launcher/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "closed",
-      "logo": "storytold-craft-launcher"
     },
     {
       "name": "Knip",
@@ -762,6 +762,83 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-11",
+      "project": "Craft Launcher",
+      "what": "Grid cards ran text under the action row when a description wrapped, and cut long bylines at the card edge; the text now stays above the actions and inside the card, ending in \"…\" where it doesn't fit",
+      "url": "https://github.com/storytold/craft-launcher/pull/1405",
+      "ref": "storytold/craft-launcher#1405",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-craft-launcher",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "Lowering object rest in for (var { a, ...b } of c) made a and b block-scoped, so reading them after the loop threw; a var head now stays var, as Babel emits it",
+      "url": "https://github.com/oxc-project/oxc/pull/29313",
+      "ref": "oxc-project/oxc#29313",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "getter-return skipped TypeScript files, so a property descriptor getter (Object.defineProperty) that returns nothing went unreported, though tsc doesn't check those; TypeScript files now get the descriptor check",
+      "url": "https://github.com/oxc-project/oxc/pull/29312",
+      "ref": "oxc-project/oxc#29312",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "The minifier folded 'aaaaaaa'.replaceAll('a', 'aaaaaaa') into a 49-character literal, longer than the call; a string method call is now kept when its result is longer",
+      "url": "https://github.com/oxc-project/oxc/pull/29311",
+      "ref": "oxc-project/oxc#29311",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "require-mock-type-parameters reported vi.fn(impl) even when the implementation is typed and Vitest infers the mock's type from it; a typed implementation now counts, untyped parameters are still reported",
+      "url": "https://github.com/oxc-project/oxc/pull/29310",
+      "ref": "oxc-project/oxc#29310",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "The consistent-test-it fix renamed an imported it to an unbound test, breaking files with Vitest globals off; the call is now renamed only when the new name stays the test framework's function",
+      "url": "https://github.com/oxc-project/oxc/pull/29309",
+      "ref": "oxc-project/oxc#29309",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "oxc",
+      "what": "Chained Tester::expect_fix calls replaced each other, so four linter tests only ran their last list of fix cases; a second call now adds to the first, and every list runs",
+      "url": "https://github.com/oxc-project/oxc/pull/29308",
+      "ref": "oxc-project/oxc#29308",
+      "kind": "pr",
+      "feature": false,
+      "logo": "oxc-project",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-10",
       "project": "FilmCraft",
@@ -1591,7 +1668,7 @@
     }
   ],
   "calendar": {
-    "total": 580,
+    "total": 595,
     "weeks": [
       [
         {
@@ -3809,7 +3886,7 @@
         {
           "date": "2026-10-27",
           "count": 51,
-          "level": 4,
+          "level": 3,
           "weekday": 2
         },
         {
@@ -3847,7 +3924,7 @@
         {
           "date": "2026-11-02",
           "count": 33,
-          "level": 3,
+          "level": 2,
           "weekday": 1
         },
         {
@@ -3902,9 +3979,15 @@
         },
         {
           "date": "2026-11-11",
-          "count": 58,
+          "count": 73,
           "level": 4,
           "weekday": 3
+        },
+        {
+          "date": "2026-11-12",
+          "count": 0,
+          "level": 0,
+          "weekday": 4
         }
       ]
     ]
