@@ -116,6 +116,11 @@
       "logo": "storytold-effectcraft"
     },
     {
+      "name": "DesignCraft",
+      "repo": "storytold/designcraft",
+      "logo": "storytold-designcraft"
+    },
+    {
       "name": "Grafana",
       "repo": "grafana/grafana",
       "logo": "grafana"
@@ -388,8 +393,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "48",
-    "Merged": "15",
-    "Under review": "30",
+    "Merged": "16",
+    "Under review": "29",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
@@ -531,7 +536,7 @@
       "name": "DesignCraft",
       "repo": "storytold/designcraft",
       "prs": 3,
-      "merged": 0,
+      "merged": 1,
       "closed": 0,
       "features": 3,
       "comments": 0,
@@ -1052,7 +1057,7 @@
       "kind": "pr",
       "feature": true,
       "logo": "storytold-designcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-28",
@@ -1586,7 +1591,7 @@
     }
   ],
   "calendar": {
-    "total": 576,
+    "total": 580,
     "weeks": [
       [
         {
@@ -3897,7 +3902,7 @@
         },
         {
           "date": "2026-11-11",
-          "count": 54,
+          "count": 58,
           "level": 4,
           "weekday": 3
         }
