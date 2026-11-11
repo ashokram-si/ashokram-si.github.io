@@ -90,6 +90,8 @@ const STATE_BADGE = {
   listed: ['In contributors list', 'listed'],
   merged: ['Merged commits', 'merged'],
   review: ['PR in review', 'review'],
+  closed: ['PR closed', 'closed'],
+  investigation: ['Investigation posted', 'investigation'],
 };
 
 function renderContributing(data, resolveProject) {
@@ -101,6 +103,7 @@ function renderContributing(data, resolveProject) {
       [c.prs, 'PR', 'PRs'],
       [c.merged, 'merged', 'merged'],
       [c.features, 'feature', 'features'],
+      [c.closed, 'closed', 'closed'],
       [c.comments, 'investigation', 'investigations'],
     ].filter(([n]) => Number(n) > 0)
       .map(([n, one, many]) => h('li', {}, h('b', { text: n }), n === 1 ? one : many));

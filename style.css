@@ -791,6 +791,8 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
 }
 .badge--merged, .badge--listed, .pill--merged { background: var(--sun); }
 .badge--review, .pill--review { background: var(--white); }
+.badge--closed { background: var(--shade); border-color: var(--shade); color: var(--white); }
+.badge--investigation { background: var(--white); border-style: dashed; border-color: var(--shade); }
 .pill--closed {
   background: var(--shade);
   border-color: var(--shade);
