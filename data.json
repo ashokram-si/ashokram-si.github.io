@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 44
+      "count": 50
     },
     {
       "name": "C++",
@@ -150,8 +150,14 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 44,
+      "prs": 50,
       "projects": [
+        {
+          "name": "Turso",
+          "repo": "tursodatabase/turso",
+          "prs": 7,
+          "logo": "tursodatabase"
+        },
         {
           "name": "oxc",
           "repo": "oxc-project/oxc",
@@ -265,12 +271,6 @@
           "repo": "tauri-apps/tauri",
           "prs": 1,
           "logo": "tauri-apps"
-        },
-        {
-          "name": "Turso",
-          "repo": "tursodatabase/turso",
-          "prs": 1,
-          "logo": "tursodatabase"
         },
         {
           "name": "Vector",
@@ -392,14 +392,26 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "55",
+    "Pull requests opened": "61",
     "Merged": "16",
-    "Under review": "36",
+    "Under review": "42",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "21",
+    "Fixes ready locally, awaiting submission": "11",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "Turso",
+      "repo": "tursodatabase/turso",
+      "prs": 7,
+      "merged": 0,
+      "closed": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "tursodatabase"
+    },
     {
       "name": "Craft Launcher",
       "repo": "storytold/craft-launcher",
@@ -641,18 +653,6 @@
       "logo": "ggml-org"
     },
     {
-      "name": "Turso",
-      "repo": "tursodatabase/turso",
-      "prs": 1,
-      "merged": 0,
-      "closed": 0,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "tursodatabase"
-    },
-    {
       "name": "GridCraft",
       "repo": "storytold/gridcraft",
       "prs": 1,
@@ -762,6 +762,72 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "CREATE SEQUENCE ... START 1.5 or a value past bigint gave \"not supported\"; sequence options are now read as PostgreSQL reads a bigint, with its errors",
+      "url": "https://github.com/tursodatabase/turso/pull/11710",
+      "ref": "tursodatabase/turso#11710",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "In tursopg, a cast to a type that doesn't exist ('q'::nosuch) gave 0; it now fails with PostgreSQL's type \"nosuch\" does not exist",
+      "url": "https://github.com/tursodatabase/turso/pull/11709",
+      "ref": "tursodatabase/turso#11709",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "tursopg read '\\x0aff'::bytea as the bytes of the text and refused text in a bytea column; bytea now reads PostgreSQL's hex and escape input formats, with its error messages and codes",
+      "url": "https://github.com/tursodatabase/turso/pull/11708",
+      "ref": "tursodatabase/turso#11708",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "An expression index naming its column with the table broke DELETE and UPDATE that alias the table; index expressions are now stored without the qualifier, as PostgreSQL stores them",
+      "url": "https://github.com/tursodatabase/turso/pull/11707",
+      "ref": "tursodatabase/turso#11707",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "ALTER TABLE ... DROP COLUMN of a missing column panicked on a table with no columns and gave the wrong error otherwise; the column is now looked up first, as SQLite does, giving PostgreSQL's 42703",
+      "url": "https://github.com/tursodatabase/turso/pull/11706",
+      "ref": "tursodatabase/turso#11706",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Turso",
+      "what": "An INSERT ... ON CONFLICT DO UPDATE with ascending keys could update a row twice or panic, because the rowids it wrote were stored without a seek; it now gives PostgreSQL's \"cannot affect row a second time\" error",
+      "url": "https://github.com/tursodatabase/turso/pull/11705",
+      "ref": "tursodatabase/turso#11705",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-11",
       "project": "Craft Launcher",
@@ -1668,7 +1734,7 @@
     }
   ],
   "calendar": {
-    "total": 598,
+    "total": 612,
     "weeks": [
       [
         {
@@ -3985,7 +4051,7 @@
         },
         {
           "date": "2026-11-12",
-          "count": 3,
+          "count": 17,
           "level": 1,
           "weekday": 4
         }
