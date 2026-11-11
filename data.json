@@ -52,11 +52,19 @@
   "github_achievements": [
     {
       "name": "Pull Shark",
-      "tier": "",
-      "earned": "2026-10-28",
-      "note": "two or more merged pull requests",
+      "tier": "x2",
+      "earned": "2026-11-05",
+      "note": "16 merged pull requests (first tier 2026-10-28 with storytold/vectorcraft#4215; bronze with quarkusio/quarkus#57866)",
       "image": "assets/badges/pull-shark.png",
-      "url": "https://github.com/ashokram-si"
+      "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements"
+    },
+    {
+      "name": "Pair Extraordinaire",
+      "tier": "",
+      "earned": "2026-10-31",
+      "note": "a co-authored commit on a merged pull request (JuliaLang/julia#64230)",
+      "image": "assets/badges/pair-extraordinaire.png",
+      "url": "https://github.com/ashokram-si?achievement=pair-extraordinaire&tab=achievements"
     }
   ],
   "profile": "https://github.com/ashokram-si",
@@ -1260,7 +1268,7 @@
     }
   ],
   "calendar": {
-    "total": 524,
+    "total": 527,
     "weeks": [
       [
         {
@@ -3571,7 +3579,7 @@
         },
         {
           "date": "2026-11-11",
-          "count": 11,
+          "count": 14,
           "level": 1,
           "weekday": 3
         }
