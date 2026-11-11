@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 50
+      "count": 52
     },
     {
       "name": "C++",
@@ -150,7 +150,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 50,
+      "prs": 52,
       "projects": [
         {
           "name": "Turso",
@@ -171,6 +171,12 @@
           "logo": "storytold-soundcraft"
         },
         {
+          "name": "Biome",
+          "repo": "biomejs/biome",
+          "prs": 4,
+          "logo": "biomejs"
+        },
+        {
           "name": "CADCraft",
           "repo": "storytold/cadcraft",
           "prs": 3,
@@ -187,12 +193,6 @@
           "repo": "storytold/vectorcraft",
           "prs": 3,
           "logo": "storytold-vectorcraft"
-        },
-        {
-          "name": "Biome",
-          "repo": "biomejs/biome",
-          "prs": 2,
-          "logo": "biomejs"
         },
         {
           "name": "Craft Launcher",
@@ -392,14 +392,26 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "61",
+    "Pull requests opened": "63",
     "Merged": "16",
-    "Under review": "42",
+    "Under review": "44",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "11",
+    "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "Biome",
+      "repo": "biomejs/biome",
+      "prs": 4,
+      "merged": 1,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/biomejs/biome/commits?author=ashokram-si",
+      "state": "merged",
+      "logo": "biomejs"
+    },
     {
       "name": "Turso",
       "repo": "tursodatabase/turso",
@@ -459,18 +471,6 @@
       "link": "https://github.com/storytold/wordcraft/commits?author=ashokram-si",
       "state": "merged",
       "logo": "storytold-wordcraft"
-    },
-    {
-      "name": "Biome",
-      "repo": "biomejs/biome",
-      "prs": 2,
-      "merged": 1,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/biomejs/biome/commits?author=ashokram-si",
-      "state": "merged",
-      "logo": "biomejs"
     },
     {
       "name": "CADCraft",
@@ -762,6 +762,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-11",
+      "project": "Biome",
+      "what": "useThisInClassMethods reported a method whose only this is in a parameter's default value; parameters are now checked along with the body, as ESLint does",
+      "url": "https://github.com/biomejs/biome/pull/13098",
+      "ref": "biomejs/biome#13098",
+      "kind": "pr",
+      "feature": false,
+      "logo": "biomejs",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-11",
+      "project": "Biome",
+      "what": "noUnknownTypeSelector reported the selectedcontent element of customizable <select> as unknown; the rule now knows it",
+      "url": "https://github.com/biomejs/biome/pull/13097",
+      "ref": "biomejs/biome#13097",
+      "kind": "pr",
+      "feature": false,
+      "logo": "biomejs",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-11",
       "project": "Turso",
@@ -1734,7 +1756,7 @@
     }
   ],
   "calendar": {
-    "total": 612,
+    "total": 619,
     "weeks": [
       [
         {
@@ -4051,8 +4073,8 @@
         },
         {
           "date": "2026-11-12",
-          "count": 17,
-          "level": 1,
+          "count": 24,
+          "level": 2,
           "weekday": 4
         }
       ]
