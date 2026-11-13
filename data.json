@@ -116,6 +116,16 @@
       "logo": "storytold-effectcraft"
     },
     {
+      "name": "PhotoCraft",
+      "repo": "storytold/photocraft",
+      "logo": "storytold-photocraft"
+    },
+    {
+      "name": "SoundCraft",
+      "repo": "storytold/soundcraft",
+      "logo": "storytold-soundcraft"
+    },
+    {
       "name": "DesignCraft",
       "repo": "storytold/designcraft",
       "logo": "storytold-designcraft"
@@ -398,8 +408,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "63",
-    "Merged": "18",
-    "Under review": "42",
+    "Merged": "21",
+    "Under review": "39",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
@@ -553,7 +563,7 @@
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
       "prs": 5,
-      "merged": 0,
+      "merged": 2,
       "closed": 0,
       "features": 2,
       "comments": 0,
@@ -625,12 +635,12 @@
       "name": "PhotoCraft",
       "repo": "storytold/photocraft",
       "prs": 2,
-      "merged": 0,
+      "merged": 1,
       "closed": 0,
       "features": 1,
       "comments": 0,
-      "link": "https://github.com/storytold/photocraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/photocraft/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "storytold-photocraft"
     },
     {
@@ -1194,7 +1204,7 @@
       "kind": "pr",
       "feature": true,
       "logo": "storytold-photocraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-28",
@@ -1205,7 +1215,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-soundcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-28",
@@ -1216,7 +1226,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-soundcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-28",
@@ -1761,7 +1771,7 @@
     }
   ],
   "calendar": {
-    "total": 647,
+    "total": 651,
     "weeks": [
       [
         {
@@ -4084,7 +4094,7 @@
         },
         {
           "date": "2026-11-13",
-          "count": 3,
+          "count": 7,
           "level": 1,
           "weekday": 5
         }
