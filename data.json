@@ -54,7 +54,7 @@
       "name": "Pull Shark",
       "tier": "x2",
       "earned": "2026-11-05",
-      "note": "16 merged pull requests (first tier 2026-10-28 with storytold/vectorcraft#4215; bronze with quarkusio/quarkus#57866)",
+      "note": "22 merged pull requests (first tier 2026-10-28 with storytold/vectorcraft#4215; bronze with quarkusio/quarkus#57866); silver at 128",
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
@@ -1771,7 +1771,7 @@
     }
   ],
   "calendar": {
-    "total": 666,
+    "total": 670,
     "weeks": [
       [
         {
@@ -4094,7 +4094,7 @@
         },
         {
           "date": "2026-11-13",
-          "count": 22,
+          "count": 26,
           "level": 2,
           "weekday": 5
         }
