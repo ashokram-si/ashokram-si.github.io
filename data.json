@@ -58,7 +58,7 @@
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
-      "count": 17,
+      "count": 22,
       "level": 2,
       "next": 128,
       "unit": "merged PRs",
@@ -81,14 +81,14 @@
   ],
   "shipped_to": [
     {
-      "name": "WordCraft",
-      "repo": "storytold/wordcraft",
-      "logo": "storytold-wordcraft"
-    },
-    {
       "name": "Biome",
       "repo": "biomejs/biome",
       "logo": "biomejs"
+    },
+    {
+      "name": "WordCraft",
+      "repo": "storytold/wordcraft",
+      "logo": "storytold-wordcraft"
     },
     {
       "name": "Rerun",
@@ -144,6 +144,11 @@
       "name": "Quarkus",
       "repo": "quarkusio/quarkus",
       "logo": "quarkusio"
+    },
+    {
+      "name": "Tauri",
+      "repo": "tauri-apps/tauri",
+      "logo": "tauri-apps"
     }
   ],
   "languages": [
@@ -393,8 +398,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "63",
-    "Merged": "16",
-    "Under review": "44",
+    "Merged": "18",
+    "Under review": "42",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "9",
     "Projects I contribute to": "44"
@@ -404,7 +409,7 @@
       "name": "Biome",
       "repo": "biomejs/biome",
       "prs": 4,
-      "merged": 1,
+      "merged": 2,
       "closed": 0,
       "features": 0,
       "comments": 0,
@@ -552,8 +557,8 @@
       "closed": 0,
       "features": 2,
       "comments": 0,
-      "link": "https://github.com/storytold/soundcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/storytold/soundcraft/graphs/contributors",
+      "state": "listed",
       "logo": "storytold-soundcraft"
     },
     {
@@ -632,12 +637,12 @@
       "name": "Tauri",
       "repo": "tauri-apps/tauri",
       "prs": 1,
-      "merged": 0,
+      "merged": 1,
       "closed": 0,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/tauri-apps/tauri/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/tauri-apps/tauri/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "tauri-apps"
     },
     {
@@ -771,7 +776,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "biomejs",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-11-11",
@@ -1244,7 +1249,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "tauri-apps",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-25",
@@ -1756,7 +1761,7 @@
     }
   ],
   "calendar": {
-    "total": 619,
+    "total": 647,
     "weeks": [
       [
         {
@@ -3979,25 +3984,25 @@
         },
         {
           "date": "2026-10-28",
-          "count": 85,
+          "count": 88,
           "level": 4,
           "weekday": 3
         },
         {
           "date": "2026-10-29",
-          "count": 30,
+          "count": 31,
           "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-10-30",
-          "count": 64,
+          "count": 65,
           "level": 4,
           "weekday": 5
         },
         {
           "date": "2026-10-31",
-          "count": 20,
+          "count": 21,
           "level": 2,
           "weekday": 6
         }
@@ -4011,13 +4016,13 @@
         },
         {
           "date": "2026-11-02",
-          "count": 33,
+          "count": 34,
           "level": 2,
           "weekday": 1
         },
         {
           "date": "2026-11-03",
-          "count": 9,
+          "count": 10,
           "level": 1,
           "weekday": 2
         },
@@ -4029,19 +4034,19 @@
         },
         {
           "date": "2026-11-05",
-          "count": 24,
+          "count": 26,
           "level": 2,
           "weekday": 4
         },
         {
           "date": "2026-11-06",
-          "count": 63,
+          "count": 64,
           "level": 4,
           "weekday": 5
         },
         {
           "date": "2026-11-07",
-          "count": 9,
+          "count": 10,
           "level": 1,
           "weekday": 6
         }
@@ -4049,33 +4054,39 @@
       [
         {
           "date": "2026-11-08",
-          "count": 7,
+          "count": 8,
           "level": 1,
           "weekday": 0
         },
         {
           "date": "2026-11-09",
-          "count": 3,
+          "count": 4,
           "level": 1,
           "weekday": 1
         },
         {
           "date": "2026-11-10",
-          "count": 9,
+          "count": 10,
           "level": 1,
           "weekday": 2
         },
         {
           "date": "2026-11-11",
-          "count": 73,
+          "count": 74,
           "level": 4,
           "weekday": 3
         },
         {
           "date": "2026-11-12",
-          "count": 24,
+          "count": 33,
           "level": 2,
           "weekday": 4
+        },
+        {
+          "date": "2026-11-13",
+          "count": 3,
+          "level": 1,
+          "weekday": 5
         }
       ]
     ]
