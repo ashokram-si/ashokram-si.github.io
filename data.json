@@ -1363,7 +1363,7 @@
     {
       "date": "2026-10-26",
       "project": "oxc",
-      "what": "Parser fix: a regex like (/<!-- x -->/) in a module was wrongly read as an HTML comment (and crashed the formatter in scripts). The arrow-function lookahead now stops early, as TypeScript's does, with unit and conformance tests",
+      "what": "Parser regression tests: a regex like (/<!-- x -->/) in a module was wrongly read as an HTML comment (and crashed the formatter in scripts). Main's own parser rework then fixed it, so this PR now adds the unit and conformance tests that keep it fixed",
       "url": "https://github.com/oxc-project/oxc/pull/28181",
       "ref": "oxc-project/oxc#28181",
       "kind": "pr",
@@ -1771,7 +1771,7 @@
     }
   ],
   "calendar": {
-    "total": 705,
+    "total": 708,
     "weeks": [
       [
         {
@@ -4076,7 +4076,7 @@
         },
         {
           "date": "2026-11-17",
-          "count": 15,
+          "count": 18,
           "level": 1,
           "weekday": 2
         }
