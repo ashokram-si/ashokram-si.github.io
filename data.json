@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 52
+      "count": 54
     },
     {
       "name": "C++",
@@ -165,12 +165,12 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 52,
+      "prs": 54,
       "projects": [
         {
           "name": "Turso",
           "repo": "tursodatabase/turso",
-          "prs": 7,
+          "prs": 8,
           "logo": "tursodatabase"
         },
         {
@@ -234,6 +234,12 @@
           "logo": "storytold-filmcraft"
         },
         {
+          "name": "GridCraft",
+          "repo": "storytold/gridcraft",
+          "prs": 2,
+          "logo": "storytold-gridcraft"
+        },
+        {
           "name": "PhotoCraft",
           "repo": "storytold/photocraft",
           "prs": 2,
@@ -256,12 +262,6 @@
           "repo": "storytold/figcraft",
           "prs": 1,
           "logo": "storytold-figcraft"
-        },
-        {
-          "name": "GridCraft",
-          "repo": "storytold/gridcraft",
-          "prs": 1,
-          "logo": "storytold-gridcraft"
         },
         {
           "name": "Leptos",
@@ -407,14 +407,38 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "63",
+    "Pull requests opened": "65",
     "Merged": "22",
-    "Under review": "37",
+    "Under review": "39",
     "Issue investigations posted": "1",
-    "Fixes ready locally, awaiting submission": "9",
+    "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "GridCraft",
+      "repo": "storytold/gridcraft",
+      "prs": 2,
+      "merged": 0,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/gridcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-gridcraft"
+    },
+    {
+      "name": "Turso",
+      "repo": "tursodatabase/turso",
+      "prs": 8,
+      "merged": 0,
+      "closed": 1,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "tursodatabase"
+    },
     {
       "name": "Biome",
       "repo": "biomejs/biome",
@@ -426,18 +450,6 @@
       "link": "https://github.com/biomejs/biome/commits?author=ashokram-si",
       "state": "merged",
       "logo": "biomejs"
-    },
-    {
-      "name": "Turso",
-      "repo": "tursodatabase/turso",
-      "prs": 7,
-      "merged": 0,
-      "closed": 1,
-      "features": 1,
-      "comments": 0,
-      "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "tursodatabase"
     },
     {
       "name": "Craft Launcher",
@@ -668,18 +680,6 @@
       "logo": "ggml-org"
     },
     {
-      "name": "GridCraft",
-      "repo": "storytold/gridcraft",
-      "prs": 1,
-      "merged": 0,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/gridcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-gridcraft"
-    },
-    {
       "name": "Knip",
       "repo": "webpro-nl/knip",
       "prs": 1,
@@ -777,6 +777,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-18",
+      "project": "GridCraft",
+      "what": "A sheet name of 16 emoji passed the 31-character check but made an XLSX that Excel refuses, because Excel counts UTF-16 units; one shared rule now limits names on rename, copy, save and import",
+      "url": "https://github.com/storytold/gridcraft/pull/4467",
+      "ref": "storytold/gridcraft#4467",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold-gridcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-18",
+      "project": "Turso",
+      "what": "tursopg dropped nothing and reported success for DROP TYPE IF EXISTS int4; built-in types are now refused with PostgreSQL's 2BP01, and a missing type reports 42704",
+      "url": "https://github.com/tursodatabase/turso/pull/12026",
+      "ref": "tursodatabase/turso#12026",
+      "kind": "pr",
+      "feature": false,
+      "logo": "tursodatabase",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-11",
       "project": "Biome",
@@ -1771,7 +1793,7 @@
     }
   ],
   "calendar": {
-    "total": 750,
+    "total": 753,
     "weeks": [
       [
         {
@@ -4082,7 +4104,7 @@
         },
         {
           "date": "2026-11-18",
-          "count": 22,
+          "count": 25,
           "level": 2,
           "weekday": 3
         }
