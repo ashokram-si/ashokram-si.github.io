@@ -579,8 +579,8 @@
       "closed": 0,
       "features": 2,
       "comments": 1,
-      "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
-      "state": "listed",
+      "link": "https://github.com/storytold/vectorcraft/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "storytold-vectorcraft"
     },
     {
@@ -1771,7 +1771,7 @@
     }
   ],
   "calendar": {
-    "total": 725,
+    "total": 729,
     "weeks": [
       [
         {
@@ -4076,9 +4076,15 @@
         },
         {
           "date": "2026-11-17",
-          "count": 35,
-          "level": 2,
+          "count": 38,
+          "level": 3,
           "weekday": 2
+        },
+        {
+          "date": "2026-11-18",
+          "count": 1,
+          "level": 1,
+          "weekday": 3
         }
       ]
     ]
