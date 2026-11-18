@@ -409,7 +409,7 @@
   "stats": {
     "Pull requests opened": "65",
     "Merged": "22",
-    "Under review": "39",
+    "Under review": "38",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
@@ -456,11 +456,11 @@
       "repo": "storytold/craft-launcher",
       "prs": 2,
       "merged": 0,
-      "closed": 1,
+      "closed": 2,
       "features": 0,
       "comments": 0,
       "link": "https://github.com/storytold/craft-launcher/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "state": "closed",
       "logo": "storytold-craft-launcher"
     },
     {
@@ -896,7 +896,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-craft-launcher",
-      "status": "IN REVIEW"
+      "status": "CLOSED"
     },
     {
       "date": "2026-11-11",
@@ -1793,7 +1793,7 @@
     }
   ],
   "calendar": {
-    "total": 769,
+    "total": 771,
     "weeks": [
       [
         {
@@ -4110,8 +4110,8 @@
         },
         {
           "date": "2026-11-19",
-          "count": 0,
-          "level": 0,
+          "count": 2,
+          "level": 1,
           "weekday": 4
         }
       ]
