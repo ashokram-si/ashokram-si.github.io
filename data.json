@@ -111,6 +111,11 @@
       "logo": "storytold-cadcraft"
     },
     {
+      "name": "SoundCraft",
+      "repo": "storytold/soundcraft",
+      "logo": "storytold-soundcraft"
+    },
+    {
       "name": "VectorCraft",
       "repo": "storytold/vectorcraft",
       "logo": "storytold-vectorcraft"
@@ -124,11 +129,6 @@
       "name": "PhotoCraft",
       "repo": "storytold/photocraft",
       "logo": "storytold-photocraft"
-    },
-    {
-      "name": "SoundCraft",
-      "repo": "storytold/soundcraft",
-      "logo": "storytold-soundcraft"
     },
     {
       "name": "DesignCraft",
@@ -413,8 +413,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "65",
-    "Merged": "23",
-    "Under review": "37",
+    "Merged": "24",
+    "Under review": "36",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
@@ -580,7 +580,7 @@
       "name": "SoundCraft",
       "repo": "storytold/soundcraft",
       "prs": 5,
-      "merged": 2,
+      "merged": 3,
       "closed": 0,
       "features": 2,
       "comments": 0,
@@ -1110,7 +1110,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "storytold-soundcraft",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-10-30",
@@ -1798,7 +1798,7 @@
     }
   ],
   "calendar": {
-    "total": 847,
+    "total": 850,
     "weeks": [
       [
         {
@@ -4121,8 +4121,8 @@
         },
         {
           "date": "2026-11-20",
-          "count": 56,
-          "level": 3,
+          "count": 59,
+          "level": 4,
           "weekday": 5
         }
       ]
