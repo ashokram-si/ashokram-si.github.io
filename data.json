@@ -58,7 +58,7 @@
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
-      "count": 23,
+      "count": 24,
       "level": 2,
       "next": 128,
       "unit": "merged PRs",
@@ -84,6 +84,11 @@
       "name": "Biome",
       "repo": "biomejs/biome",
       "logo": "biomejs"
+    },
+    {
+      "name": "Turso",
+      "repo": "tursodatabase/turso",
+      "logo": "tursodatabase"
     },
     {
       "name": "WordCraft",
@@ -408,8 +413,8 @@
   "profile": "https://github.com/ashokram-si",
   "stats": {
     "Pull requests opened": "65",
-    "Merged": "22",
-    "Under review": "38",
+    "Merged": "23",
+    "Under review": "37",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
@@ -431,12 +436,12 @@
       "name": "Turso",
       "repo": "tursodatabase/turso",
       "prs": 8,
-      "merged": 0,
+      "merged": 1,
       "closed": 1,
       "features": 1,
       "comments": 0,
-      "link": "https://github.com/tursodatabase/turso/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
+      "link": "https://github.com/tursodatabase/turso/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "tursodatabase"
     },
     {
@@ -885,7 +890,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "tursodatabase",
-      "status": "IN REVIEW"
+      "status": "MERGED"
     },
     {
       "date": "2026-11-11",
@@ -1793,7 +1798,7 @@
     }
   ],
   "calendar": {
-    "total": 815,
+    "total": 825,
     "weeks": [
       [
         {
@@ -4060,7 +4065,7 @@
         },
         {
           "date": "2026-11-11",
-          "count": 74,
+          "count": 75,
           "level": 4,
           "weekday": 3
         },
@@ -4072,7 +4077,7 @@
         },
         {
           "date": "2026-11-13",
-          "count": 43,
+          "count": 44,
           "level": 3,
           "weekday": 5
         },
@@ -4116,8 +4121,8 @@
         },
         {
           "date": "2026-11-20",
-          "count": 37,
-          "level": 2,
+          "count": 45,
+          "level": 3,
           "weekday": 5
         }
       ]
