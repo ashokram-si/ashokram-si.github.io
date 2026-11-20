@@ -1798,7 +1798,7 @@
     }
   ],
   "calendar": {
-    "total": 825,
+    "total": 828,
     "weeks": [
       [
         {
@@ -4121,7 +4121,7 @@
         },
         {
           "date": "2026-11-20",
-          "count": 45,
+          "count": 48,
           "level": 3,
           "weekday": 5
         }
