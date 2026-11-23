@@ -414,7 +414,7 @@
   "stats": {
     "Pull requests opened": "65",
     "Merged": "24",
-    "Under review": "36",
+    "Under review": "35",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
@@ -437,7 +437,7 @@
       "repo": "tursodatabase/turso",
       "prs": 8,
       "merged": 1,
-      "closed": 1,
+      "closed": 2,
       "features": 1,
       "comments": 0,
       "link": "https://github.com/tursodatabase/turso/commits?author=ashokram-si",
@@ -835,7 +835,7 @@
       "kind": "pr",
       "feature": false,
       "logo": "tursodatabase",
-      "status": "IN REVIEW"
+      "status": "CLOSED"
     },
     {
       "date": "2026-11-11",
@@ -1798,7 +1798,7 @@
     }
   ],
   "calendar": {
-    "total": 895,
+    "total": 899,
     "weeks": [
       [
         {
@@ -4091,9 +4091,15 @@
       [
         {
           "date": "2026-11-22",
-          "count": 13,
+          "count": 15,
           "level": 1,
           "weekday": 0
+        },
+        {
+          "date": "2026-11-23",
+          "count": 2,
+          "level": 1,
+          "weekday": 1
         }
       ]
     ]
