@@ -21,7 +21,7 @@
     {
       "name": "Python",
       "logo": "assets/lang/python-original.svg",
-      "count": 1
+      "count": 2
     },
     {
       "name": "TypeScript",
@@ -326,6 +326,19 @@
       ]
     },
     {
+      "name": "Python",
+      "logo": "assets/lang/python-original.svg",
+      "prs": 2,
+      "projects": [
+        {
+          "name": "Meltano",
+          "repo": "meltano/meltano",
+          "prs": 2,
+          "logo": "meltano"
+        }
+      ]
+    },
+    {
       "name": "Java",
       "logo": "assets/lang/java-original.svg",
       "prs": 1,
@@ -348,19 +361,6 @@
           "repo": "ggml-org/llama.cpp",
           "prs": 1,
           "logo": "ggml-org"
-        }
-      ]
-    },
-    {
-      "name": "Python",
-      "logo": "assets/lang/python-original.svg",
-      "prs": 1,
-      "projects": [
-        {
-          "name": "Meltano",
-          "repo": "meltano/meltano",
-          "prs": 1,
-          "logo": "meltano"
         }
       ]
     },
@@ -412,14 +412,26 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "67",
+    "Pull requests opened": "68",
     "Merged": "24",
-    "Under review": "37",
+    "Under review": "38",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "Meltano",
+      "repo": "meltano/meltano",
+      "prs": 2,
+      "merged": 0,
+      "closed": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "meltano"
+    },
     {
       "name": "WordCraft",
       "repo": "storytold/wordcraft",
@@ -563,18 +575,6 @@
       "link": "https://github.com/storytold/figcraft/graphs/contributors",
       "state": "listed",
       "logo": "storytold-figcraft"
-    },
-    {
-      "name": "Meltano",
-      "repo": "meltano/meltano",
-      "prs": 1,
-      "merged": 0,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "meltano"
     },
     {
       "name": "SoundCraft",
@@ -782,6 +782,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-24",
+      "project": "Meltano",
+      "what": "meltano state merge could take state from only one other state ID; it now merges several at once, in the order given, with the later one winning where two set the same bookmark and nothing written if any source is missing",
+      "url": "https://github.com/meltano/meltano/pull/10460",
+      "ref": "meltano/meltano#10460",
+      "kind": "pr",
+      "feature": true,
+      "logo": "meltano",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-23",
       "project": "WordCraft",
@@ -1820,7 +1831,7 @@
     }
   ],
   "calendar": {
-    "total": 964,
+    "total": 971,
     "weeks": [
       [
         {
@@ -4125,7 +4136,7 @@
         },
         {
           "date": "2026-11-24",
-          "count": 8,
+          "count": 15,
           "level": 1,
           "weekday": 2
         }
