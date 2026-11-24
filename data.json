@@ -26,7 +26,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 7
+      "count": 12
     },
     {
       "name": "AI tooling",
@@ -303,19 +303,19 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "prs": 7,
+      "prs": 12,
       "projects": [
+        {
+          "name": "Plane",
+          "repo": "makeplane/plane",
+          "prs": 7,
+          "logo": "makeplane"
+        },
         {
           "name": "Grafana",
           "repo": "grafana/grafana",
           "prs": 3,
           "logo": "grafana"
-        },
-        {
-          "name": "Plane",
-          "repo": "makeplane/plane",
-          "prs": 2,
-          "logo": "makeplane"
         },
         {
           "name": "Knip",
@@ -418,9 +418,9 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "71",
+    "Pull requests opened": "76",
     "Merged": "24",
-    "Under review": "41",
+    "Under review": "46",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "45"
@@ -429,7 +429,7 @@
     {
       "name": "Plane",
       "repo": "makeplane/plane",
-      "prs": 2,
+      "prs": 7,
       "merged": 0,
       "closed": 0,
       "features": 1,
@@ -800,6 +800,61 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "Updating a work item, cycle, module, state or label could give it the same external id and source as another one, after which lookups crashed; such updates now get a 409, while re-sending a row's own pair keeps working; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10395",
+      "ref": "makeplane/plane#10395",
+      "kind": "pr",
+      "feature": false,
+      "logo": "makeplane",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "File uploads crashed on a size that wasn't a number and accepted zero or negative sizes; eight upload endpoints now share one check and answer with a 400; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10394",
+      "ref": "makeplane/plane#10394",
+      "kind": "pr",
+      "feature": false,
+      "logo": "makeplane",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "Work item exports listed people who had been removed as assignees, and someone removed and added again twice; exports now list only current assignees; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10393",
+      "ref": "makeplane/plane#10393",
+      "kind": "pr",
+      "feature": false,
+      "logo": "makeplane",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "The work item search API and the app's entity search crashed on a limit or count that wasn't a positive whole number; they now answer with a 400, with an upper bound of 1000; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10392",
+      "ref": "makeplane/plane#10392",
+      "kind": "pr",
+      "feature": false,
+      "logo": "makeplane",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "Transferring work items to a cycle that doesn't exist in the project crashed with a server error; it now answers with a clear 400; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10391",
+      "ref": "makeplane/plane#10391",
+      "kind": "pr",
+      "feature": false,
+      "logo": "makeplane",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-24",
       "project": "Plane",
@@ -1893,7 +1948,7 @@
     }
   ],
   "calendar": {
-    "total": 1005,
+    "total": 1020,
     "weeks": [
       [
         {
@@ -4198,8 +4253,8 @@
         },
         {
           "date": "2026-11-24",
-          "count": 49,
-          "level": 3,
+          "count": 64,
+          "level": 4,
           "weekday": 2
         }
       ]
