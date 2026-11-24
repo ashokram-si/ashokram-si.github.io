@@ -315,7 +315,7 @@
           "name": "Plane",
           "repo": "makeplane/plane",
           "prs": 2,
-          "logo": null
+          "logo": "makeplane"
         },
         {
           "name": "Knip",
@@ -436,7 +436,7 @@
       "comments": 0,
       "link": "https://github.com/makeplane/plane/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
-      "logo": null
+      "logo": "makeplane"
     },
     {
       "name": "Meltano",
@@ -808,7 +808,7 @@
       "ref": "makeplane/plane#10385",
       "kind": "pr",
       "feature": true,
-      "logo": null,
+      "logo": "makeplane",
       "status": "IN REVIEW"
     },
     {
@@ -819,7 +819,7 @@
       "ref": "makeplane/plane#10384",
       "kind": "pr",
       "feature": false,
-      "logo": null,
+      "logo": "makeplane",
       "status": "IN REVIEW"
     },
     {
@@ -1860,7 +1860,7 @@
         {
           "name": "Plane",
           "url": "https://github.com/makeplane/plane",
-          "logo": null,
+          "logo": "makeplane",
           "monogram": "Pl"
         }
       ]
@@ -1893,7 +1893,7 @@
     }
   ],
   "calendar": {
-    "total": 997,
+    "total": 1001,
     "weeks": [
       [
         {
@@ -4198,7 +4198,7 @@
         },
         {
           "date": "2026-11-24",
-          "count": 41,
+          "count": 45,
           "level": 3,
           "weekday": 2
         }
