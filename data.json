@@ -26,7 +26,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 5
+      "count": 7
     },
     {
       "name": "AI tooling",
@@ -303,13 +303,19 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "prs": 5,
+      "prs": 7,
       "projects": [
         {
           "name": "Grafana",
           "repo": "grafana/grafana",
           "prs": 3,
           "logo": "grafana"
+        },
+        {
+          "name": "Plane",
+          "repo": "makeplane/plane",
+          "prs": 2,
+          "logo": null
         },
         {
           "name": "Knip",
@@ -412,14 +418,26 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "69",
+    "Pull requests opened": "71",
     "Merged": "24",
-    "Under review": "39",
+    "Under review": "41",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
-    "Projects I contribute to": "44"
+    "Projects I contribute to": "45"
   },
   "contributing_to": [
+    {
+      "name": "Plane",
+      "repo": "makeplane/plane",
+      "prs": 2,
+      "merged": 0,
+      "closed": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/makeplane/plane/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": null
+    },
     {
       "name": "Meltano",
       "repo": "meltano/meltano",
@@ -782,6 +800,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "self hosted Plane allowed a fixed 300 static file requests per IP per minute, so normal page loads could fail with HTTP 429; the web and admin limits are now set with WEB_ASSET_RATE_LIMIT and ADMIN_ASSET_RATE_LIMIT (default 300)",
+      "url": "https://github.com/makeplane/plane/pull/10385",
+      "ref": "makeplane/plane#10385",
+      "kind": "pr",
+      "feature": true,
+      "logo": null,
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-24",
+      "project": "Plane",
+      "what": "Moving work items to another cycle (\"Transfer work items\") or converting a draft into a cycle saved nothing in their activity history, because the background task failed on the data the transfer sent; found by reading the code, reported and fixed",
+      "url": "https://github.com/makeplane/plane/pull/10384",
+      "ref": "makeplane/plane#10384",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-24",
       "project": "Meltano",
@@ -1813,6 +1853,17 @@
           "monogram": "Ve"
         }
       ]
+    },
+    {
+      "area": "Product apps",
+      "projects": [
+        {
+          "name": "Plane",
+          "url": "https://github.com/makeplane/plane",
+          "logo": null,
+          "monogram": "Pl"
+        }
+      ]
     }
   ],
   "how_i_work": [
@@ -1842,7 +1893,7 @@
     }
   ],
   "calendar": {
-    "total": 983,
+    "total": 997,
     "weeks": [
       [
         {
@@ -4147,8 +4198,8 @@
         },
         {
           "date": "2026-11-24",
-          "count": 27,
-          "level": 2,
+          "count": 41,
+          "level": 3,
           "weekday": 2
         }
       ]
