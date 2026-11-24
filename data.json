@@ -1949,7 +1949,7 @@
   ],
   "security": [],
   "calendar": {
-    "total": 1045,
+    "total": 1047,
     "weeks": [
       [
         {
@@ -4260,7 +4260,7 @@
         },
         {
           "date": "2026-11-25",
-          "count": 9,
+          "count": 11,
           "level": 1,
           "weekday": 3
         }
