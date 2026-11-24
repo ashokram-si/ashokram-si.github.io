@@ -21,7 +21,7 @@
     {
       "name": "Python",
       "logo": "assets/lang/python-original.svg",
-      "count": 2
+      "count": 3
     },
     {
       "name": "TypeScript",
@@ -328,12 +328,12 @@
     {
       "name": "Python",
       "logo": "assets/lang/python-original.svg",
-      "prs": 2,
+      "prs": 3,
       "projects": [
         {
           "name": "Meltano",
           "repo": "meltano/meltano",
-          "prs": 2,
+          "prs": 3,
           "logo": "meltano"
         }
       ]
@@ -412,9 +412,9 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "68",
+    "Pull requests opened": "69",
     "Merged": "24",
-    "Under review": "38",
+    "Under review": "39",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
@@ -423,10 +423,10 @@
     {
       "name": "Meltano",
       "repo": "meltano/meltano",
-      "prs": 2,
+      "prs": 3,
       "merged": 0,
       "closed": 0,
-      "features": 1,
+      "features": 2,
       "comments": 0,
       "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
@@ -782,6 +782,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-24",
+      "project": "Meltano",
+      "what": "meltano run couldn't narrow a pipeline to some streams the way meltano el can; it now takes --select and --exclude naming the extractor they apply to, so a run with several extractors can filter each one",
+      "url": "https://github.com/meltano/meltano/pull/10461",
+      "ref": "meltano/meltano#10461",
+      "kind": "pr",
+      "feature": true,
+      "logo": "meltano",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-24",
       "project": "Meltano",
@@ -1831,7 +1842,7 @@
     }
   ],
   "calendar": {
-    "total": 977,
+    "total": 983,
     "weeks": [
       [
         {
@@ -4136,7 +4147,7 @@
         },
         {
           "date": "2026-11-24",
-          "count": 21,
+          "count": 27,
           "level": 2,
           "weekday": 2
         }
