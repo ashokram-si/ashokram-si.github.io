@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 54
+      "count": 56
     },
     {
       "name": "C++",
@@ -170,7 +170,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 54,
+      "prs": 56,
       "projects": [
         {
           "name": "Turso",
@@ -215,6 +215,12 @@
           "logo": "storytold-vectorcraft"
         },
         {
+          "name": "WordCraft",
+          "repo": "storytold/wordcraft",
+          "prs": 3,
+          "logo": "storytold-wordcraft"
+        },
+        {
           "name": "Craft Launcher",
           "repo": "storytold/craft-launcher",
           "prs": 2,
@@ -245,16 +251,16 @@
           "logo": "storytold-gridcraft"
         },
         {
+          "name": "LightCraft",
+          "repo": "storytold/lightcraft",
+          "prs": 2,
+          "logo": "storytold-lightcraft"
+        },
+        {
           "name": "PhotoCraft",
           "repo": "storytold/photocraft",
           "prs": 2,
           "logo": "storytold-photocraft"
-        },
-        {
-          "name": "WordCraft",
-          "repo": "storytold/wordcraft",
-          "prs": 2,
-          "logo": "storytold-wordcraft"
         },
         {
           "name": "Burn",
@@ -273,12 +279,6 @@
           "repo": "leptos-rs/leptos",
           "prs": 1,
           "logo": "leptos-rs"
-        },
-        {
-          "name": "LightCraft",
-          "repo": "storytold/lightcraft",
-          "prs": 1,
-          "logo": "storytold-lightcraft"
         },
         {
           "name": "PdfCraft",
@@ -412,14 +412,38 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "65",
+    "Pull requests opened": "67",
     "Merged": "24",
-    "Under review": "35",
+    "Under review": "37",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "44"
   },
   "contributing_to": [
+    {
+      "name": "WordCraft",
+      "repo": "storytold/wordcraft",
+      "prs": 3,
+      "merged": 1,
+      "closed": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/wordcraft/commits?author=ashokram-si",
+      "state": "merged",
+      "logo": "storytold-wordcraft"
+    },
+    {
+      "name": "LightCraft",
+      "repo": "storytold/lightcraft",
+      "prs": 2,
+      "merged": 0,
+      "closed": 0,
+      "features": 1,
+      "comments": 0,
+      "link": "https://github.com/storytold/lightcraft/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold-lightcraft"
+    },
     {
       "name": "GridCraft",
       "repo": "storytold/gridcraft",
@@ -493,18 +517,6 @@
       "logo": "storytold-filmcraft"
     },
     {
-      "name": "WordCraft",
-      "repo": "storytold/wordcraft",
-      "prs": 2,
-      "merged": 1,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/wordcraft/commits?author=ashokram-si",
-      "state": "merged",
-      "logo": "storytold-wordcraft"
-    },
-    {
       "name": "CADCraft",
       "repo": "storytold/cadcraft",
       "prs": 3,
@@ -563,18 +575,6 @@
       "link": "https://github.com/meltano/meltano/pulls?q=is%3Apr+author%3Aashokram-si",
       "state": "review",
       "logo": "meltano"
-    },
-    {
-      "name": "LightCraft",
-      "repo": "storytold/lightcraft",
-      "prs": 1,
-      "merged": 0,
-      "closed": 0,
-      "features": 0,
-      "comments": 0,
-      "link": "https://github.com/storytold/lightcraft/pulls?q=is%3Apr+author%3Aashokram-si",
-      "state": "review",
-      "logo": "storytold-lightcraft"
     },
     {
       "name": "SoundCraft",
@@ -782,6 +782,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-23",
+      "project": "WordCraft",
+      "what": "Read Mode could only reflow text into screen columns, so a form or newsletter couldn't be read as it prints; View › Layout › Pages now shows the printed pages, fitted to the window and turned like the columns",
+      "url": "https://github.com/storytold/wordcraft/pull/7636",
+      "ref": "storytold/wordcraft#7636",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-wordcraft",
+      "status": "IN REVIEW"
+    },
+    {
+      "date": "2026-11-23",
+      "project": "LightCraft",
+      "what": "the Print dialog could only write a PDF; it now prints the pages as JPEG files for a lab or a client, one per page at the print resolution and quality, with the colour profile embedded",
+      "url": "https://github.com/storytold/lightcraft/pull/4676",
+      "ref": "storytold/lightcraft#4676",
+      "kind": "pr",
+      "feature": true,
+      "logo": "storytold-lightcraft",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-18",
       "project": "GridCraft",
@@ -1798,7 +1820,7 @@
     }
   ],
   "calendar": {
-    "total": 957,
+    "total": 959,
     "weeks": [
       [
         {
@@ -4103,7 +4125,7 @@
         },
         {
           "date": "2026-11-24",
-          "count": 1,
+          "count": 3,
           "level": 1,
           "weekday": 2
         }
