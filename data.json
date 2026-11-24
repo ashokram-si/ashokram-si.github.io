@@ -1947,8 +1947,9 @@
       "text": "AI assistance (Claude Code) only where a project allows it, disclosed as it asks."
     }
   ],
+  "security": [],
   "calendar": {
-    "total": 1038,
+    "total": 1045,
     "weeks": [
       [
         {
@@ -4259,7 +4260,7 @@
         },
         {
           "date": "2026-11-25",
-          "count": 2,
+          "count": 9,
           "level": 1,
           "weekday": 3
         }
