@@ -1940,16 +1940,129 @@
     },
     {
       "title": "Each project's rules",
-      "text": "conventions, changelogs and AI policies followed exactly."
+      "text": "conventions, changelogs and contribution guides followed exactly."
     },
     {
-      "title": "Transparent about AI",
-      "text": "AI assistance (Claude Code) only where a project allows it, disclosed as it asks."
+      "title": "Security research, responsibly",
+      "text": "only targets in scope under each program's rules, reported privately, published only once fixed and disclosed."
     }
   ],
   "security": [],
+  "security_intro": "I look for security bugs in bug bounty programs and open source projects, only in scope and under each program's rules, and I report them privately. A finding is listed here once the program has fixed it and made it public.",
+  "security_focus": [
+    "Access control",
+    "Authentication",
+    "Race conditions",
+    "SSRF",
+    "Source code review"
+  ],
+  "security_platforms": [
+    {
+      "name": "HackerOne",
+      "url": "https://hackerone.com/ashokram-si",
+      "note": "@ashokram-si",
+      "logo": "bounty-hackerone",
+      "monogram": "HO"
+    },
+    {
+      "name": "Bugcrowd",
+      "url": "https://bugcrowd.com/h/ashokram-si",
+      "note": "@ashokram-si",
+      "logo": "bounty-bugcrowd",
+      "monogram": "Bu"
+    },
+    {
+      "name": "Intigriti",
+      "url": "https://app.intigriti.com/profile/ashokramsi",
+      "note": "@ashokramsi",
+      "logo": "bounty-intigriti",
+      "monogram": "In"
+    },
+    {
+      "name": "YesWeHack",
+      "url": "https://yeswehack.com/hunters/ashokram-si",
+      "note": "@ashokram-si",
+      "logo": "bounty-yeswehack",
+      "monogram": "YWH"
+    },
+    {
+      "name": "Google Bug Hunters",
+      "url": "https://bughunters.google.com/profile/ef6a8c6b-007b-4369-bae2-22a215a9071d",
+      "note": "Ashok Ram",
+      "logo": "bounty-bughunters",
+      "monogram": "GB"
+    }
+  ],
+  "writing": {
+    "intro": "I write up my merged pull requests: what broke, why it broke, and how the fix got through review, in plain words for anyone who knows basic coding.",
+    "platforms": [
+      {
+        "name": "Hashnode",
+        "url": "https://ashokramsi.hashnode.dev",
+        "note": "every post, the original",
+        "logo": "blog-hashnode",
+        "monogram": "Ha"
+      },
+      {
+        "name": "DEV",
+        "url": "https://dev.to/ashokramsi",
+        "note": "the community version",
+        "logo": "blog-dev",
+        "monogram": "DEV"
+      },
+      {
+        "name": "Medium",
+        "url": "https://medium.com/@ashokramsi",
+        "note": "the story behind each fix",
+        "logo": "blog-medium",
+        "monogram": "Me"
+      },
+      {
+        "name": "Substack",
+        "url": "https://ashokramsi.substack.com",
+        "note": "each post by email",
+        "logo": "blog-substack",
+        "monogram": "Su"
+      },
+      {
+        "name": "Devpost",
+        "url": "https://devpost.com/ashokram-si",
+        "note": "a project page per fix",
+        "logo": "blog-devpost",
+        "monogram": "De"
+      }
+    ],
+    "posts": [
+      {
+        "num": "06",
+        "title": "How I added dilation to average pooling in Burn",
+        "url": "https://ashokramsi.hashnode.dev/burn-avg-pool-dilation"
+      },
+      {
+        "num": "05",
+        "title": "Why Grafana table gauge bars didn't match their values",
+        "url": "https://ashokramsi.hashnode.dev/grafana-tableng-alignment"
+      },
+      {
+        "num": "04",
+        "title": "Why quarkus:dev ignored gRPC settings in application.properties",
+        "url": "https://ashokramsi.hashnode.dev/quarkus-dev-mode-goal-order"
+      },
+      {
+        "num": "03",
+        "title": "Why first(s, typemax(Int)) returned an empty string in Julia",
+        "url": "https://ashokramsi.hashnode.dev/julia-nextind-saturate"
+      },
+      {
+        "num": "02",
+        "title": "Why Biome's formatter broke negative interpolations in SCSS",
+        "url": "https://ashokramsi.hashnode.dev/biome-scss-negative-interpolation"
+      }
+    ],
+    "total": 6
+  },
   "calendar": {
-    "total": 1047,
+    "total": 1064,
     "weeks": [
       [
         {
@@ -4260,8 +4373,8 @@
         },
         {
           "date": "2026-11-25",
-          "count": 11,
-          "level": 1,
+          "count": 28,
+          "level": 2,
           "weekday": 3
         }
       ]

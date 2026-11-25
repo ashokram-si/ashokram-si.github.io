@@ -1085,6 +1085,40 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
   overflow-wrap: anywhere;
 }
 
+/* ------------------------------------------- WRITING + SECURITY */
+.sec-intro { margin: 0 0 28px; color: var(--ink-2); font-size: clamp(16px, 1.7vw, 20px); line-height: 1.6; }
+.tile__note { font: 400 11.5px/1.35 var(--f-mono); color: var(--shade); }
+/* Five profile cards, one full row; on phones a 3 + 2 split that still fills both rows. */
+.wall__grid.sites-row { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.security__profiles { margin-top: 44px; }
+@media (max-width: 640px) {
+  .wall__grid.sites-row { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .sites-row > li { grid-column: span 2; }
+  .sites-row > li:nth-child(n + 4) { grid-column: span 3; }
+}
+.writing__latest { margin-top: 44px; }
+.writing__posts { display: grid; gap: 10px; }
+.post-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line-2);
+  transition: border-color .25s, box-shadow .25s, transform .3s var(--ease);
+}
+.post-row:hover, .post-row:focus-visible {
+  border-color: var(--ink);
+  box-shadow: inset 4px 0 0 var(--sun), 0 10px 24px rgba(43, 44, 48, .08);
+  transform: translateX(3px);
+}
+.post-row__num { flex: none; color: var(--shade); font-size: 13px; }
+.post-row__title { font: 500 clamp(15px, 1.5vw, 17px)/1.45 var(--f-display); overflow-wrap: anywhere; }
+.term__text { margin: 14px 0 0; color: rgba(255, 255, 255, .85); }
+.term__link { color: var(--sun); }
+
 /* --------------------------------------------- TERMINAL (dark band) */
 .section--band {
   background: var(--ink);
@@ -1101,7 +1135,6 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
 .section--band :focus-visible { outline-color: var(--white); }
 
 .term {
-  max-width: 920px;
   background: #222327;
   border: 1px solid rgba(255, 255, 255, .18);
   box-shadow: 0 40px 100px rgba(22, 23, 26, .45);
@@ -1184,7 +1217,8 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
 @media (min-height: 1100px) {
   .hero { min-height: min(100svh, 1000px); }
 }
-@media (max-width: 1100px) {
+/* Section numbers in the bar only where all ten links and the GitHub link fit with them. */
+@media (max-width: 1520px) {
   .nav__links a { padding-inline: 7px; }
   .nav__links a span { display: none; }
 }
@@ -1197,8 +1231,8 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
   .portrait { max-width: 520px; }
 }
 
-/* Compact menu when the section links don't fit */
-@media (max-width: 1000px) {
+/* Compact menu when the section links don't fit (ten links need about 1,230px) */
+@media (max-width: 1240px) {
   .nav { gap: 12px; }
   .nav__gh { margin-left: auto; order: 2; }
   .nav__toggle {
@@ -1523,4 +1557,28 @@ h1, h2, h3 { margin: 0; font-weight: 700; line-height: 1.05; color: var(--ink); 
 }
 @media (prefers-reduced-motion: reduce) {
   .ach__art::before { animation: none; }
+}
+
+/* ------------------------------------------- FILL THE COLUMN
+   Terminals run the full content width; the security one adds a row of focus tags so the wider
+   panel has something in it. On wide screens the activity calendar's cells grow to fill its panel
+   instead of sitting small in the middle; narrow screens keep fixed cells and scroll sideways. */
+.term__tags { display: flex; flex-wrap: wrap; gap: 10px; margin: 4px 0 18px; padding: 0; list-style: none; }
+.term__tag {
+  padding: 6px 12px;
+  font-size: 13px;
+  color: #fff;
+  border: 1px solid rgba(246, 205, 76, .55);
+  background: rgba(246, 205, 76, .08);
+}
+.term__tag::before { content: "./"; color: var(--sun); }
+@media (min-width: 900px) {
+  .cal__grid {
+    width: 100%;
+    grid-template-columns: 30px repeat(var(--weeks, 53), minmax(0, 1fr));
+    grid-template-rows: 16px repeat(7, auto);
+    --gap: 4px;
+  }
+  .cal__grid .cal__day { width: 100%; height: auto; aspect-ratio: 1; }
+  .cal__legend .cal__day { width: 15px; height: 15px; }
 }

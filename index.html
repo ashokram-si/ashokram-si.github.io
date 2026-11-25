@@ -76,7 +76,9 @@
         <li><a href="#languages"><span>05</span>languages</a></li>
         <li><a href="#prs"><span>06</span>pull requests</a></li>
         <li><a href="#following"><span>07</span>following</a></li>
-        <li><a href="#how"><span>08</span>how I work</a></li>
+        <li><a href="#writing"><span>08</span>writing</a></li>
+        <li><a href="#security"><span>09</span>security</a></li>
+        <li><a href="#how"><span>10</span>how I work</a></li>
         <li class="nav__links-gh"><a data-bind-href="profile" href="#" target="_blank" rel="noopener">GitHub profile<span aria-hidden="true"> ↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
       </ol>
     </nav>
@@ -277,11 +279,53 @@
       </div>
     </section>
 
-    <!-- 08 / HOW I WORK -->
+    <!-- 08 / WRITING -->
+    <section class="section" id="writing" aria-labelledby="writing-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>08</span> // writing</p>
+          <h2 class="sec-head__title" id="writing-title">Writing</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="posts"></span></div>
+        </div>
+        <p class="sec-intro" data-bind="writing-intro"></p>
+        <ul class="wall__grid sites-row writing__sites" aria-label="Where to read"></ul>
+        <h3 class="wall__area writing__latest">Latest posts</h3>
+        <ol class="writing__posts"></ol>
+      </div>
+    </section>
+
+    <!-- 09 / SECURITY RESEARCH -->
+    <section class="section" id="security" aria-labelledby="security-title">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__idx mono"><span>09</span> // security</p>
+          <h2 class="sec-head__title" id="security-title">Security research</h2>
+          <div class="sec-head__rule" aria-hidden="true"><span class="mono" data-count="security"></span></div>
+        </div>
+        <div class="term hud">
+          <div class="term__bar mono" aria-hidden="true">
+            <span class="term__dots"><i></i><i></i><i></i></span>
+            <span>~/<span data-bind="handle"></span> — security</span>
+          </div>
+          <div class="term__body mono">
+            <p class="term__cmd" aria-hidden="true"><span class="term__p">$</span> <span>cat security.md</span></p>
+            <p class="term__text" data-bind="security-intro"></p>
+            <ol class="term__list security__list"></ol>
+            <p class="term__cmd security__focus-cmd" aria-hidden="true"><span class="term__p">$</span> <span>ls focus/</span></p>
+            <ul class="term__tags security__focus" aria-label="What I look for"></ul>
+            <p class="term__cmd term__cmd--end" aria-hidden="true"><span class="term__p">$</span> <span class="caret"></span></p>
+          </div>
+        </div>
+        <h3 class="wall__area security__profiles">Profiles</h3>
+        <ul class="wall__grid sites-row security__sites" aria-label="Bug bounty profiles"></ul>
+      </div>
+    </section>
+
+    <!-- 10 / HOW I WORK -->
     <section class="section section--band" id="how" aria-labelledby="how-title">
       <div class="container">
         <div class="sec-head">
-          <p class="sec-head__idx mono"><span>08</span> // method</p>
+          <p class="sec-head__idx mono"><span>10</span> // method</p>
           <h2 class="sec-head__title" id="how-title">How I work</h2>
           <div class="sec-head__rule" aria-hidden="true"></div>
         </div>

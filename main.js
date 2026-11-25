@@ -207,10 +207,58 @@ function renderInterests(data) {
   }));
 }
 
-function renderHowIWork(data) {
-  $('.term__list').append(...(data.how_i_work || []).map((item) => h('li', {},
+/** A card for one of my profiles elsewhere: the site's logo, its name and a short note. */
+function siteTile(p) {
+  return h('li', {},
+    h('a', { class: 'tile hud', ...external(p.url) },
+      logoTile(p.logo, p.monogram || p.name.slice(0, 2), 52),
+      h('span', { class: 'tile__name', text: p.name }),
+      h('span', { class: 'tile__note', text: p.note }),
+      newTabNote(),
+    ),
+  );
+}
+
+function renderWriting(data) {
+  const w = data.writing || {};
+  const posts = w.posts || [];
+  $('[data-count="posts"]').textContent = plural(w.total || posts.length, 'post', 'posts');
+  $('[data-bind="writing-intro"]').textContent = w.intro || '';
+  $('.writing__sites').append(...(w.platforms || []).map(siteTile));
+  if (!posts.length) $('.writing__latest').hidden = true;
+  $('.writing__posts').append(...posts.map((p) => h('li', {},
+    h('a', { class: 'post-row', ...external(p.url) },
+      h('span', { class: 'post-row__num mono', text: p.num }),
+      h('span', { class: 'post-row__title', text: p.title }),
+      newTabNote(),
+    ),
+  )));
+}
+
+// Only findings a program has fixed and made public ever reach data.json.
+function renderSecurity(data) {
+  const found = data.security || [];
+  $('[data-count="security"]').textContent = found.length ? plural(found.length, 'disclosed', 'disclosed') : 'responsible disclosure';
+  $('[data-bind="security-intro"]').textContent = data.security_intro || '';
+  const focus = data.security_focus || [];
+  if (!focus.length) $('.security__focus-cmd').hidden = true;
+  $('.security__focus').append(...focus.map((f) => h('li', { class: 'term__tag', text: f })));
+  const sites = data.security_platforms || [];
+  if (!sites.length) $('.security__profiles').hidden = true;
+  $('.security__sites').append(...sites.map(siteTile));
+  $('.security__list').append(...found.map((f) => h('li', {},
     h('span', { class: 'term__chk', 'aria-hidden': 'true', text: '[✓]' }),
-    h('span', {}, h('strong', { text: item.title }), ` — ${item.text}`),
+    h('span', {},
+      h('strong', { text: f.program }), `: ${f.finding} · `,
+      h('a', { class: 'term__link', ...external(f.url) }, f.ref, newTabNote()),
+    ),
+  )));
+}
+
+function renderHowIWork(data) {
+  $('#how .term__list').append(...(data.how_i_work || []).map((item) => h('li', {},
+    h('span', { class: 'term__chk', 'aria-hidden': 'true', text: '[✓]' }),
+    h('span', {}, h('strong', { text: item.title }), `: ${item.text}`),
   )));
 }
 
@@ -451,16 +499,21 @@ function wallMotion() {
   });
 }
 
+// Each terminal panel (security, how I work) plays its own entrance when it scrolls in.
 function termMotion() {
-  const typed = $('.term__typed');
-  const lines = $$('.term__list li');
-  const end = $('.term__cmd--end');
-  const tl = gsap.timeline({ scrollTrigger: { trigger: '.term', start: 'top 78%', once: true } });
-  tl.from('.term', { opacity: 0, y: 30, duration: 0.7, ease: 'power3.out' })
-    .add(typeTween(typed, 0.8), 0.3)
-    .from(lines, { opacity: 0, x: -12, duration: 0.35, stagger: 0.16, ease: 'power2.out' })
-    .from(lines.map((l) => l.querySelector('.term__chk')), { color: 'transparent', duration: 0.01, stagger: 0.16 }, '<0.15')
-    .from(end, { opacity: 0, duration: 0.2 });
+  $$('.term').forEach((term) => {
+    const typed = term.querySelector('.term__typed');
+    const lines = [...term.querySelectorAll('.term__list li')];
+    const end = term.querySelector('.term__cmd--end');
+    const tl = gsap.timeline({ scrollTrigger: { trigger: term, start: 'top 78%', once: true } });
+    tl.from(term, { opacity: 0, y: 30, duration: 0.7, ease: 'power3.out' });
+    if (typed) tl.add(typeTween(typed, 0.8), 0.3);
+    if (lines.length) {
+      tl.from(lines, { opacity: 0, x: -12, duration: 0.35, stagger: 0.16, ease: 'power2.out' })
+        .from(lines.map((l) => l.querySelector('.term__chk')), { color: 'transparent', duration: 0.01, stagger: 0.16 }, '<0.15');
+    }
+    if (end) tl.from(end, { opacity: 0, duration: 0.2 });
+  });
 }
 
 function footerMotion() {
@@ -522,7 +575,7 @@ function setupPortrait() {
   }
 }
 
-/** Compact section menu for narrow screens (≤1000px, see style.css). */
+/** Compact section menu for narrow screens (≤1240px, see style.css). */
 function setupNavMenu() {
   const bar = $('.nav');
   const toggle = $('.nav__toggle');
@@ -605,6 +658,8 @@ async function init() {
   renderLanguages(data, resolveProject);
   const prTable = renderContributions(data, resolveProject);
   renderInterests(data);
+  renderWriting(data);
+  renderSecurity(data);
   renderHowIWork(data);
 
   startHero3D();
