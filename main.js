@@ -12,6 +12,10 @@ const gsap = window.gsap;
 const ScrollTrigger = window.ScrollTrigger;
 const animate = Boolean(gsap && ScrollTrigger) && !reduceMotion;
 if (animate) gsap.registerPlugin(ScrollTrigger);
+// The page is built after data.json loads, so the browser's own scroll restore lands on a half
+// built page; scrollToHashTarget() restores the place once everything is in.
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+const startY = window.scrollY;
 
 // ----------------------------------------------------------------- render
 
@@ -363,9 +367,23 @@ function introTimeline() {
   return tl;
 }
 
+// "Play once" without ScrollTrigger's `once: true`: that option kills the trigger the moment it
+// fires, and when the page opens already scrolled down (a #hash link, a reload mid page) several
+// fire during ScrollTrigger's first refresh. Killing them mid refresh empties a slot it is still
+// walking and it throws, so every trigger created after that never exists and its section stays
+// invisible. These keep the trigger alive and simply never reverse.
+const ONCE = { toggleActions: 'play none none none' };
+
+/** For batch and plain triggers with onEnter: the elements that have not played yet, marked now. */
+function firstTime(els) {
+  const fresh = els.filter((el) => !el.dataset.shown);
+  fresh.forEach((el) => { el.dataset.shown = '1'; });
+  return fresh;
+}
+
 function sectionHeads() {
   $$('.sec-head').forEach((head) => {
-    const tl = gsap.timeline({ scrollTrigger: { trigger: head, start: 'top 85%', once: true } });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: head, start: 'top 85%', ...ONCE } });
     tl.from(head.querySelector('.sec-head__idx'), { opacity: 0, x: -16, duration: 0.5, ease: 'power2.out' })
       .from(head.querySelector('.sec-head__title'), { opacity: 0, yPercent: 40, duration: 0.8, ease: 'expo.out' }, '<0.05')
       .from(head.querySelector('.sec-head__rule'), { scaleX: 0, transformOrigin: '0 50%', duration: 1, ease: 'expo.out' }, '<0.1');
@@ -380,7 +398,7 @@ function statsMotion() {
     duration: 0.7,
     stagger: 0.1,
     ease: 'power3.out',
-    scrollTrigger: { trigger: '.stats', start: 'top 80%', once: true },
+    scrollTrigger: { trigger: '.stats', start: 'top 80%', ...ONCE },
   });
   items.forEach((item, i) => {
     const num = item.querySelector('.stat__num');
@@ -394,14 +412,14 @@ function statsMotion() {
       ease: 'power2.out',
       onUpdate: () => { num.textContent = String(Math.round(state.v)); },
       onStart: () => item.classList.add('is-in'),
-      scrollTrigger: { trigger: '.stats', start: 'top 80%', once: true },
+      scrollTrigger: { trigger: '.stats', start: 'top 80%', ...ONCE },
     });
   });
 
   // Portrait: one Sunstruck scan sweep the first time it comes into view.
   const scan = $('.portrait__scan');
   const stack = $('.portrait__stack');
-  gsap.timeline({ scrollTrigger: { trigger: stack, start: 'top 75%', once: true } })
+  gsap.timeline({ scrollTrigger: { trigger: stack, start: 'top 75%', ...ONCE } })
     .from('.portrait', { opacity: 0, y: 30, duration: 0.9, ease: 'power3.out' })
     .fromTo(scan, { top: '0%', opacity: 1 }, { top: '100%', duration: 1.3, ease: 'power1.inOut' }, 0.2)
     .fromTo(stack, { '--r': '0%', '--x': '50%', '--y': '0%' },
@@ -415,39 +433,44 @@ function statsMotion() {
 function revealMotion() {
   ScrollTrigger.batch('.ach > li, .langs__row', {
     start: 'top 90%',
-    once: true,
-    onEnter: (batch) => gsap.from(batch, { opacity: 0, y: 24, duration: 0.6, stagger: 0.07, ease: 'power3.out' }),
+    onEnter: (batch) => {
+      const fresh = firstTime(batch);
+      if (fresh.length) gsap.from(fresh, { opacity: 0, y: 24, duration: 0.6, stagger: 0.07, ease: 'power3.out' });
+    },
   });
   $$('.ach__bar > span, .langs__bar > span, .langs__spectrum > span').forEach((el) => {
     gsap.from(el, { scaleX: 0, transformOrigin: 'left center', duration: 1.1, ease: 'power2.out',
-      scrollTrigger: { trigger: el, start: 'top 92%', once: true } });
+      scrollTrigger: { trigger: el, start: 'top 92%', ...ONCE } });
   });
 }
 
 function cardsMotion() {
   ScrollTrigger.batch('.cards > li', {
     start: 'top 88%',
-    once: true,
-    onEnter: (batch) => gsap.from(batch, {
-      opacity: 0,
-      y: 40,
-      rotateX: -12,
-      transformOrigin: '50% 100%',
-      duration: 0.8,
-      stagger: 0.09,
-      ease: 'power3.out',
-    }),
+    onEnter: (batch) => {
+      const fresh = firstTime(batch);
+      if (!fresh.length) return;
+      gsap.from(fresh, {
+        opacity: 0,
+        y: 40,
+        rotateX: -12,
+        transformOrigin: '50% 100%',
+        duration: 0.8,
+        stagger: 0.09,
+        ease: 'power3.out',
+      });
+    },
   });
 }
 
 function prsMotion(table) {
   gsap.from('.prt-tabs .prt-tab', {
     opacity: 0, y: 10, duration: 0.4, stagger: 0.06, ease: 'power2.out',
-    scrollTrigger: { trigger: '.prt-tabs', start: 'top 88%', once: true },
+    scrollTrigger: { trigger: '.prt-tabs', start: 'top 88%', ...ONCE },
   });
   gsap.from(table.rows(), {
     opacity: 0, y: 14, duration: 0.5, stagger: 0.06, ease: 'power3.out', clearProps: 'opacity,transform',
-    scrollTrigger: { trigger: '.prt-panel', start: 'top 85%', once: true },
+    scrollTrigger: { trigger: '.prt-panel', start: 'top 85%', ...ONCE },
   });
 }
 
@@ -460,7 +483,7 @@ function calendarMotion(cells) {
     ease: 'back.out(2)',
     stagger: (i, el) => Number(el.dataset.col) * 0.022,
     clearProps: 'opacity,transform',
-    scrollTrigger: { trigger: '.cal', start: 'top 82%', once: true },
+    scrollTrigger: { trigger: '.cal', start: 'top 82%', ...ONCE },
   });
 }
 
@@ -474,8 +497,8 @@ function wallMotion() {
   ScrollTrigger.create({
     trigger: wall,
     start: 'top 78%',
-    once: true,
     onEnter: () => {
+      if (!firstTime([wall]).length) return;
       const height = wall.offsetHeight;
       // Animate `top` (not a transform) so the line never extends the page's scroll height.
       gsap.fromTo(scan, { top: '0%', opacity: 1 }, {
@@ -505,7 +528,7 @@ function termMotion() {
     const typed = term.querySelector('.term__typed');
     const lines = [...term.querySelectorAll('.term__list li')];
     const end = term.querySelector('.term__cmd--end');
-    const tl = gsap.timeline({ scrollTrigger: { trigger: term, start: 'top 78%', once: true } });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: term, start: 'top 78%', ...ONCE } });
     tl.from(term, { opacity: 0, y: 30, duration: 0.7, ease: 'power3.out' });
     if (typed) tl.add(typeTween(typed, 0.8), 0.3);
     if (lines.length) {
@@ -523,7 +546,7 @@ function footerMotion() {
     duration: 0.6,
     stagger: 0.1,
     ease: 'power2.out',
-    scrollTrigger: { trigger: '.foot', start: 'top 95%', once: true },
+    scrollTrigger: { trigger: '.foot', start: 'top 95%', ...ONCE },
   });
 }
 
@@ -669,6 +692,11 @@ async function init() {
   setupPortrait();
 
   if (animate) {
+    // ScrollTrigger measures every trigger as it is created. Created while the page sits mid
+    // scroll (a #hash link or a reload), those measurements come out broken (end NaN) and its
+    // refresh walks off the end of its own list and throws, so later sections never appear.
+    // Build them from the top, as on a fresh visit; scrollToHashTarget() moves back afterwards.
+    window.scrollTo(0, 0);
     introTimeline();
     sectionHeads();
     statsMotion();
@@ -691,11 +719,14 @@ async function init() {
 }
 
 /** Content is rendered after load, so the browser's own jump to #section (or
- *  #prs?status=…) happens too early; redo it once everything is in place. */
+ *  #prs?status=…) happens too early; redo it once everything is in place. Without a hash, go
+ *  back to where the visitor was when the page loaded (a reload mid page). */
 function scrollToHashTarget() {
   const id = decodeURIComponent(location.hash.slice(1).split('?')[0]);
   const el = id && document.getElementById(id);
   if (el && id !== 'top') el.scrollIntoView({ block: 'start', behavior: 'instant' });
+  else if (startY > 0) window.scrollTo({ top: startY, behavior: 'instant' });
+  if (animate) ScrollTrigger.refresh();
 }
 
 init().then(scrollToHashTarget);
