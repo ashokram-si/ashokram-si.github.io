@@ -26,12 +26,17 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "count": 12
+      "count": 13
     },
     {
       "name": "AI tooling",
       "logo": null,
       "count": 0
+    },
+    {
+      "name": "Go",
+      "logo": "assets/lang/go-original.svg",
+      "count": 2
     },
     {
       "name": "JavaScript",
@@ -41,11 +46,6 @@
     {
       "name": "Julia",
       "logo": "assets/lang/julia-original.svg",
-      "count": 1
-    },
-    {
-      "name": "Go",
-      "logo": "assets/lang/go-original.svg",
       "count": 1
     }
   ],
@@ -58,7 +58,7 @@
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
-      "count": 25,
+      "count": 26,
       "level": 2,
       "next": 128,
       "unit": "merged PRs",
@@ -80,6 +80,11 @@
     }
   ],
   "shipped_to": [
+    {
+      "name": "memos",
+      "repo": "usememos/memos",
+      "logo": null
+    },
     {
       "name": "Biome",
       "repo": "biomejs/biome",
@@ -303,7 +308,7 @@
     {
       "name": "TypeScript",
       "logo": "assets/lang/typescript-original.svg",
-      "prs": 12,
+      "prs": 13,
       "projects": [
         {
           "name": "Plane",
@@ -316,6 +321,12 @@
           "repo": "grafana/grafana",
           "prs": 3,
           "logo": "grafana"
+        },
+        {
+          "name": "Ghost",
+          "repo": "TryGhost/Ghost",
+          "prs": 1,
+          "logo": null
         },
         {
           "name": "Knip",
@@ -341,6 +352,25 @@
           "repo": "meltano/meltano",
           "prs": 3,
           "logo": "meltano"
+        }
+      ]
+    },
+    {
+      "name": "Go",
+      "logo": "assets/lang/go-original.svg",
+      "prs": 2,
+      "projects": [
+        {
+          "name": "Hugo",
+          "repo": "gohugoio/hugo",
+          "prs": 1,
+          "logo": "gohugoio"
+        },
+        {
+          "name": "memos",
+          "repo": "usememos/memos",
+          "prs": 1,
+          "logo": null
         }
       ]
     },
@@ -397,19 +427,6 @@
       ]
     },
     {
-      "name": "Go",
-      "logo": "assets/lang/go-original.svg",
-      "prs": 1,
-      "projects": [
-        {
-          "name": "Hugo",
-          "repo": "gohugoio/hugo",
-          "prs": 1,
-          "logo": "gohugoio"
-        }
-      ]
-    },
-    {
       "name": "AI tooling",
       "logo": null,
       "prs": 0,
@@ -418,14 +435,38 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "76",
-    "Merged": "24",
-    "Under review": "46",
+    "Pull requests opened": "78",
+    "Merged": "25",
+    "Under review": "47",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
-    "Projects I contribute to": "45"
+    "Projects I contribute to": "47"
   },
   "contributing_to": [
+    {
+      "name": "memos",
+      "repo": "usememos/memos",
+      "prs": 1,
+      "merged": 1,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/usememos/memos/commits?author=ashokram-si",
+      "state": "merged",
+      "logo": null
+    },
+    {
+      "name": "Ghost",
+      "repo": "TryGhost/Ghost",
+      "prs": 1,
+      "merged": 0,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/TryGhost/Ghost/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": null
+    },
     {
       "name": "Plane",
       "repo": "makeplane/plane",
@@ -614,8 +655,8 @@
       "closed": 0,
       "features": 2,
       "comments": 1,
-      "link": "https://github.com/storytold/vectorcraft/graphs/contributors",
-      "state": "listed",
+      "link": "https://github.com/storytold/vectorcraft/commits?author=ashokram-si",
+      "state": "merged",
       "logo": "storytold-vectorcraft"
     },
     {
@@ -800,6 +841,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-25",
+      "project": "memos",
+      "what": "Memo previews and titles showed markdown escapes and HTML entities as typed (Tom \\& Jerry, &amp;); they now show the text the memo renders, and saved titles are rebuilt once after upgrading; found by testing, reported and fixed",
+      "url": "https://github.com/usememos/memos/pull/6644",
+      "ref": "usememos/memos#6644",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "MERGED"
+    },
+    {
+      "date": "2026-11-25",
+      "project": "Ghost",
+      "what": "Signup cards created from HTML (Admin API, imports) lost their disclaimer and showed the subheader in its place; the parser now reads each field by its class; found by testing every card's render and parse round trip, reported and fixed",
+      "url": "https://github.com/TryGhost/Ghost/pull/33288",
+      "ref": "TryGhost/Ghost#33288",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-24",
       "project": "Plane",
@@ -1917,6 +1980,18 @@
           "url": "https://github.com/makeplane/plane",
           "logo": "makeplane",
           "monogram": "Pl"
+        },
+        {
+          "name": "memos",
+          "url": "https://github.com/usememos/memos",
+          "logo": null,
+          "monogram": "Me"
+        },
+        {
+          "name": "Ghost",
+          "url": "https://github.com/TryGhost/Ghost",
+          "logo": null,
+          "monogram": "Gh"
         }
       ]
     }
@@ -2034,6 +2109,11 @@
     ],
     "posts": [
       {
+        "num": "07",
+        "title": "Why Knip reported Mastra's agent and tool files as unused",
+        "url": "https://ashokramsi.hashnode.dev/knip-mastra-plugin"
+      },
+      {
         "num": "06",
         "title": "How I added dilation to average pooling in Burn",
         "url": "https://ashokramsi.hashnode.dev/burn-avg-pool-dilation"
@@ -2052,17 +2132,12 @@
         "num": "03",
         "title": "Why first(s, typemax(Int)) returned an empty string in Julia",
         "url": "https://ashokramsi.hashnode.dev/julia-nextind-saturate"
-      },
-      {
-        "num": "02",
-        "title": "Why Biome's formatter broke negative interpolations in SCSS",
-        "url": "https://ashokramsi.hashnode.dev/biome-scss-negative-interpolation"
       }
     ],
-    "total": 6
+    "total": 7
   },
   "calendar": {
-    "total": 1064,
+    "total": 1110,
     "weeks": [
       [
         {
@@ -4373,9 +4448,21 @@
         },
         {
           "date": "2026-11-25",
-          "count": 28,
-          "level": 2,
+          "count": 69,
+          "level": 4,
           "weekday": 3
+        },
+        {
+          "date": "2026-11-26",
+          "count": 1,
+          "level": 1,
+          "weekday": 4
+        },
+        {
+          "date": "2026-11-27",
+          "count": 4,
+          "level": 1,
+          "weekday": 5
         }
       ]
     ]
