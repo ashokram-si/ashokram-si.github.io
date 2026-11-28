@@ -11,7 +11,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "count": 56
+      "count": 57
     },
     {
       "name": "C++",
@@ -175,7 +175,7 @@
     {
       "name": "Rust",
       "logo": "assets/lang/rust-original.svg",
-      "prs": 56,
+      "prs": 57,
       "projects": [
         {
           "name": "Turso",
@@ -302,6 +302,12 @@
           "repo": "vectordotdev/vector",
           "prs": 1,
           "logo": "vectordotdev"
+        },
+        {
+          "name": "craft-libs",
+          "repo": "storytold/craft-libs",
+          "prs": 1,
+          "logo": "storytold"
         }
       ]
     },
@@ -435,14 +441,26 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "80",
+    "Pull requests opened": "81",
     "Merged": "27",
-    "Under review": "47",
+    "Under review": "48",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
     "Projects I contribute to": "47"
   },
   "contributing_to": [
+    {
+      "name": "craft-libs",
+      "repo": "storytold/craft-libs",
+      "prs": 1,
+      "merged": 0,
+      "closed": 0,
+      "features": 0,
+      "comments": 0,
+      "link": "https://github.com/storytold/craft-libs/pulls?q=is%3Apr+author%3Aashokram-si",
+      "state": "review",
+      "logo": "storytold"
+    },
     {
       "name": "memos",
       "repo": "usememos/memos",
@@ -841,6 +859,17 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-28",
+      "project": "craft-libs",
+      "what": "The shared SVG reader dropped a rectangle's rounded corner radii; it now hands them over, resolved as SVG defines them, so CADCraft can draw rounded corners",
+      "url": "https://github.com/storytold/craft-libs/pull/4014",
+      "ref": "storytold/craft-libs#4014",
+      "kind": "pr",
+      "feature": false,
+      "logo": "storytold",
+      "status": "IN REVIEW"
+    },
     {
       "date": "2026-11-27",
       "project": "memos",
@@ -2159,7 +2188,7 @@
     "total": 8
   },
   "calendar": {
-    "total": 1132,
+    "total": 1138,
     "weeks": [
       [
         {
@@ -4488,7 +4517,7 @@
         },
         {
           "date": "2026-11-28",
-          "count": 3,
+          "count": 9,
           "level": 1,
           "weekday": 6
         }
