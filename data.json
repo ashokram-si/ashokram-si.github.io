@@ -36,7 +36,7 @@
     {
       "name": "Go",
       "logo": "assets/lang/go-original.svg",
-      "count": 2
+      "count": 4
     },
     {
       "name": "JavaScript",
@@ -58,7 +58,7 @@
       "image": "assets/badges/pull-shark.png?v=25e37d13fa",
       "url": "https://github.com/ashokram-si?achievement=pull-shark&tab=achievements",
       "unlocked_by": "quarkusio/quarkus#57866",
-      "count": 26,
+      "count": 28,
       "level": 2,
       "next": 128,
       "unit": "merged PRs",
@@ -343,6 +343,25 @@
       ]
     },
     {
+      "name": "Go",
+      "logo": "assets/lang/go-original.svg",
+      "prs": 4,
+      "projects": [
+        {
+          "name": "memos",
+          "repo": "usememos/memos",
+          "prs": 3,
+          "logo": null
+        },
+        {
+          "name": "Hugo",
+          "repo": "gohugoio/hugo",
+          "prs": 1,
+          "logo": "gohugoio"
+        }
+      ]
+    },
+    {
       "name": "Python",
       "logo": "assets/lang/python-original.svg",
       "prs": 3,
@@ -352,25 +371,6 @@
           "repo": "meltano/meltano",
           "prs": 3,
           "logo": "meltano"
-        }
-      ]
-    },
-    {
-      "name": "Go",
-      "logo": "assets/lang/go-original.svg",
-      "prs": 2,
-      "projects": [
-        {
-          "name": "Hugo",
-          "repo": "gohugoio/hugo",
-          "prs": 1,
-          "logo": "gohugoio"
-        },
-        {
-          "name": "memos",
-          "repo": "usememos/memos",
-          "prs": 1,
-          "logo": null
         }
       ]
     },
@@ -435,8 +435,8 @@
   ],
   "profile": "https://github.com/ashokram-si",
   "stats": {
-    "Pull requests opened": "78",
-    "Merged": "25",
+    "Pull requests opened": "80",
+    "Merged": "27",
     "Under review": "47",
     "Issue investigations posted": "1",
     "Fixes ready locally, awaiting submission": "3",
@@ -446,13 +446,13 @@
     {
       "name": "memos",
       "repo": "usememos/memos",
-      "prs": 1,
-      "merged": 1,
+      "prs": 3,
+      "merged": 3,
       "closed": 0,
       "features": 0,
       "comments": 0,
-      "link": "https://github.com/usememos/memos/commits?author=ashokram-si",
-      "state": "merged",
+      "link": "https://github.com/usememos/memos/graphs/contributors",
+      "state": "listed",
       "logo": null
     },
     {
@@ -841,6 +841,28 @@
     }
   ],
   "contributions": [
+    {
+      "date": "2026-11-27",
+      "project": "memos",
+      "what": "The upgrade step that rebuilds every memo could skip one when a memo was deleted while it listed them; it now lists all memos in one query, with a test that deletes a memo mid pass; found in review of my earlier fix, reported and fixed",
+      "url": "https://github.com/usememos/memos/pull/6666",
+      "ref": "usememos/memos#6666",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "MERGED"
+    },
+    {
+      "date": "2026-11-27",
+      "project": "memos",
+      "what": "Inline code written over two lines kept the line break in memo previews and titles; it now reads as a space, as the memo shows it; reported and fixed",
+      "url": "https://github.com/usememos/memos/pull/6667",
+      "ref": "usememos/memos#6667",
+      "kind": "pr",
+      "feature": false,
+      "logo": null,
+      "status": "MERGED"
+    },
     {
       "date": "2026-11-25",
       "project": "memos",
@@ -2109,6 +2131,11 @@
     ],
     "posts": [
       {
+        "num": "08",
+        "title": "How one bad timezone string could stop Rerun's scheduler",
+        "url": "https://ashokramsi.hashnode.dev/rerun-timezone-routines"
+      },
+      {
         "num": "07",
         "title": "Why Knip reported Mastra's agent and tool files as unused",
         "url": "https://ashokramsi.hashnode.dev/knip-mastra-plugin"
@@ -2127,17 +2154,12 @@
         "num": "04",
         "title": "Why quarkus:dev ignored gRPC settings in application.properties",
         "url": "https://ashokramsi.hashnode.dev/quarkus-dev-mode-goal-order"
-      },
-      {
-        "num": "03",
-        "title": "Why first(s, typemax(Int)) returned an empty string in Julia",
-        "url": "https://ashokramsi.hashnode.dev/julia-nextind-saturate"
       }
     ],
-    "total": 7
+    "total": 8
   },
   "calendar": {
-    "total": 1110,
+    "total": 1132,
     "weeks": [
       [
         {
@@ -4460,9 +4482,15 @@
         },
         {
           "date": "2026-11-27",
-          "count": 4,
-          "level": 1,
+          "count": 23,
+          "level": 2,
           "weekday": 5
+        },
+        {
+          "date": "2026-11-28",
+          "count": 3,
+          "level": 1,
+          "weekday": 6
         }
       ]
     ]
